@@ -1,0 +1,15 @@
+2026-09-13 08:55:16,237 INFO t1_phase: fragments 500/3597
+2026-09-13 08:55:25,889 INFO t1_phase: fragments 1000/3597
+2026-09-13 08:55:34,982 INFO t1_phase: fragments 1500/3597
+2026-09-13 08:55:43,533 INFO t1_phase: fragments 2000/3597
+2026-09-13 08:55:52,131 INFO t1_phase: fragments 2500/3597
+2026-09-13 08:56:01,831 INFO t1_phase: fragments 3000/3597
+2026-09-13 08:56:13,680 INFO t1_phase: fragments 3500/3597
+2026-09-13 08:56:16,402 INFO t1_phase: fragments: 187971 from 3366 objects; silver counts {'STABLE_ORBIT': 182537, 'SUSTAINED_DECAY': 5041, 'UNKNOWN_TRANSITION': 393}
+2026-09-13 08:56:48,688 INFO t1_phase: mean over seeds:
+                  macro_f1    ari    nmi  f1_STABLE_ORBIT  f1_SUSTAINED_RAISE  f1_SUSTAINED_DECAY
+method                                                                                           
+Constant-stable      0.329  0.000  0.000            0.988                 0.0               0.000
+HistGB               0.666  0.998  0.993            1.000                 0.0               0.998
+Raw PCA + KMeans     0.398  0.028  0.073            0.943                 0.0               0.250
+Slope-rule           0.587  0.750  0.619            0.993                 0.0               0.768

@@ -1,0 +1,11 @@
+# T1 phase classification (t1_phase_classification/). The recorded run used Python 3.13.11 with the pinned
+# versions below (from the sub-project README); the remaining packages were not pinned in the original run.
+--extra-index-url https://download.pytorch.org/whl/cu128
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+torch==2.11.0+cu128
+scipy
+joblib
+ruptures
+matplotlib

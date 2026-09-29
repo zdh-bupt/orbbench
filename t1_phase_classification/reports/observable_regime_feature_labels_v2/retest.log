@@ -1,0 +1,52 @@
+C:\Users\Rinsanshio\Documents\Shigoto\SatLife\satlife_observable\model.py:37: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(
+Completed retrospective inference for seed 42
+C:\Users\Rinsanshio\Documents\Shigoto\SatLife\satlife_observable\model.py:37: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(
+Completed retrospective inference for seed 43
+C:\Users\Rinsanshio\Documents\Shigoto\SatLife\satlife_observable\model.py:37: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(
+Completed retrospective inference for seed 44
+                      system          family  seed      split  sample_count  satellite_count  adjusted_rand_index  normalized_mutual_information  macro_f1  symmetric_segment_iou  segment_macro_duration_iou  boundary_f1_24h  true_boundaries_24h  predicted_boundaries_24h
+             constant_stable         control    -1 validation         10617              395             0.000000                       0.000000  0.314001               0.864764                    0.864764         0.000000                    4                         0
+             constant_stable         control    -1       test         10209              376             0.000000                       0.000000  0.314826               0.870525                    0.870525         0.000000                    8                         0
+              raw_pca_kmeans     traditional    42 validation         10617              395             0.828858                       0.700229  0.664198               0.886190                    0.946008         0.171429                    4                        31
+              raw_pca_kmeans     traditional    42       test         10209              376             0.793633                       0.666131  0.700605               0.882400                    0.939698         0.292683                    8                        33
+                 pelt_kmeans     traditional    42 validation         10617              395             0.635848                       0.472237  0.500435               0.895597                    0.900075         0.000000                    4                         6
+                 pelt_kmeans     traditional    42       test         10209              376             0.659828                       0.495102  0.470760               0.890550                    0.902115         0.190476                    8                        13
+transformer_embedding_kmeans self_supervised    42 validation         10617              395             0.007855                       0.001031  0.333229               0.154197                    0.725111         0.000000                    4                      1485
+transformer_embedding_kmeans self_supervised    42       test         10209              376            -0.012864                       0.001968  0.325014               0.140628                    0.711540         0.000000                    8                      1571
+              raw_pca_kmeans     traditional    43 validation         10617              395             0.828858                       0.700229  0.664198               0.886190                    0.946008         0.171429                    4                        31
+              raw_pca_kmeans     traditional    43       test         10209              376             0.793745                       0.666720  0.701238               0.882609                    0.939921         0.292683                    8                        33
+                 pelt_kmeans     traditional    43 validation         10617              395             0.635848                       0.472237  0.500435               0.895597                    0.900075         0.000000                    4                         6
+                 pelt_kmeans     traditional    43       test         10209              376             0.659828                       0.495102  0.470760               0.890550                    0.902115         0.190476                    8                        13
+transformer_embedding_kmeans self_supervised    43 validation         10617              395            -0.008344                       0.000840  0.326713               0.164508                    0.730006         0.000000                    4                      1379
+transformer_embedding_kmeans self_supervised    43       test         10209              376            -0.021296                       0.001447  0.319794               0.151225                    0.724309         0.000000                    8                      1467
+              raw_pca_kmeans     traditional    44 validation         10617              395             0.828858                       0.700229  0.664198               0.886190                    0.946008         0.171429                    4                        31
+              raw_pca_kmeans     traditional    44       test         10209              376             0.794160                       0.667421  0.701106               0.882745                    0.940066         0.292683                    8                        33
+                 pelt_kmeans     traditional    44 validation         10617              395             0.635848                       0.472237  0.500435               0.895597                    0.900075         0.000000                    4                         6
+                 pelt_kmeans     traditional    44       test         10209              376             0.659828                       0.495102  0.470760               0.890550                    0.902115         0.190476                    8                        13
+transformer_embedding_kmeans self_supervised    44 validation         10617              395            -0.004661                       0.003269  0.335851               0.159146                    0.728092         0.000000                    4                      1434
+transformer_embedding_kmeans self_supervised    44       test         10209              376            -0.016170                       0.004479  0.328322               0.144764                    0.716676         0.000000                    8                      1529
+{
+  "created_by": "scripts/retest_feature_label_clustering_v2.py",
+  "label_version": "feature_rules_v2",
+  "evaluation_kind": "retrospective_test",
+  "not_a_new_unseen_final_test": true,
+  "reuse_rationale": "TLE inputs, self-supervised next-TLE target, split, and cluster count are unchanged; only the proxy labels and train-fitted cluster-to-state mapping changed.",
+  "dataset": "C:\\Users\\Rinsanshio\\Documents\\Shigoto\\SatLife\\output\\tle_observable_regime_feature_labels_v2",
+  "dataset_sha256": "dd3cc1711ec4edfdeb9a16876743d286614ad1944e6c2283df54ed2bed30d0d0",
+  "index_sha256": "159ac47d33aed06523f0548a7585cacc42272f00ff70458e9f41933167b7112f",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "device": "cuda",
+  "elapsed_seconds": 86.243,
+  "python": "3.13.11",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.0"
+}

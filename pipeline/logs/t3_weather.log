@@ -1,0 +1,11 @@
+2026-09-13 08:32:47,639 INFO t3_weather: best per var/horizon:
+    variable  horizon_d      method       mae  skill_vs_persistence
+kp_daily_avg          1  Ridge-AR30  0.659275              0.202337
+kp_daily_avg          3  Ridge-AR30  0.783115              0.291681
+kp_daily_avg          7  Ridge-AR30  0.785083              0.444832
+    f107_obs          1 HistGB-AR30  6.959367              0.014142
+      ap_avg          1 HistGB-AR30  6.973526              0.234935
+      ap_avg          7 HistGB-AR30  8.320095              0.438870
+      ap_avg          3 HistGB-AR30  8.533454              0.298061
+    f107_obs          3 HistGB-AR30 13.007952              0.101387
+    f107_obs          7  Ridge-AR30 18.929568              0.175631

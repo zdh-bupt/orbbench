@@ -1,0 +1,198 @@
+2026-09-14 02:39:29,439 INFO chain_proof: C1 S1A: 110 T2 flags over 8874 TLEs; 8.2% of origins flagged (oracle 33.0%)
+2026-09-14 02:39:30,779 INFO chain_proof: C1 S1B: 227 T2 flags over 8236 TLEs; 0.3% of origins flagged (oracle 0.0%)
+2026-09-14 02:39:32,181 INFO chain_proof: C1 S2A: 291 T2 flags over 8705 TLEs; 17.6% of origins flagged (oracle 13.1%)
+2026-09-14 02:39:33,623 INFO chain_proof: C1 S2B: 302 T2 flags over 8475 TLEs; 14.7% of origins flagged (oracle 0.0%)
+2026-09-14 02:39:35,195 INFO chain_proof: C1 S3A: 206 T2 flags over 9873 TLEs; 20.8% of origins flagged (oracle 11.6%)
+2026-09-14 02:39:35,944 INFO chain_proof: C1 S3B: 177 T2 flags over 4617 TLEs; 16.6% of origins flagged (oracle 0.0%)
+2026-09-14 02:39:36,065 INFO chain_proof: C1 (T component, h=all):
+                     model                  split     n  cov68  cov95  nees  err_p50_km  sigma_p50_km
+                 sigma-age                    all 26370  0.646  0.920 4.489       0.456         0.616
+                 sigma-age post-maneuver (oracle)  5400  0.594  0.818 7.272       0.494         0.617
+                 sigma-age     no recent maneuver 20970  0.659  0.946 3.772       0.449         0.616
+                 sigma-age             T2-flagged  5904  0.640  0.914 3.847       0.467         0.614
+    sigma-age x g(T2 flag)                    all 26370  0.621  0.906 5.013       0.456         0.601
+    sigma-age x g(T2 flag) post-maneuver (oracle)  5400  0.549  0.797 8.476       0.494         0.577
+    sigma-age x g(T2 flag)     no recent maneuver 20970  0.639  0.934 4.122       0.449         0.606
+    sigma-age x g(T2 flag)             T2-flagged  5904  0.527  0.851 6.189       0.467         0.484
+sigma-age x g(oracle flag)                    all 26370  0.671  0.930 3.789       0.456         0.634
+sigma-age x g(oracle flag) post-maneuver (oracle)  5400  0.714  0.868 3.853       0.494         0.847
+sigma-age x g(oracle flag)     no recent maneuver 20970  0.659  0.946 3.772       0.449         0.616
+sigma-age x g(oracle flag)             T2-flagged  5904  0.699  0.924 2.997       0.467         0.679
+2026-09-14 02:39:36,065 INFO chain_proof: C1 g factors: T2 {"r": 0.669, "t": 0.788, "n": 0.588}  oracle {"r": 0.977, "t": 1.374, "n": 1.074}
+2026-09-14 02:39:56,272 INFO chain_proof: C2: 450 objects, 72252 pairs, 281 reference approaches < 10 km
+2026-09-14 02:41:14,734 INFO chain_proof: C2:
+ lead_h           ranking                          target  n_pred  n_positive  recall_at_k  recall_at_2k  precision_at_10  spearman_score_vs_neg_truemiss
+      6        point miss matched (true approach < 10 km)    1306          84        0.167         0.286              0.2                           0.052
+      6        point miss    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.052
+      6    Pc sigma-fixed matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                           0.053
+      6    Pc sigma-fixed    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.053
+      6      Pc sigma-age matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6      Pc sigma-age    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+      6 Pc sigma-age x T2 matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6 Pc sigma-age x T2    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+     24        point miss matched (true approach < 10 km)    1305          84        0.155         0.333              0.2                           0.046
+     24        point miss    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                           0.046
+     24    Pc sigma-fixed matched (true approach < 10 km)    1305          84        0.167         0.333              0.2                           0.046
+     24    Pc sigma-fixed    dangerous (true miss < 5 km)    1305          16        0.000         0.188              0.0                           0.046
+     24      Pc sigma-age matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24      Pc sigma-age    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+     24 Pc sigma-age x T2 matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24 Pc sigma-age x T2    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+2026-09-14 02:41:15,479 INFO chain_proof: C3:
+                            policy  n_events  pre_pc_ge_1e4_frac  safety_rate_pc  safety_rate_2km  dv_mean_m_s  dv_p90_m_s  min_dist_p50_m  pc_post_p90  decision_sigma_p50_m  true_sigma_p50_m
+                       No-maneuver       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001                   NaN           725.714
+               Distance-max (2 km)       117               0.248           1.000              1.0       10.338        15.0        2016.671        0.000                   NaN           725.714
+   Pc-gate, calibrated sigma (CDM)       117               0.248           1.000              0.0        0.303         1.2         501.996        0.000               725.714           725.714
+Pc-gate, OrbBench sigma-age (24 h)       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001               648.522           725.714
+              Pc-gate, fixed sigma       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001               584.659           725.714
+  Pc-gate, conservative 2 km sigma       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001              2000.000           725.714
+2026-09-14 02:46:09,698 INFO chain_proof: C4 1-min trajectories 100/600
+2026-09-14 02:47:04,596 INFO chain_proof: C4 1-min trajectories 200/600
+2026-09-14 02:49:41,584 INFO chain_proof: C1 S1A: 8874 TLEs; origins with T2 score>=6 in prev 48h: 28.2% (logged maneuver in prev 48h: 33.0%)
+2026-09-14 02:49:43,338 INFO chain_proof: C1 S2A: 8705 TLEs; origins with T2 score>=6 in prev 48h: 28.9% (logged maneuver in prev 48h: 13.1%)
+2026-09-14 02:49:45,356 INFO chain_proof: C1 S3A: 9873 TLEs; origins with T2 score>=6 in prev 48h: 43.2% (logged maneuver in prev 48h: 11.6%)
+2026-09-14 02:50:09,884 INFO chain_proof: C4 1-min trajectories 300/600
+2026-09-14 02:52:00,744 INFO chain_proof: C2: 450 objects, 72252 pairs, 281 reference approaches < 10 km
+2026-09-14 02:52:54,831 ERROR chain_proof: chain proof failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 316, in main
+    c2 = c2_uq_ranking(); save_df(c2, "c2_uq_ranking.csv"); log.info("C2:\n" + c2.round(3).to_string(index=False))
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 154, in c2_uq_ranking
+    gT = float(np.mean([g[c]["flag_t2"] for c in RTN])) if g else 1.0
+                        ~~~~^^^^^^^^^^^
+KeyError: 'flag_t2'
+2026-09-14 02:53:35,909 INFO chain_proof: C4 1-min trajectories 400/600
+2026-09-14 02:57:31,439 INFO chain_proof: C4 1-min trajectories 500/600
+2026-09-14 02:58:51,778 INFO chain_proof: C2: 450 objects, 72252 pairs, 281 reference approaches < 10 km
+2026-09-14 03:00:25,295 INFO chain_proof: C2:
+ lead_h                   ranking                          target  n_pred  n_positive  recall_at_k  recall_at_2k  precision_at_10  spearman_score_vs_neg_truemiss
+      6                point miss matched (true approach < 10 km)    1306          84        0.167         0.286              0.2                           0.052
+      6                point miss    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.052
+      6            Pc sigma-fixed matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                           0.053
+      6            Pc sigma-fixed    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.053
+      6              Pc sigma-age matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6              Pc sigma-age    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+      6         Pc sigma-age x T2 matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6         Pc sigma-age x T2    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+      6 Pc sigma-object (LOO p50) matched (true approach < 10 km)    1306          84        0.095         0.167              0.4                          -0.101
+      6 Pc sigma-object (LOO p50)    dangerous (true miss < 5 km)    1306          16        0.062         0.062              0.1                          -0.101
+      6 Pc sigma-object (LOO p90) matched (true approach < 10 km)    1306          84        0.119         0.167              0.3                          -0.124
+      6 Pc sigma-object (LOO p90)    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.1                          -0.124
+      6       miss / sigma-object matched (true approach < 10 km)    1306          84        0.095         0.167              0.3                          -0.118
+      6       miss / sigma-object    dangerous (true miss < 5 km)    1306          16        0.000         0.062              0.0                          -0.118
+     24                point miss matched (true approach < 10 km)    1305          84        0.155         0.333              0.2                           0.046
+     24                point miss    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                           0.046
+     24            Pc sigma-fixed matched (true approach < 10 km)    1305          84        0.167         0.333              0.2                           0.046
+     24            Pc sigma-fixed    dangerous (true miss < 5 km)    1305          16        0.000         0.188              0.0                           0.046
+     24              Pc sigma-age matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24              Pc sigma-age    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+     24         Pc sigma-age x T2 matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24         Pc sigma-age x T2    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+     24 Pc sigma-object (LOO p50) matched (true approach < 10 km)    1305          84        0.083         0.167              0.3                          -0.059
+     24 Pc sigma-object (LOO p50)    dangerous (true miss < 5 km)    1305          16        0.000         0.000              0.0                          -0.059
+     24 Pc sigma-object (LOO p90) matched (true approach < 10 km)    1305          84        0.119         0.167              0.1                          -0.081
+     24 Pc sigma-object (LOO p90)    dangerous (true miss < 5 km)    1305          16        0.062         0.062              0.0                          -0.081
+     24       miss / sigma-object matched (true approach < 10 km)    1305          84        0.095         0.167              0.1                          -0.067
+     24       miss / sigma-object    dangerous (true miss < 5 km)    1305          16        0.000         0.000              0.0                          -0.067
+2026-09-14 03:00:33,022 INFO chain_proof: C4 1-min trajectories 600/600
+2026-09-14 03:00:48,428 INFO chain_proof: C4: 600 LEO objects, 58825 candidate pairs of 179700, 139 reference approaches < 10 km
+2026-09-14 03:00:48,669 INFO chain_proof: C4:
+                  ordering  0.02  0.05   0.1  0.15   0.2   0.3   0.4   0.5  0.75  1.0   AUC  n_truth  n_pairs  n_objects
+    T5 shell density (min) 0.091 0.167 0.227 0.326 0.371 0.492 0.606 0.742 0.886  1.0 0.656      139    58825        600
+T5 shell density (product) 0.091 0.174 0.227 0.303 0.348 0.477 0.591 0.652 0.902  1.0 0.636      139    58825        600
+                    oracle 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000  1.0 0.999      139    58825        600
+                    random 0.015 0.045 0.091 0.129 0.205 0.280 0.447 0.538 0.780  1.0 0.519      139    58825        600
+          same-shell first 0.030 0.106 0.242 0.356 0.477 0.636 0.720 0.811 0.939  1.0 0.710      139    58825        600
+2026-09-14 03:00:48,704 INFO chain_proof: A0 vs A1:
+                                       stage                                      metric                               A0          A0_value                        A1         A1_value
+                     Trajectory (T4 product)       kinematic jump at TLE switch, P90 (m)                      nearest TLE        137.522193                       MTF        13.660034
+Uncertainty (T2->UQ), post-maneuver (oracle)             along-track 95% coverage / NEES                        sigma-age      0.818 / 7.27         sigma-age x g(T2)     0.797 / 8.48
+                   Uncertainty (T2->UQ), all             along-track 95% coverage / NEES                        sigma-age      0.920 / 4.49         sigma-age x g(T2)     0.906 / 5.01
+          Warning ranking (UQ->T6), lead 6 h                 recall@K of true approaches                       point miss          0.166667        Pc(sigma-age x T2)         0.166667
+         Warning ranking (UQ->T6), lead 24 h                 recall@K of true approaches                       point miss          0.154762        Pc(sigma-age x T2)         0.166667
+     Screening budget (T5->T6), 20% of pairs              recall of reference approaches                     random order          0.204545          T5 shell density         0.348485
+     Screening budget (T5->T6), 50% of pairs              recall of reference approaches                     random order          0.537879          T5 shell density         0.651515
+                          Avoidance (UQ->T7) mean delta-v (m/s) at safety (true Pc<1e-4)                    distance rule 10.34 (safe 1.00)   Pc-gate, OrbBench sigma 0.00 (safe 0.75)
+                          Avoidance (UQ->T7) mean delta-v (m/s) at safety (true Pc<1e-4) Pc-gate, conservative 2 km sigma  0.00 (safe 0.75) Pc-gate, calibrated sigma 0.30 (safe 1.00)
+2026-09-14 03:01:08,251 INFO chain_proof: A0 vs A1:
+                                  stage                                metric           A0   A0_value                 A1  A1_value
+                Trajectory (T4 product) kinematic jump at TLE switch, P90 (m)  nearest TLE 137.522193                MTF 13.660034
+     Warning ranking (UQ->T6), lead 6 h           recall@K of true approaches   point miss   0.166667 Pc(sigma-age x T2)  0.166667
+    Warning ranking (UQ->T6), lead 24 h           recall@K of true approaches   point miss   0.154762 Pc(sigma-age x T2)  0.166667
+Screening budget (T5->T6), 20% of pairs        recall of reference approaches random order   0.204545   T5 shell density  0.348485
+Screening budget (T5->T6), 50% of pairs        recall of reference approaches random order   0.537879   T5 shell density  0.651515
+2026-09-14 03:01:08,697 WARNING chain_proof: figures skipped: Data cannot be log-scaled because all values are <= 0.
+2026-09-14 03:11:04,807 INFO chain_proof: A0 vs A1:
+                                             stage                                      metric                       A0      A0_value                                  A1     A1_value
+                           Trajectory product (T4)       kinematic jump at TLE switch, P90 (m)              nearest TLE         137.5                                 MTF         13.7
+                           Trajectory product (T4)          share of switches with jump > 50 m              nearest TLE         0.252                                 MTF         0.01
+    Uncertainty (T2 -> UQ), post-maneuver (logged)                  along-track 95% cov / NEES           sigma-age only 0.780 / 10.28             sigma-age x g(T2 score) 0.816 / 7.63
+Uncertainty (events -> UQ), post-maneuver (logged)                  along-track 95% cov / NEES           sigma-age only 0.780 / 10.28    sigma-age x g(T2 + maneuver log) 0.867 / 3.92
+                       Uncertainty (T2 -> UQ), all                  along-track 95% cov / NEES           sigma-age only  0.885 / 4.80             sigma-age x g(T2 score) 0.915 / 3.57
+                   Uncertainty (events -> UQ), all                  along-track 95% cov / NEES           sigma-age only  0.885 / 4.80    sigma-age x g(T2 + maneuver log) 0.931 / 2.42
+              Warning ranking (UQ -> T6), lead 6 h                 recall@K of true approaches               point miss         0.167                  Pc(sigma-age x T2)        0.167
+             Warning ranking (UQ -> T6), lead 24 h                 recall@K of true approaches               point miss         0.155                  Pc(sigma-age x T2)        0.167
+         Screening budget (T5 -> T6), 20% of pairs              recall of reference approaches             random order         0.205              T5 shell density (min)        0.371
+         Screening budget (T5 -> T6), 50% of pairs              recall of reference approaches             random order         0.538              T5 shell density (min)        0.742
+                       Screening budget (T5 -> T6)                  AUC of recall-budget curve             random order         0.519              T5 shell density (min)        0.656
+              Avoidance (UQ -> T7), 117 CDM events mean delta-v (m/s) [safety by true Pc<1e-4]     distance rule (2 km)  10.34 [1.00] Pc-gate, per-event calibrated sigma  0.30 [1.00]
+              Avoidance (UQ -> T7), 117 CDM events mean delta-v (m/s) [safety by true Pc<1e-4] Pc-gate, one fixed sigma   0.00 [0.75] Pc-gate, per-event calibrated sigma  0.30 [1.00]
+2026-09-16 08:13:08,445 INFO chain_proof: C4 1-min trajectories 100/1500
+2026-09-16 08:19:41,032 INFO chain_proof: C4 1-min trajectories 200/1500
+2026-09-16 08:24:11,093 INFO chain_proof: C4 1-min trajectories 300/1500
+2026-09-16 08:24:11,100 INFO chain_proof: C4 1-min trajectories 400/1500
+2026-09-16 08:25:56,065 INFO chain_proof: C4 1-min trajectories 500/1500
+2026-09-16 08:29:50,004 INFO chain_proof: C4 1-min trajectories 600/1500
+2026-09-16 08:33:49,256 INFO chain_proof: C4 1-min trajectories 700/1500
+2026-09-16 08:37:51,321 INFO chain_proof: C4 1-min trajectories 800/1500
+2026-09-16 08:41:58,661 INFO chain_proof: C4 1-min trajectories 900/1500
+2026-09-16 08:46:08,624 INFO chain_proof: C4 1-min trajectories 1000/1500
+2026-09-16 08:50:22,695 INFO chain_proof: C4 1-min trajectories 1100/1500
+2026-09-16 08:54:43,285 INFO chain_proof: C4 1-min trajectories 1200/1500
+2026-09-16 08:58:47,585 INFO chain_proof: C4 1-min trajectories 1300/1500
+2026-09-16 09:02:27,812 INFO chain_proof: C4 1-min trajectories 1400/1500
+2026-09-16 09:06:04,705 INFO chain_proof: C4 1-min trajectories 1500/1500
+2026-09-16 09:39:47,813 INFO chain_proof: C4 1-min trajectories 100/1500
+2026-09-16 09:41:15,926 INFO chain_proof: C4 1-min trajectories 200/1500
+2026-09-16 09:42:19,489 INFO chain_proof: C4 1-min trajectories 300/1500
+2026-09-16 09:42:19,495 INFO chain_proof: C4 1-min trajectories 400/1500
+2026-09-16 09:42:53,127 INFO chain_proof: C4 1-min trajectories 500/1500
+2026-09-16 09:43:59,376 INFO chain_proof: C4 1-min trajectories 600/1500
+2026-09-16 09:45:13,722 INFO chain_proof: C4 1-min trajectories 700/1500
+2026-09-16 09:46:30,100 INFO chain_proof: C4 1-min trajectories 800/1500
+2026-09-16 09:47:51,701 INFO chain_proof: C4 1-min trajectories 900/1500
+2026-09-16 09:49:19,011 INFO chain_proof: C4 1-min trajectories 1000/1500
+2026-09-16 09:50:52,501 INFO chain_proof: C4 1-min trajectories 1100/1500
+2026-09-16 09:52:32,369 INFO chain_proof: C4 1-min trajectories 1200/1500
+2026-09-16 09:53:48,518 INFO chain_proof: C4 1-min trajectories 1300/1500
+2026-09-16 09:54:39,599 INFO chain_proof: C4 1-min trajectories 1400/1500
+2026-09-16 09:55:32,907 INFO chain_proof: C4 1-min trajectories 1500/1500
+2026-09-16 12:04:39,368 INFO chain_proof: C4 1-min trajectories 100/600
+2026-09-16 12:05:58,765 INFO chain_proof: C4 1-min trajectories 200/600
+2026-09-16 12:07:10,555 INFO chain_proof: C4 1-min trajectories 300/600
+2026-09-16 12:08:38,556 INFO chain_proof: C4 1-min trajectories 400/600
+2026-09-16 12:10:13,727 INFO chain_proof: C4 1-min trajectories 500/600
+2026-09-16 12:11:05,322 INFO chain_proof: C4 1-min trajectories 600/600
+2026-09-16 12:11:34,643 INFO chain_proof: C4: 600 LEO objects, 74766 candidate pairs of 179700, 182 reference approaches < 10 km
+2026-09-16 12:11:34,801 INFO chain_proof: C4:
+                  ordering  0.02  0.05   0.1  0.15   0.2   0.3   0.4   0.5  0.75  1.0   AUC  n_truth  n_pairs  n_objects
+    T5 shell density (min) 0.074 0.111 0.204 0.302 0.383 0.512 0.593 0.710 0.889  1.0 0.651      182    74766        600
+T5 shell density (product) 0.074 0.105 0.160 0.241 0.364 0.463 0.574 0.648 0.889  1.0 0.622      182    74766        600
+                    oracle 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000  1.0 0.999      182    74766        600
+                    random 0.025 0.025 0.049 0.099 0.136 0.296 0.395 0.488 0.759  1.0 0.494      182    74766        600
+          same-shell first 0.056 0.099 0.284 0.352 0.432 0.586 0.667 0.778 0.932  1.0 0.694      182    74766        600
+2026-09-16 12:11:34,870 INFO chain_proof: A0 vs A1:
+                                             stage                                      metric                       A0      A0_value                                  A1     A1_value
+                           Trajectory product (T4)       kinematic jump at TLE switch, P90 (m)              nearest TLE         137.5                                 MTF         13.7
+                           Trajectory product (T4)          share of switches with jump > 50 m              nearest TLE         0.252                                 MTF         0.01
+    Uncertainty (T2 -> UQ), post-maneuver (logged)                  along-track 95% cov / NEES           sigma-age only 0.780 / 10.28             sigma-age x g(T2 score) 0.816 / 7.63
+Uncertainty (events -> UQ), post-maneuver (logged)                  along-track 95% cov / NEES           sigma-age only 0.780 / 10.28    sigma-age x g(T2 + maneuver log) 0.867 / 3.92
+                       Uncertainty (T2 -> UQ), all                  along-track 95% cov / NEES           sigma-age only  0.885 / 4.80             sigma-age x g(T2 score) 0.915 / 3.57
+                   Uncertainty (events -> UQ), all                  along-track 95% cov / NEES           sigma-age only  0.885 / 4.80    sigma-age x g(T2 + maneuver log) 0.931 / 2.42
+              Warning ranking (UQ -> T6), lead 6 h                 recall@K of true approaches               point miss         0.167                  Pc(sigma-age x T2)        0.167
+             Warning ranking (UQ -> T6), lead 24 h                 recall@K of true approaches               point miss         0.155                  Pc(sigma-age x T2)        0.167
+         Screening budget (T5 -> T6), 20% of pairs              recall of reference approaches             random order         0.136              T5 shell density (min)        0.383
+         Screening budget (T5 -> T6), 50% of pairs              recall of reference approaches             random order         0.488              T5 shell density (min)         0.71
+                       Screening budget (T5 -> T6)                  AUC of recall-budget curve             random order         0.494              T5 shell density (min)        0.651
+              Avoidance (UQ -> T7), 117 CDM events mean delta-v (m/s) [safety by true Pc<1e-4]     distance rule (2 km)  10.34 [1.00] Pc-gate, per-event calibrated sigma  0.30 [1.00]
+              Avoidance (UQ -> T7), 117 CDM events mean delta-v (m/s) [safety by true Pc<1e-4] Pc-gate, one fixed sigma   0.00 [0.75] Pc-gate, per-event calibrated sigma  0.30 [1.00]

@@ -1,0 +1,85 @@
+2026-09-13 10:03:26,162 INFO t7_avoidance: events: {'cdm': 117}
+2026-09-13 10:03:44,743 INFO t7_avoidance: 
+task     strategy source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver    cdm 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7          PPO    cdm 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7   Physics-Pc    cdm 59          1.0        0.056       0.300          0.186             0.0       3863845.670
+  T7  Physics-max    cdm 59          1.0        0.305       0.600          1.017             0.0       3863845.774
+  T7 Proportional    cdm 59          1.0        0.192       0.346          1.017             0.0       3863845.685
+  T7  No-maneuver    ALL 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7          PPO    ALL 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7   Physics-Pc    ALL 59          1.0        0.056       0.300          0.186             0.0       3863845.670
+  T7  Physics-max    ALL 59          1.0        0.305       0.600          1.017             0.0       3863845.774
+  T7 Proportional    ALL 59          1.0        0.192       0.346          1.017             0.0       3863845.685
+2026-09-13 10:31:06,949 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 10:31:24,734 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1551.946
+  T7          PPO       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7          PPO screening  4        0.000        0.000       0.000          0.000             0.0          1551.946
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1551.946
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2223.919
+  T7 Proportional       cdm 59        0.000       10.792      16.633        151.000             0.0          1720.976
+  T7 Proportional screening  4        1.000        7.039      13.342        150.500             0.0          2038.143
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.948
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2020.623
+  T7 Proportional       ALL 63        0.063       10.554      16.633        150.968             0.0          1727.201
+2026-09-13 10:41:32,192 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 10:42:23,952 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7          PPO       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7          PPO screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2223.871
+  T7 Proportional       cdm 59        0.000       10.792      16.633        151.000             0.0          1720.976
+  T7 Proportional screening  4        1.000        7.040      13.342        150.500             0.0          2038.157
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.948
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2020.623
+  T7 Proportional       ALL 63        0.063       10.554      16.633        150.968             0.0          1727.201
+2026-09-13 10:54:15,581 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 10:55:32,475 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7          PPO       cdm 59        0.000       44.685      44.700        148.983             0.0           454.679
+  T7          PPO screening  4        0.000       44.699      44.700        149.000             0.0          1551.852
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2223.871
+  T7 Proportional       cdm 59        0.000       10.792      16.633        151.000             0.0          1720.976
+  T7 Proportional screening  4        1.000        7.040      13.342        150.500             0.0          2038.157
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        0.000       44.686      44.700        148.984             0.0           489.150
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.948
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2020.623
+  T7 Proportional       ALL 63        0.063       10.554      16.633        150.968             0.0          1727.201
+2026-09-13 11:08:55,358 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 11:10:17,550 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1248.089
+  T7          PPO       cdm 59        1.000       45.000      45.000        150.000             0.0          3852.168
+  T7          PPO screening  4        1.000       45.000      45.000        150.000             0.0          4622.217
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1248.089
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2062.335
+  T7 Proportional       cdm 59        0.000       10.757      16.579        150.000             0.0          1720.976
+  T7 Proportional screening  4        0.500        7.029      13.342        150.000             0.0          1957.345
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        1.000       45.000      45.000        150.000             0.0          3886.637
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.947
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2019.055
+  T7 Proportional       ALL 63        0.032       10.520      16.579        150.000             0.0          1727.201

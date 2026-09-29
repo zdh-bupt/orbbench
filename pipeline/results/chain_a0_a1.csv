@@ -1,0 +1,14 @@
+stage,metric,A0,A0_value,A1,A1_value
+Trajectory product (T4),"kinematic jump at TLE switch, P90 (m)",nearest TLE,137.5,MTF,13.7
+Trajectory product (T4),share of switches with jump > 50 m,nearest TLE,0.252,MTF,0.01
+"Uncertainty (T2 -> UQ), post-maneuver (logged)",along-track 95% cov / NEES,sigma-age only,0.780 / 10.28,sigma-age x g(T2 score),0.816 / 7.63
+"Uncertainty (events -> UQ), post-maneuver (logged)",along-track 95% cov / NEES,sigma-age only,0.780 / 10.28,sigma-age x g(T2 + maneuver log),0.867 / 3.92
+"Uncertainty (T2 -> UQ), all",along-track 95% cov / NEES,sigma-age only,0.885 / 4.80,sigma-age x g(T2 score),0.915 / 3.57
+"Uncertainty (events -> UQ), all",along-track 95% cov / NEES,sigma-age only,0.885 / 4.80,sigma-age x g(T2 + maneuver log),0.931 / 2.42
+"Warning ranking (UQ -> T6), lead 6 h",recall@K of true approaches,point miss,0.167,Pc(sigma-age x T2),0.167
+"Warning ranking (UQ -> T6), lead 24 h",recall@K of true approaches,point miss,0.155,Pc(sigma-age x T2),0.167
+"Screening budget (T5 -> T6), 20% of pairs",recall of reference approaches,random order,0.136,T5 shell density (min),0.383
+"Screening budget (T5 -> T6), 50% of pairs",recall of reference approaches,random order,0.488,T5 shell density (min),0.71
+Screening budget (T5 -> T6),AUC of recall-budget curve,random order,0.494,T5 shell density (min),0.651
+"Avoidance (UQ -> T7), 117 CDM events",mean delta-v (m/s) [safety by true Pc<1e-4],distance rule (2 km),10.34 [1.00],"Pc-gate, per-event calibrated sigma",0.30 [1.00]
+"Avoidance (UQ -> T7), 117 CDM events",mean delta-v (m/s) [safety by true Pc<1e-4],"Pc-gate, one fixed sigma",0.00 [0.75],"Pc-gate, per-event calibrated sigma",0.30 [1.00]

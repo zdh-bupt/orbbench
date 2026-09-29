@@ -1,0 +1,6 @@
+chain,budget_fraction,n_reference_approaches,approaches_reached,recall,dv_per_event_m_s,dv_total_m_s,events_with_pc_ge_gate,dv_per_reached_dangerous
+A1 full (T5 order -> T6 Pc -> T7 Pc-gate),0.2,182,69.7,0.382716049382716,0.087,6.09,2,
+  -T5 (random order),0.2,182,24.7,0.1358024691358024,0.087,2.16,2,
+  -T6 sigma (distance rule),0.2,182,69.7,0.382716049382716,0.262,18.26,2,
+A0 none (random order + distance rule),0.2,182,24.7,0.1358024691358024,0.262,6.48,2,
+oracle ordering + Pc-gate,0.2,182,182.0,1.0,0.087,15.9,2,

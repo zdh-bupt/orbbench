@@ -1,0 +1,7 @@
+panel,state,display_name,fragment_id,norad_cat_id,object_name,sample_count,duration_days,net_a_change_km,a_range_km,selection_note
+a,STABLE_ORBIT,Stable orbit,48481:4:part2,48481,STARLINK-2706,237,96.46843592,0.11669921875,0.3486328125,Long well-sampled fragment with small semimajor-axis range
+b,SUSTAINED_RAISE,Sustained raise,48481:1:part1,48481,STARLINK-2706,113,37.99998843,231.595703125,231.595703125,Long well-sampled monotone raise
+c,SUSTAINED_DECAY,Sustained decay,44249:1:part1,44249,STARLINK-61,30,11.8157976,-38.888671875,38.888671875,Well-sampled monotone decay
+d,OFFSET_PLATEAU,Offset plateau,48481:5:part1,48481,STARLINK-2706,45,19.33347875,-0.03125,6.7041015625,Only available offset-plateau fragment
+e,SHORT_EXCURSION_RETURN,Short excursion and return,48481:3:part1,48481,STARLINK-2706,3,2.05674655,-0.03955078125,8.88671875,Compact excursion-and-return example
+f,UNKNOWN_TRANSITION,Unknown transition,47168:2:part1,47168,STARLINK-1885,15,4.89621603,-0.47998046875,2.916015625,Well-sampled fragment that misses every exclusive rule

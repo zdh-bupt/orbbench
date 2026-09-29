@@ -1,0 +1,75 @@
+2026-09-17 04:57:17,216 INFO detail_table: T2 done
+2026-09-17 04:57:30,834 INFO detail_table: T4 Sentinel done
+2026-09-17 04:57:30,906 INFO detail_table: T4 Starlink done
+2026-09-17 04:57:51,841 INFO detail_table: T4 per-object coverage: origin 1/5
+2026-09-17 04:58:10,517 INFO detail_table: T4 per-object coverage: origin 2/5
+2026-09-17 04:58:30,359 INFO detail_table: T4 per-object coverage: origin 3/5
+2026-09-17 04:58:50,385 INFO detail_table: T4 per-object coverage: origin 4/5
+2026-09-17 04:59:09,858 INFO detail_table: T4 per-object coverage: origin 5/5
+2026-09-17 05:01:19,232 INFO detail_table: cohort done
+2026-09-17 05:01:19,237 INFO detail_table: 
+       block          column             metric  independent  unified      n
+ T2 Maneuver     Sentinel-1A                 F1        0.411    0.420    NaN
+ T2 Maneuver     Sentinel-1A       False alarms      223.000  207.000    NaN
+ T2 Maneuver     Sentinel-2A                 F1        0.467    0.492    NaN
+ T2 Maneuver     Sentinel-2A       False alarms       67.000   60.000    NaN
+ T2 Maneuver     Sentinel-3A                 F1        0.479    0.479    NaN
+ T2 Maneuver     Sentinel-3A       False alarms       72.000   72.000    NaN
+ T2 Maneuver             All                 F1        0.433    0.443    NaN
+ T2 Maneuver             All       False alarms      362.000  339.000    NaN
+ T4 Forecast     Sentinel-1A 95% coverage, 24 h        0.748    0.797 1067.0
+ T4 Forecast     Sentinel-2A 95% coverage, 24 h        0.825    0.846  773.0
+ T4 Forecast     Sentinel-2B 95% coverage, 24 h        0.880    0.887 1079.0
+ T4 Forecast     Sentinel-3A 95% coverage, 24 h        0.881    0.897 1073.0
+ T4 Forecast     Sentinel-3B 95% coverage, 24 h        0.846    0.861  403.0
+ T4 Forecast  All (Sentinel) 95% coverage, 24 h        0.835    0.858 4395.0
+ T4 Forecast  Starlink 44752 95% coverage, 24 h        0.933    0.982  282.0
+ T4 Forecast  Starlink 44723 95% coverage, 24 h        0.934    0.958  286.0
+ T4 Forecast  Starlink 44751 95% coverage, 24 h        0.721    0.775  262.0
+ T4 Forecast  All (Starlink) 95% coverage, 24 h        0.857    0.909 4473.0
+ T4 Forecast   payload 19908 95% coverage, 24 h        1.000    1.000    5.0
+ T4 Forecast rocket body 204 95% coverage, 24 h        1.000    1.000    5.0
+ T4 Forecast    debris 20881 95% coverage, 24 h        1.000    1.000    5.0
+ T4 Forecast    All (cohort) 95% coverage, 24 h        0.924    0.932 6580.0
+  T6 Warning         payload          Found (%)       18.893   66.124  307.0
+  T6 Warning         payload      In budget (%)       27.500   50.000   40.0
+  T6 Warning         payload            Alerted       11.000   18.000   40.0
+T7 Avoidance         payload           Resolved       11.000   18.000   40.0
+T7 Avoidance         payload        Unnecessary        3.000    0.000   40.0
+T7 Avoidance         payload                 dv      198.300  119.400   40.0
+  T6 Warning     rocket body          Found (%)       19.178   42.466  146.0
+  T6 Warning     rocket body      In budget (%)       26.667   26.667   15.0
+  T6 Warning     rocket body            Alerted        4.000    4.000   15.0
+T7 Avoidance     rocket body           Resolved        4.000    4.000   15.0
+T7 Avoidance     rocket body        Unnecessary        1.000    0.000   15.0
+T7 Avoidance     rocket body                 dv       69.300   23.400   15.0
+  T6 Warning          debris          Found (%)       20.800   40.000  500.0
+  T6 Warning          debris      In budget (%)       17.647   35.294   68.0
+  T6 Warning          debris            Alerted       11.000   23.000   68.0
+T7 Avoidance          debris           Resolved       10.000   23.000   68.0
+T7 Avoidance          debris        Unnecessary        0.000    0.000   68.0
+T7 Avoidance          debris                 dv      146.400  132.000   68.0
+  T6 Warning      300-800 km          Found (%)       23.560   38.743  191.0
+  T6 Warning      300-800 km      In budget (%)       20.000   55.000   20.0
+  T6 Warning      300-800 km            Alerted        4.000   10.000   20.0
+T7 Avoidance      300-800 km           Resolved        4.000   10.000   20.0
+T7 Avoidance      300-800 km        Unnecessary        0.000    0.000   20.0
+T7 Avoidance      300-800 km                 dv       58.800   52.500   20.0
+  T6 Warning     800-1200 km          Found (%)       17.910   51.306  536.0
+  T6 Warning     800-1200 km      In budget (%)       19.178   32.877   73.0
+  T6 Warning     800-1200 km            Alerted       13.000   23.000   73.0
+T7 Avoidance     800-1200 km           Resolved       12.000   23.000   73.0
+T7 Avoidance     800-1200 km        Unnecessary        1.000    0.000   73.0
+T7 Avoidance     800-1200 km                 dv      189.000  123.300   73.0
+  T6 Warning    1200-2000 km          Found (%)       21.681   51.327  226.0
+  T6 Warning    1200-2000 km      In budget (%)       30.000   43.333   30.0
+  T6 Warning    1200-2000 km            Alerted        9.000   12.000   30.0
+T7 Avoidance    1200-2000 km           Resolved        9.000   12.000   30.0
+T7 Avoidance    1200-2000 km        Unnecessary        3.000    0.000   30.0
+T7 Avoidance    1200-2000 km                 dv      166.200   99.000   30.0
+  T6 Warning             All          Found (%)       19.937   48.793  953.0
+  T6 Warning             All      In budget (%)       21.951   39.024  123.0
+  T6 Warning             All            Alerted       26.000   45.000  123.0
+T7 Avoidance             All           Resolved       25.000   45.000  123.0
+T7 Avoidance             All        Unnecessary        4.000    0.000  123.0
+T7 Avoidance             All                 dv      414.000  274.800  123.0

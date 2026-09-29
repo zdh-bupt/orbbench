@@ -1,0 +1,65 @@
+block,column,metric,independent,unified,n
+T2 Maneuver,Sentinel-1A,F1,0.4106463878326997,0.4204322200392926,
+T2 Maneuver,Sentinel-1A,False alarms,223.0,207.0,
+T2 Maneuver,Sentinel-2A,F1,0.4671532846715329,0.4923076923076923,
+T2 Maneuver,Sentinel-2A,False alarms,67.0,60.0,
+T2 Maneuver,Sentinel-3A,F1,0.4794520547945205,0.4794520547945205,
+T2 Maneuver,Sentinel-3A,False alarms,72.0,72.0,
+T2 Maneuver,All,F1,0.4326328800988875,0.443312101910828,
+T2 Maneuver,All,False alarms,362.0,339.0,
+T4 Forecast,Sentinel-1A,"95% coverage, 24 h",0.7478912839737581,0.7966260543580131,1067.0
+T4 Forecast,Sentinel-2A,"95% coverage, 24 h",0.8253557567917206,0.8460543337645536,773.0
+T4 Forecast,Sentinel-2B,"95% coverage, 24 h",0.8795180722891566,0.8869323447636701,1079.0
+T4 Forecast,Sentinel-3A,"95% coverage, 24 h",0.880708294501398,0.896551724137931,1073.0
+T4 Forecast,Sentinel-3B,"95% coverage, 24 h",0.8461538461538461,0.8610421836228288,403.0
+T4 Forecast,All (Sentinel),"95% coverage, 24 h",0.8352673492605234,0.8577929465301479,4395.0
+T4 Forecast,Starlink 44752,"95% coverage, 24 h",0.9326241134751773,0.9822695035460993,282.0
+T4 Forecast,Starlink 44723,"95% coverage, 24 h",0.9335664335664335,0.958041958041958,286.0
+T4 Forecast,Starlink 44751,"95% coverage, 24 h",0.7213740458015268,0.7748091603053435,262.0
+T4 Forecast,All (Starlink),"95% coverage, 24 h",0.8569192935390119,0.9094567404426559,4473.0
+T4 Forecast,payload 19908,"95% coverage, 24 h",1.0,1.0,5.0
+T4 Forecast,rocket body 204,"95% coverage, 24 h",1.0,1.0,5.0
+T4 Forecast,debris 20881,"95% coverage, 24 h",1.0,1.0,5.0
+T4 Forecast,All (cohort),"95% coverage, 24 h",0.9237082066869301,0.9322188449848025,6580.0
+T6 Warning,payload,Found (%),18.892508143322477,66.12377850162866,307.0
+T6 Warning,payload,In budget (%),27.500000000000004,50.0,40.0
+T6 Warning,payload,Alerted,11.0,18.0,40.0
+T7 Avoidance,payload,Resolved,11.0,18.0,40.0
+T7 Avoidance,payload,Unnecessary,3.0,0.0,40.0
+T7 Avoidance,payload,dv,198.30000000000018,119.4,40.0
+T6 Warning,rocket body,Found (%),19.17808219178082,42.465753424657535,146.0
+T6 Warning,rocket body,In budget (%),26.666666666666668,26.666666666666668,15.0
+T6 Warning,rocket body,Alerted,4.0,4.0,15.0
+T7 Avoidance,rocket body,Resolved,4.0,4.0,15.0
+T7 Avoidance,rocket body,Unnecessary,1.0,0.0,15.0
+T7 Avoidance,rocket body,dv,69.30000000000005,23.4,15.0
+T6 Warning,debris,Found (%),20.8,40.0,500.0
+T6 Warning,debris,In budget (%),17.647058823529413,35.294117647058826,68.0
+T6 Warning,debris,Alerted,11.0,23.0,68.0
+T7 Avoidance,debris,Resolved,10.0,23.0,68.0
+T7 Avoidance,debris,Unnecessary,0.0,0.0,68.0
+T7 Avoidance,debris,dv,146.40000000000012,131.99999999999997,68.0
+T6 Warning,300-800 km,Found (%),23.56020942408377,38.7434554973822,191.0
+T6 Warning,300-800 km,In budget (%),20.0,55.00000000000001,20.0
+T6 Warning,300-800 km,Alerted,4.0,10.0,20.0
+T7 Avoidance,300-800 km,Resolved,4.0,10.0,20.0
+T7 Avoidance,300-800 km,Unnecessary,0.0,0.0,20.0
+T7 Avoidance,300-800 km,dv,58.800000000000054,52.49999999999998,20.0
+T6 Warning,800-1200 km,Found (%),17.91044776119403,51.30597014925373,536.0
+T6 Warning,800-1200 km,In budget (%),19.17808219178082,32.87671232876712,73.0
+T6 Warning,800-1200 km,Alerted,13.0,23.0,73.0
+T7 Avoidance,800-1200 km,Resolved,12.0,23.0,73.0
+T7 Avoidance,800-1200 km,Unnecessary,1.0,0.0,73.0
+T7 Avoidance,800-1200 km,dv,189.00000000000017,123.3,73.0
+T6 Warning,1200-2000 km,Found (%),21.68141592920354,51.32743362831859,226.0
+T6 Warning,1200-2000 km,In budget (%),30.0,43.333333333333336,30.0
+T6 Warning,1200-2000 km,Alerted,9.0,12.0,30.0
+T7 Avoidance,1200-2000 km,Resolved,9.0,12.0,30.0
+T7 Avoidance,1200-2000 km,Unnecessary,3.0,0.0,30.0
+T7 Avoidance,1200-2000 km,dv,166.20000000000016,99.00000000000003,30.0
+T6 Warning,All,Found (%),19.937040923399792,48.79328436516264,953.0
+T6 Warning,All,In budget (%),21.951219512195124,39.02439024390244,123.0
+T6 Warning,All,Alerted,26.0,45.0,123.0
+T7 Avoidance,All,Resolved,25.0,45.0,123.0
+T7 Avoidance,All,Unnecessary,4.0,0.0,123.0
+T7 Avoidance,All,dv,414.00000000000034,274.79999999999995,123.0

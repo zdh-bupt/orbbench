@@ -1,0 +1,253 @@
+2026-09-13 10:03:49,581 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:03:49,583 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 10:04:21,131 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:04:21,142 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 10:31:29,885 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:31:29,930 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 10:42:28,362 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:42:28,387 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 10:55:36,939 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:55:36,941 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 11:10:22,057 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 11:10:22,068 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 15:45:06,310 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 15:45:06,327 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 15:45:30,690 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 15:45:30,692 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 16:17:09,872 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1             weather→forecast (T3→T4)  1        0.795    0.773 3D P50 km          -2.708
+ E1               maneuver→forecast, P95  1        1.219    1.222 3D P95 km           0.230
+ E1            maneuver→forecast (T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1             weather→forecast (T3→T4)  4        0.641    0.622 3D P50 km          -3.044
+ E1               maneuver→forecast, P95  4        1.695    1.695 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1             weather→forecast (T3→T4) 24        0.489    0.497 3D P50 km           1.623
+ E1               maneuver→forecast, P95 24        4.216    4.246 3D P95 km           0.719
+ E1 maneuver→forecast [maneuver windows]  1        0.414    0.415 3D P50 km           0.103
+ E1    maneuver→forecast [quiet windows]  1        0.597    0.595 3D P50 km          -0.262
+ E1 maneuver→forecast [maneuver windows] 24        0.969    0.954 3D P50 km          -1.555
+ E1    maneuver→forecast [quiet windows] 24        0.429    0.429 3D P50 km          -0.013
+2026-09-13 16:17:09,874 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-13 16:44:06,771 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1             weather→forecast (T3→T4)  1        0.795    0.773 3D P50 km          -2.708
+ E1               maneuver→forecast, P95  1        1.219    1.222 3D P95 km           0.230
+ E1            maneuver→forecast (T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1             weather→forecast (T3→T4)  4        0.641    0.622 3D P50 km          -3.044
+ E1               maneuver→forecast, P95  4        1.695    1.695 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1             weather→forecast (T3→T4) 24        0.489    0.497 3D P50 km           1.623
+ E1               maneuver→forecast, P95 24        4.216    4.246 3D P95 km           0.719
+ E1 maneuver→forecast [maneuver windows]  1        0.414    0.415 3D P50 km           0.103
+ E1    maneuver→forecast [quiet windows]  1        0.597    0.595 3D P50 km          -0.262
+ E1 maneuver→forecast [maneuver windows] 24        0.969    0.954 3D P50 km          -1.555
+ E1    maneuver→forecast [quiet windows] 24        0.429    0.429 3D P50 km          -0.013
+2026-09-13 16:44:06,791 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+2026-09-16 12:22:00,334 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1             weather→forecast (T3→T4)  1        0.795    0.773 3D P50 km          -2.708
+ E1               maneuver→forecast, P95  1        1.219    1.222 3D P95 km           0.230
+ E1            maneuver→forecast (T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1             weather→forecast (T3→T4)  4        0.641    0.622 3D P50 km          -3.044
+ E1               maneuver→forecast, P95  4        1.695    1.695 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1             weather→forecast (T3→T4) 24        0.489    0.497 3D P50 km           1.623
+ E1               maneuver→forecast, P95 24        4.216    4.246 3D P95 km           0.719
+ E1 maneuver→forecast [maneuver windows]  1        0.414    0.415 3D P50 km           0.103
+ E1    maneuver→forecast [quiet windows]  1        0.597    0.595 3D P50 km          -0.262
+ E1 maneuver→forecast [maneuver windows] 24        0.969    0.954 3D P50 km          -1.555
+ E1    maneuver→forecast [quiet windows] 24        0.429    0.429 3D P50 km          -0.013
+2026-09-16 12:22:00,363 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN

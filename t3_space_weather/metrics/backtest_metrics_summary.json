@@ -1,0 +1,158 @@
+{
+  "ctx30_pred3": {
+    "f107_obs": {
+      "MAE_mean": 11.762676,
+      "MAE_std": 8.18276,
+      "RMSE_mean": 12.809875,
+      "RMSE_std": 8.357917,
+      "50%CI_Coverage_mean": 0.333333,
+      "80%CI_Coverage_mean": 0.533333
+    },
+    "kp_daily_avg": {
+      "MAE_mean": 1.032505,
+      "MAE_std": 0.675899,
+      "RMSE_mean": 1.145319,
+      "RMSE_std": 0.675123,
+      "50%CI_Coverage_mean": 0.366667,
+      "80%CI_Coverage_mean": 0.733333
+    },
+    "ap_avg": {
+      "MAE_mean": 15.302309,
+      "MAE_std": 16.964742,
+      "RMSE_mean": 17.401872,
+      "RMSE_std": 17.980476,
+      "50%CI_Coverage_mean": 0.466667,
+      "80%CI_Coverage_mean": 0.666667
+    }
+  },
+  "ctx30_pred7": {
+    "f107_obs": {
+      "MAE_mean": 9.839077,
+      "MAE_std": 5.64923,
+      "RMSE_mean": 11.606846,
+      "RMSE_std": 6.598822,
+      "50%CI_Coverage_mean": 0.485714,
+      "80%CI_Coverage_mean": 0.757143
+    },
+    "kp_daily_avg": {
+      "MAE_mean": 1.33739,
+      "MAE_std": 0.475259,
+      "RMSE_mean": 1.547562,
+      "RMSE_std": 0.485522,
+      "50%CI_Coverage_mean": 0.3,
+      "80%CI_Coverage_mean": 0.7
+    },
+    "ap_avg": {
+      "MAE_mean": 14.335575,
+      "MAE_std": 9.200141,
+      "RMSE_mean": 18.05151,
+      "RMSE_std": 11.67344,
+      "50%CI_Coverage_mean": 0.371429,
+      "80%CI_Coverage_mean": 0.742857
+    }
+  },
+  "ctx60_pred3": {
+    "f107_obs": {
+      "MAE_mean": 12.00102,
+      "MAE_std": 8.092075,
+      "RMSE_mean": 13.049081,
+      "RMSE_std": 8.133843,
+      "50%CI_Coverage_mean": 0.233333,
+      "80%CI_Coverage_mean": 0.566667
+    },
+    "kp_daily_avg": {
+      "MAE_mean": 0.911261,
+      "MAE_std": 0.610983,
+      "RMSE_mean": 1.0388,
+      "RMSE_std": 0.599992,
+      "50%CI_Coverage_mean": 0.5,
+      "80%CI_Coverage_mean": 0.833333
+    },
+    "ap_avg": {
+      "MAE_mean": 14.027727,
+      "MAE_std": 16.535723,
+      "RMSE_mean": 16.371858,
+      "RMSE_std": 17.540825,
+      "50%CI_Coverage_mean": 0.466667,
+      "80%CI_Coverage_mean": 0.733333
+    }
+  },
+  "ctx60_pred7": {
+    "f107_obs": {
+      "MAE_mean": 10.243574,
+      "MAE_std": 5.68047,
+      "RMSE_mean": 12.010788,
+      "RMSE_std": 6.532718,
+      "50%CI_Coverage_mean": 0.442857,
+      "80%CI_Coverage_mean": 0.771429
+    },
+    "kp_daily_avg": {
+      "MAE_mean": 0.980213,
+      "MAE_std": 0.317381,
+      "RMSE_mean": 1.199432,
+      "RMSE_std": 0.355606,
+      "50%CI_Coverage_mean": 0.442857,
+      "80%CI_Coverage_mean": 0.728571
+    },
+    "ap_avg": {
+      "MAE_mean": 12.002856,
+      "MAE_std": 8.526051,
+      "RMSE_mean": 15.65236,
+      "RMSE_std": 11.509379,
+      "50%CI_Coverage_mean": 0.457143,
+      "80%CI_Coverage_mean": 0.742857
+    }
+  },
+  "ctx90_pred3": {
+    "f107_obs": {
+      "MAE_mean": 11.225444,
+      "MAE_std": 8.338538,
+      "RMSE_mean": 12.258885,
+      "RMSE_std": 8.472878,
+      "50%CI_Coverage_mean": 0.266667,
+      "80%CI_Coverage_mean": 0.5
+    },
+    "kp_daily_avg": {
+      "MAE_mean": 0.877683,
+      "MAE_std": 0.764013,
+      "RMSE_mean": 0.992629,
+      "RMSE_std": 0.754888,
+      "50%CI_Coverage_mean": 0.5,
+      "80%CI_Coverage_mean": 0.733333
+    },
+    "ap_avg": {
+      "MAE_mean": 13.550127,
+      "MAE_std": 17.544553,
+      "RMSE_mean": 15.69185,
+      "RMSE_std": 18.469033,
+      "50%CI_Coverage_mean": 0.533333,
+      "80%CI_Coverage_mean": 0.733333
+    }
+  },
+  "ctx90_pred7": {
+    "f107_obs": {
+      "MAE_mean": 9.547561,
+      "MAE_std": 6.073205,
+      "RMSE_mean": 11.280234,
+      "RMSE_std": 7.04679,
+      "50%CI_Coverage_mean": 0.457143,
+      "80%CI_Coverage_mean": 0.8
+    },
+    "kp_daily_avg": {
+      "MAE_mean": 0.860509,
+      "MAE_std": 0.356695,
+      "RMSE_mean": 1.04272,
+      "RMSE_std": 0.427944,
+      "50%CI_Coverage_mean": 0.471429,
+      "80%CI_Coverage_mean": 0.785714
+    },
+    "ap_avg": {
+      "MAE_mean": 10.955772,
+      "MAE_std": 8.856969,
+      "RMSE_mean": 14.285922,
+      "RMSE_std": 11.842217,
+      "50%CI_Coverage_mean": 0.471429,
+      "80%CI_Coverage_mean": 0.771429
+    }
+  }
+}

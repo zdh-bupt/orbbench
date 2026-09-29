@@ -1,0 +1,7 @@
+state,fragment_id,selection_note
+STABLE_ORBIT,48481:4:part2,Long well-sampled fragment with small semimajor-axis range
+SUSTAINED_RAISE,48481:1:part1,Long well-sampled monotone raise
+SUSTAINED_DECAY,44249:1:part1,Well-sampled monotone decay
+OFFSET_PLATEAU,48481:5:part1,Only available offset-plateau fragment
+SHORT_EXCURSION_RETURN,48481:3:part1,Compact excursion-and-return example
+UNKNOWN_TRANSITION,47168:2:part1,Well-sampled fragment that misses every exclusive rule

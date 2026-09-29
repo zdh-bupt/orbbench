@@ -1,0 +1,29 @@
+lead_h,ranking,target,n_pred,n_positive,recall_at_k,recall_at_2k,precision_at_10,spearman_score_vs_neg_truemiss
+6,point miss,matched (true approach < 10 km),1306,84,0.16666666666666666,0.2857142857142857,0.2,0.05159461374911411
+6,point miss,dangerous (true miss < 5 km),1306,16,0.0625,0.125,0.0,0.05159461374911411
+6,Pc sigma-fixed,matched (true approach < 10 km),1306,84,0.16666666666666666,0.2976190476190476,0.2,0.053376531335425734
+6,Pc sigma-fixed,dangerous (true miss < 5 km),1306,16,0.0625,0.125,0.0,0.053376531335425734
+6,Pc sigma-age,matched (true approach < 10 km),1306,84,0.16666666666666666,0.2976190476190476,0.2,-0.029948364888123923
+6,Pc sigma-age,dangerous (true miss < 5 km),1306,16,0.0,0.1875,0.0,-0.029948364888123923
+6,Pc sigma-age x T2,matched (true approach < 10 km),1306,84,0.16666666666666666,0.2976190476190476,0.2,-0.029948364888123923
+6,Pc sigma-age x T2,dangerous (true miss < 5 km),1306,16,0.0,0.1875,0.0,-0.029948364888123923
+6,Pc sigma-object (LOO p50),matched (true approach < 10 km),1306,84,0.09523809523809523,0.16666666666666666,0.4,-0.10111640112648108
+6,Pc sigma-object (LOO p50),dangerous (true miss < 5 km),1306,16,0.0625,0.0625,0.1,-0.10111640112648108
+6,Pc sigma-object (LOO p90),matched (true approach < 10 km),1306,84,0.11904761904761904,0.16666666666666666,0.3,-0.12441204215500899
+6,Pc sigma-object (LOO p90),dangerous (true miss < 5 km),1306,16,0.0625,0.125,0.1,-0.12441204215500899
+6,miss / sigma-object,matched (true approach < 10 km),1306,84,0.09523809523809523,0.16666666666666666,0.3,-0.11793054571226082
+6,miss / sigma-object,dangerous (true miss < 5 km),1306,16,0.0,0.0625,0.0,-0.11793054571226082
+24,point miss,matched (true approach < 10 km),1305,84,0.15476190476190477,0.3333333333333333,0.2,0.04584387972056293
+24,point miss,dangerous (true miss < 5 km),1305,16,0.0,0.125,0.0,0.04584387972056293
+24,Pc sigma-fixed,matched (true approach < 10 km),1305,84,0.16666666666666666,0.3333333333333333,0.2,0.04635010630758328
+24,Pc sigma-fixed,dangerous (true miss < 5 km),1305,16,0.0,0.1875,0.0,0.04635010630758328
+24,Pc sigma-age,matched (true approach < 10 km),1305,84,0.16666666666666666,0.2857142857142857,0.2,-0.02790320947656171
+24,Pc sigma-age,dangerous (true miss < 5 km),1305,16,0.0,0.125,0.0,-0.02790320947656171
+24,Pc sigma-age x T2,matched (true approach < 10 km),1305,84,0.16666666666666666,0.2857142857142857,0.2,-0.02790320947656171
+24,Pc sigma-age x T2,dangerous (true miss < 5 km),1305,16,0.0,0.125,0.0,-0.02790320947656171
+24,Pc sigma-object (LOO p50),matched (true approach < 10 km),1305,84,0.08333333333333333,0.16666666666666666,0.3,-0.05879618836682717
+24,Pc sigma-object (LOO p50),dangerous (true miss < 5 km),1305,16,0.0,0.0,0.0,-0.05879618836682717
+24,Pc sigma-object (LOO p90),matched (true approach < 10 km),1305,84,0.11904761904761904,0.16666666666666666,0.1,-0.08127974081198745
+24,Pc sigma-object (LOO p90),dangerous (true miss < 5 km),1305,16,0.0625,0.0625,0.0,-0.08127974081198745
+24,miss / sigma-object,matched (true approach < 10 km),1305,84,0.09523809523809523,0.16666666666666666,0.1,-0.06702440012149438
+24,miss / sigma-object,dangerous (true miss < 5 km),1305,16,0.0,0.0,0.0,-0.06702440012149438

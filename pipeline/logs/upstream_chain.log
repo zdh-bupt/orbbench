@@ -1,0 +1,126 @@
+2026-09-16 08:05:33,702 INFO upstream_chain: S1A: 8857 intervals, 457 maneuvers, non-stable 0.0%, storm intervals 153
+2026-09-16 08:05:36,283 INFO upstream_chain: S2A: 8688 intervals, 102 maneuvers, non-stable 0.2%, storm intervals 145
+2026-09-16 08:05:39,582 INFO upstream_chain: S3A: 9849 intervals, 95 maneuvers, non-stable 0.0%, storm intervals 155
+2026-09-16 08:05:48,846 INFO upstream_chain: T2 pooled:
+                              variant  precision  recall    f1    f2
+                          HistGB (A0)      0.275   0.140 0.185 0.155
+                HistGB + T1 + T3 (A1)      0.321   0.154 0.208 0.172
+                   SGP4-residual (A0)      0.326   0.643 0.433 0.538
+             SGP4-residual + T1 phase      0.326   0.643 0.433 0.538
+SGP4-residual + T1 phase + T3 Ap (A1)      0.339   0.640 0.443 0.543
+                SGP4-residual + T3 Ap      0.339   0.640 0.443 0.543
+2026-09-16 08:05:48,848 INFO upstream_chain: storm FP:
+satellite                               variant  storm_intervals  fp_storm  fp_quiet  fp_rate_storm  fp_rate_quiet  recall_nonstable  recall_stable
+      ALL                           HistGB (A0)              287         5       115            NaN            NaN               NaN            NaN
+      ALL                 HistGB + T1 + T3 (A1)              287         3       113            NaN            NaN               NaN            NaN
+      ALL                    SGP4-residual (A0)              287        70       411            NaN            NaN               NaN            NaN
+      ALL              SGP4-residual + T1 phase              287        70       411            NaN            NaN               NaN            NaN
+      ALL SGP4-residual + T1 phase + T3 Ap (A1)              287        46       411            NaN            NaN               NaN            NaN
+      ALL                 SGP4-residual + T3 Ap              287        46       411            NaN            NaN               NaN            NaN
+2026-09-16 08:06:18,336 INFO upstream_chain: T1:
+                        macro_f1  f1_STABLE_ORBIT  f1_SUSTAINED_RAISE  f1_SUSTAINED_DECAY
+variant                                                                                  
+HistGB (A0)                0.666              1.0                 0.0               0.998
+HistGB + T2 flags (A1)     0.666              1.0                 0.0               0.999
+2026-09-16 08:10:04,802 INFO upstream_chain: S1A: 8857 intervals, 457 maneuvers, non-stable 0.0%, storm intervals 153
+2026-09-16 08:10:07,066 INFO upstream_chain: S2A: 8688 intervals, 102 maneuvers, non-stable 0.2%, storm intervals 145
+2026-09-16 08:10:10,231 INFO upstream_chain: S3A: 9849 intervals, 95 maneuvers, non-stable 0.0%, storm intervals 155
+2026-09-16 08:10:20,862 INFO upstream_chain: T2 pooled:
+                              variant  precision  recall    f1    f2
+                          HistGB (A0)      0.275   0.140 0.185 0.155
+                HistGB + T1 + T3 (A1)      0.321   0.154 0.208 0.172
+                   SGP4-residual (A0)      0.326   0.643 0.433 0.538
+             SGP4-residual + T1 phase      0.326   0.643 0.433 0.538
+SGP4-residual + T1 phase + T3 Ap (A1)      0.339   0.640 0.443 0.543
+                SGP4-residual + T3 Ap      0.339   0.640 0.443 0.543
+2026-09-16 08:10:20,864 INFO upstream_chain: storm FP:
+satellite                               variant  storm_intervals  fp_storm  fp_quiet  fp_rate_storm  fp_rate_quiet  recall_nonstable  recall_stable
+      ALL                           HistGB (A0)              287         5       115            NaN            NaN               NaN            NaN
+      ALL                 HistGB + T1 + T3 (A1)              287         3       113            NaN            NaN               NaN            NaN
+      ALL                    SGP4-residual (A0)              287        70       411            NaN            NaN               NaN            NaN
+      ALL              SGP4-residual + T1 phase              287        70       411            NaN            NaN               NaN            NaN
+      ALL SGP4-residual + T1 phase + T3 Ap (A1)              287        46       411            NaN            NaN               NaN            NaN
+      ALL                 SGP4-residual + T3 Ap              287        46       411            NaN            NaN               NaN            NaN
+2026-09-16 08:10:28,992 INFO upstream_chain: T2 Starlink (T1 -> T2):
+                      variant  k_stable  k_raise  k_lower  n_test  n_thrust  tp  fp  fn  precision  recall    f1    f2
+           SGP4-residual (A0)       2.0      2.0      2.0    1683      1413 590 110 823      0.843   0.418 0.558 0.464
+SGP4-residual + T1 phase (A1)       2.0      2.0      2.0    1683      1413 590 110 823      0.843   0.418 0.558 0.464
+             phase=stable: A0       2.0      2.0      2.0     172       132  50  22  82      0.694   0.379 0.490 0.417
+             phase=stable: A1       2.0      2.0      2.0     172       132  50  22  82      0.694   0.379 0.490 0.417
+              phase=lower: A0       2.0      2.0      2.0    1505      1277 537  88 740      0.859   0.421 0.565 0.468
+              phase=lower: A1       2.0      2.0      2.0    1505      1277 537  88 740      0.859   0.421 0.565 0.468
+2026-09-16 08:11:03,686 INFO upstream_chain: T1:
+                        macro_f1  f1_STABLE_ORBIT  f1_SUSTAINED_RAISE  f1_SUSTAINED_DECAY
+variant                                                                                  
+HistGB (A0)                0.666              1.0                 0.0               0.998
+HistGB + T2 flags (A1)     0.666              1.0                 0.0               0.999
+2026-09-16 08:13:10,749 INFO upstream_chain: S1A: 8857 intervals, 457 maneuvers, non-stable 0.0%, storm intervals 153
+2026-09-16 08:13:14,593 INFO upstream_chain: S2A: 8688 intervals, 102 maneuvers, non-stable 0.2%, storm intervals 145
+2026-09-16 08:13:17,678 INFO upstream_chain: S3A: 9849 intervals, 95 maneuvers, non-stable 0.0%, storm intervals 155
+2026-09-16 08:13:29,163 INFO upstream_chain: T2 pooled:
+                              variant  precision  recall    f1    f2
+                          HistGB (A0)      0.275   0.140 0.185 0.155
+                HistGB + T1 + T3 (A1)      0.321   0.154 0.208 0.172
+                   SGP4-residual (A0)      0.326   0.643 0.433 0.538
+             SGP4-residual + T1 phase      0.326   0.643 0.433 0.538
+SGP4-residual + T1 phase + T3 Ap (A1)      0.339   0.640 0.443 0.543
+                SGP4-residual + T3 Ap      0.339   0.640 0.443 0.543
+2026-09-16 08:13:29,165 INFO upstream_chain: storm FP:
+satellite                               variant  storm_intervals  fp_storm  fp_quiet  fp_rate_storm  fp_rate_quiet  recall_nonstable  recall_stable
+      ALL                           HistGB (A0)              287         5       115            NaN            NaN               NaN            NaN
+      ALL                 HistGB + T1 + T3 (A1)              287         3       113            NaN            NaN               NaN            NaN
+      ALL                    SGP4-residual (A0)              287        70       411            NaN            NaN               NaN            NaN
+      ALL              SGP4-residual + T1 phase              287        70       411            NaN            NaN               NaN            NaN
+      ALL SGP4-residual + T1 phase + T3 Ap (A1)              287        46       411            NaN            NaN               NaN            NaN
+      ALL                 SGP4-residual + T3 Ap              287        46       411            NaN            NaN               NaN            NaN
+2026-09-16 08:13:33,169 INFO upstream_chain: T2 Starlink (T1 -> T2):
+                              variant  k_stable  k_raise  k_lower  n_test  n_thrust   tp  fp  fn  precision  recall    f1    f2
+                   SGP4-residual (A0)       0.5      0.5      0.5    1683      1413 1047 188 366      0.848   0.741 0.791 0.760
+SGP4-residual, threshold per T1 phase       0.5      0.5      0.5    1683      1413 1047 188 366      0.848   0.741 0.791 0.760
+ T1 phase alone (non-stable = thrust)       NaN      NaN      NaN    1683      1413 1281 230 132      0.848   0.907 0.876 0.894
+       SGP4-residual OR T1 phase (A1)       0.5      0.5      0.5    1683      1413 1380 262  33      0.840   0.977 0.903 0.946
+                     phase=stable: A0       0.5      0.5      0.5     172       132   99  32  33      0.756   0.750 0.753 0.751
+                     phase=stable: A1       0.5      0.5      0.5     172       132   99  32  33      0.756   0.750 0.753 0.751
+                      phase=lower: A0       0.5      0.5      0.5    1505      1277  945 155 332      0.859   0.740 0.795 0.761
+                      phase=lower: A1       0.5      0.5      0.5    1505      1277  945 155 332      0.859   0.740 0.795 0.761
+2026-09-16 08:14:05,139 INFO upstream_chain: T1:
+                        macro_f1  f1_STABLE_ORBIT  f1_SUSTAINED_RAISE  f1_SUSTAINED_DECAY
+variant                                                                                  
+HistGB (A0)                0.666              1.0                 0.0               0.998
+HistGB + T2 flags (A1)     0.666              1.0                 0.0               0.999
+2026-09-16 08:16:38,007 INFO upstream_chain: S1A: 8857 intervals, 457 maneuvers, non-stable 0.0%, storm intervals 153
+2026-09-16 08:16:40,413 INFO upstream_chain: S2A: 8688 intervals, 102 maneuvers, non-stable 0.2%, storm intervals 145
+2026-09-16 08:16:43,493 INFO upstream_chain: S3A: 9849 intervals, 95 maneuvers, non-stable 0.0%, storm intervals 155
+2026-09-16 08:16:54,766 INFO upstream_chain: T2 pooled:
+                              variant  precision  recall    f1    f2
+                          HistGB (A0)      0.275   0.140 0.185 0.155
+                HistGB + T1 + T3 (A1)      0.321   0.154 0.208 0.172
+                   SGP4-residual (A0)      0.326   0.643 0.433 0.538
+             SGP4-residual + T1 phase      0.326   0.643 0.433 0.538
+SGP4-residual + T1 phase + T3 Ap (A1)      0.339   0.640 0.443 0.543
+                SGP4-residual + T3 Ap      0.339   0.640 0.443 0.543
+2026-09-16 08:16:54,769 INFO upstream_chain: storm FP:
+satellite                               variant  storm_intervals  fp_storm  fp_quiet  fp_rate_storm  fp_rate_quiet  recall_nonstable  recall_stable
+      ALL                           HistGB (A0)              287         5       115            NaN            NaN               NaN            NaN
+      ALL                 HistGB + T1 + T3 (A1)              287         3       113            NaN            NaN               NaN            NaN
+      ALL                    SGP4-residual (A0)              287        70       411            NaN            NaN               NaN            NaN
+      ALL              SGP4-residual + T1 phase              287        70       411            NaN            NaN               NaN            NaN
+      ALL SGP4-residual + T1 phase + T3 Ap (A1)              287        46       411            NaN            NaN               NaN            NaN
+      ALL                 SGP4-residual + T3 Ap              287        46       411            NaN            NaN               NaN            NaN
+2026-09-16 08:16:59,111 INFO upstream_chain: T2 Starlink (T1 -> T2):
+                              variant  k_stable  k_raise  k_lower  n_test  n_thrust   tp  fp   fn  tn  precision  recall    f1  balanced_acc    mcc  coast_precision  coast_recall
+              always thrust (trivial)       NaN      NaN      NaN    1683      1413 1413 270    0   0      0.840   1.000 0.913         0.500  0.000            0.000         0.000
+                   SGP4-residual (A0)       3.0      3.0      3.0    1683      1413  444  74  969 196      0.857   0.314 0.460         0.520  0.032            0.168         0.726
+SGP4-residual, threshold per T1 phase       3.0      3.0      3.0    1683      1413  444  74  969 196      0.857   0.314 0.460         0.520  0.032            0.168         0.726
+ T1 phase alone (non-stable = thrust)       NaN      NaN      NaN    1683      1413 1281 230  132  40      0.848   0.907 0.876         0.527  0.066            0.233         0.148
+           SGP4-residual AND T1 phase       3.0      3.0      3.0    1683      1413  411  56 1002 214      0.880   0.291 0.437         0.542  0.068            0.176         0.793
+       SGP4-residual OR T1 phase (A1)       3.0      3.0      3.0    1683      1413 1314 248   99  22      0.841   0.930 0.883         0.506  0.016            0.182         0.081
+                     phase=stable: A0       3.0      3.0      3.0     172       132   33  18   99  22      0.647   0.250 0.361         0.400 -0.185            0.182         0.550
+                     phase=stable: A1       3.0      3.0      3.0     172       132   33  18   99  22      0.647   0.250 0.361         0.400 -0.185            0.182         0.550
+                      phase=lower: A0       3.0      3.0      3.0    1505      1277  408  56  869 172      0.879   0.319 0.469         0.537  0.057            0.165         0.754
+                      phase=lower: A1       3.0      3.0      3.0    1505      1277  408  56  869 172      0.879   0.319 0.469         0.537  0.057            0.165         0.754
+2026-09-16 08:17:33,032 INFO upstream_chain: T1:
+                        macro_f1  f1_STABLE_ORBIT  f1_SUSTAINED_RAISE  f1_SUSTAINED_DECAY
+variant                                                                                  
+HistGB (A0)                0.666              1.0                 0.0               0.998
+HistGB + T2 flags (A1)     0.666              1.0                 0.0               0.999

@@ -1,0 +1,84 @@
+task,subtask,method,metric,value
+T3 space weather,f107_obs +3d,Persistence,MAE,14.475581395348838
+T3 space weather,f107_obs +3d,Recurrence-27d,MAE,23.098837209302324
+T3 space weather,f107_obs +3d,Climatology-81d,MAE,21.407751937984493
+T3 space weather,f107_obs +3d,Ridge-AR30,MAE,14.205715674484429
+T3 space weather,f107_obs +3d,HistGB-AR30,MAE,13.007952372841924
+T3 space weather,kp_daily_avg +3d,Persistence,MAE,1.1055959302325582
+T3 space weather,kp_daily_avg +3d,Recurrence-27d,MAE,0.874200581395349
+T3 space weather,kp_daily_avg +3d,Climatology-81d,MAE,0.8969342161929372
+T3 space weather,kp_daily_avg +3d,Ridge-AR30,MAE,0.783114611896129
+T3 space weather,kp_daily_avg +3d,HistGB-AR30,MAE,0.8065572585060756
+T3 space weather,ap_avg +3d,Persistence,MAE,12.156976744186046
+T3 space weather,ap_avg +3d,Recurrence-27d,MAE,9.017441860465116
+T3 space weather,ap_avg +3d,Climatology-81d,MAE,9.120801033591732
+T3 space weather,ap_avg +3d,Ridge-AR30,MAE,8.655699816979867
+T3 space weather,ap_avg +3d,HistGB-AR30,MAE,8.53345411595306
+T3 space weather,f107_obs +3d,"Chronos-2 (reported, 2025-06 backtest)",MAE,11.225444
+T3 space weather,kp_daily_avg +3d,"Chronos-2 (reported, 2025-06 backtest)",MAE,0.877683
+T3 space weather,ap_avg +3d,"Chronos-2 (reported, 2025-06 backtest)",MAE,13.550127
+T1 phase,3-class,Constant-stable,Macro-F1,0.32931358413696576
+T1 phase,3-class,HistGB,Macro-F1,0.6660201935781721
+T1 phase,3-class,Raw PCA + KMeans,Macro-F1,0.3975964519040704
+T1 phase,3-class,Slope-rule,Macro-F1,0.5870238912803397
+T2 maneuver,pooled Sentinels,CUSUM(Δa),F2,0.1668302257114818
+T2 maneuver,pooled Sentinels,HistGB,F2,0.1549755301794453
+T2 maneuver,pooled Sentinels,HistGB-LOSO,F2,0.4363283775048481
+T2 maneuver,pooled Sentinels,SGP4-residual-3D,F2,0.537190082644628
+T2 maneuver,pooled Sentinels,SGP4-residual-T,F2,0.5384615384615385
+T2 maneuver,pooled Sentinels,Δa-MAD,F2,0.4500786163522012
+T2 maneuver,pooled Sentinels,CUSUM(Δa),Recall,1.0
+T2 maneuver,pooled Sentinels,HistGB,Recall,0.1397058823529411
+T2 maneuver,pooled Sentinels,HistGB-LOSO,Recall,0.4963235294117647
+T2 maneuver,pooled Sentinels,SGP4-residual-3D,Recall,0.6691176470588235
+T2 maneuver,pooled Sentinels,SGP4-residual-T,Recall,0.6433823529411765
+T2 maneuver,pooled Sentinels,Δa-MAD,Recall,0.8419117647058824
+T4 forecast,+1 h vs POD,HistGB-orbit,3D P50 km,0.3106957836968718
+T4 forecast,+24 h vs POD,HistGB-orbit,3D P50 km,0.5248033591835478
+T4 forecast,+1 h vs POD,HistGB-weather,3D P50 km,0.3394720017173761
+T4 forecast,+24 h vs POD,HistGB-weather,3D P50 km,0.547961047236892
+T4 forecast,+1 h vs POD,HistGB-weather+T3,3D P50 km,0.3319545857472852
+T4 forecast,+24 h vs POD,HistGB-weather+T3,3D P50 km,0.5417865696971408
+T4 forecast,+1 h vs POD,Kepler-24h,3D P50 km,39.448132564995184
+T4 forecast,+24 h vs POD,Kepler-24h,3D P50 km,722.3922312720373
+T4 forecast,+1 h vs POD,Ridge-orbit,3D P50 km,0.7923682566846176
+T4 forecast,+24 h vs POD,Ridge-orbit,3D P50 km,0.481988892001989
+T4 forecast,+1 h vs POD,Ridge-weather,3D P50 km,0.7945549827456597
+T4 forecast,+24 h vs POD,Ridge-weather,3D P50 km,0.4892047643001092
+T4 forecast,+1 h vs POD,Ridge-weather+T3,3D P50 km,0.773037910145309
+T4 forecast,+24 h vs POD,Ridge-weather+T3,3D P50 km,0.4971431301363656
+T4 forecast,+1 h vs POD,SGP4-MTF,3D P50 km,0.5712214479292005
+T4 forecast,+24 h vs POD,SGP4-MTF,3D P50 km,0.4566224130842264
+T4 forecast,+1 h vs POD,SGP4-MTF+T1+T2,3D P50 km,0.5711708990323913
+T4 forecast,+24 h vs POD,SGP4-MTF+T1+T2,3D P50 km,0.4549699073181298
+T4 forecast,+1 h vs POD,SGP4-MTF+T2,3D P50 km,0.5711708990323913
+T4 forecast,+24 h vs POD,SGP4-MTF+T2,3D P50 km,0.4549699073181298
+T4 forecast,+1 h vs POD,SGP4-prev,3D P50 km,0.5706297949541004
+T4 forecast,+24 h vs POD,SGP4-prev,3D P50 km,0.4546716871857402
+T5 evolution,+1 h density,Kepler,overlap %,88.91229962644191
+T5 evolution,+24 h density,Kepler,overlap %,81.59405357780574
+T5 evolution,+1 h density,Persistence,overlap %,75.43144986457007
+T5 evolution,+24 h density,Persistence,overlap %,75.72386980473591
+T5 evolution,+1 h density,SGP4-prev,overlap %,97.5717213280439
+T5 evolution,+24 h density,SGP4-prev,overlap %,97.53428341004188
+T6 warning,"lead 6 h, Independent",SGP4-prev screening,recall,0.9148936170212766
+T6 warning,"lead 6 h, Chained-T5 (50% budget)",SGP4-prev screening,recall,0.4893617021276595
+T6 warning,"lead 6 h, Chained-T5 (25% budget)",SGP4-prev screening,recall,0.3829787234042553
+T6 warning,"lead 6 h, Chained-T5 (10% budget)",SGP4-prev screening,recall,0.2553191489361702
+T6 warning,"lead 24 h, Independent",SGP4-prev screening,recall,0.9148936170212766
+T6 warning,"lead 24 h, Chained-T5 (50% budget)",SGP4-prev screening,recall,0.4893617021276595
+T6 warning,"lead 24 h, Chained-T5 (25% budget)",SGP4-prev screening,recall,0.3829787234042553
+T6 warning,"lead 24 h, Chained-T5 (10% budget)",SGP4-prev screening,recall,0.2553191489361702
+T6 CDM risk,final log10 Pc,Last-estimate,MAE,0.524320155080402
+T6 CDM risk,final log10 Pc,Ridge (5-fold),MAE,0.4448665009690169
+T6 CDM risk,final log10 Pc,HistGB (5-fold),MAE,0.2630802300649238
+T7 avoidance,all events,No-maneuver,safety rate,0.0
+T7 avoidance,all events,PPO,safety rate,1.0
+T7 avoidance,all events,Physics-Pc,safety rate,0.0
+T7 avoidance,all events,Physics-max,safety rate,1.0
+T7 avoidance,all events,Proportional,safety rate,0.0317460317460317
+T7 avoidance,all events,No-maneuver,Δv m/s,0.0
+T7 avoidance,all events,PPO,Δv m/s,44.99999999999993
+T7 avoidance,all events,Physics-Pc,Δv m/s,0.1142857142857142
+T7 avoidance,all events,Physics-max,Δv m/s,9.842857142857149
+T7 avoidance,all events,Proportional,Δv m/s,10.520460628154222

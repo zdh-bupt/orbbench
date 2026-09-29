@@ -1,0 +1,91 @@
+paths:
+  raw_state_dir: 'F:\演化态势感知\satData\Pruned'
+  state_cache_dir: 'data\processed\states'
+  shard_dir: 'data\closed_cohort_shards'
+  artifact_dir: 'artifacts'
+
+selection:
+  file_pattern: '*_pruned.csv'
+  recursive: true
+  satellite_id_regex: '^(?P<satellite_id>\d+)_pruned\.csv$'
+  selection_file: null
+  min_perigee_altitude_km: 100.0
+  max_apogee_altitude_km: 2000.0
+
+sampling:
+  cadence_minutes: 60
+  causal_max_age_seconds: 90.0
+  chunksize_rows: 250000
+  coordinate_batch_rows: 50000
+  source_hash: sha256
+
+grid:
+  height_min_km: 300.0
+  height_max_km: 1500.0
+  height_step_km: 50.0
+  lat_step_deg: 5.0
+  lon_step_deg: 5.0
+  outside_bucket: true
+  outside_bucket_required_for_formal: true
+
+forecast:
+  resolution: hourly
+  history_steps: 6
+  horizons: [1, 6, 24]
+  population_mode: origin_known_members
+  prior_mode: causal_kepler_teme
+  require_physics_prior_for_acceptance: true
+  require_complete_history: true
+  require_complete_targets: true
+  min_origin_members: 1
+  velocity_scale_km_s: 8.0
+
+dataset:
+  schema_version: 4
+  origin_month_shards: true
+  cic_targets: true
+  include_hard_targets_for_evaluation: true
+  physical_propagator: two_body_kepler
+  astropy_iers_auto_download: false
+
+splits:
+  mode: chronological_fractions
+  train_fraction: 0.70
+  validation_fraction: 0.10
+  calibration_fraction: 0.10
+  test_fraction: 0.10
+  purge_hours: 72
+
+model:
+  architecture: physics_residual_unet_convgru3d
+  input_channels: 21
+  base_channels: 8
+  hidden_channels: 16
+  residual_logit_limit: 4.0
+  epsilon: 1.0e-8
+
+training:
+  seed: 20260720
+  epochs: 30
+  batch_size: 1
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  num_workers: 0
+  gradient_clip_norm: 1.0
+  mixed_precision: true
+  multiscale_loss_weight: 0.20
+  residual_l2_weight: 0.0001
+  early_stopping_patience: 5
+  validation_max_batches: null
+
+acceptance:
+  tv_max: {1: 0.10, 6: 0.18, 24: 0.30}
+  regional_relative_mae_max: {1: 0.15, 6: 0.25, 24: 0.40}
+  neighbor_hotspot_f1_min: {1: 0.85, 6: 0.75, 24: 0.60}
+  interval_90_coverage_min: 0.85
+  interval_90_coverage_max: 0.95
+  hotspot_ece_max: 0.05
+  max_global_degradation_vs_physics: 0.02
+  min_hard_subset_improvement_vs_physics: 0.05
+  bootstrap_samples: 1000
+  bootstrap_block_days: 7

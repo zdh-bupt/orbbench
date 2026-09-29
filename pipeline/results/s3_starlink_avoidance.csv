@@ -1,0 +1,6 @@
+policy,n_events,safety_rate_true_pc,safety_rate_2km,dv_mean_m_s,dv_p90_m_s
+No-maneuver,13,1.0,1.0,0.0,0.0
+Distance rule (2 km),13,1.0,1.0,0.0,0.0
+Pc-gate OrbBench sigma,13,1.0,1.0,0.0,0.0
+Pc-gate fixed sigma,13,1.0,1.0,0.0,0.0
+Pc-gate operator covariance (oracle),13,1.0,1.0,0.0,0.0

@@ -1,0 +1,9 @@
+# T5 population forecasting (t5_population_forecasting/VoxelDensityForecast, pyproject.toml dependencies).
+numpy>=2.0,<3
+pandas>=2.2,<3
+pyarrow>=19,<23
+PyYAML>=6,<7
+torch>=2.6,<3
+astropy>=7,<8
+scipy>=1.15,<2
+matplotlib>=3.9,<4

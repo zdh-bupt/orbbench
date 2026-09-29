@@ -1,0 +1,5 @@
+lead_h,chain,n_pred,n_matched,precision,recall_ref_lt50km,recall_ref_lt10km,recall_truePc_ge_1e6,miss_err_med_km,spearman_pcorb_vs_truepc,spearman_pointmiss_vs_truepc,spearman_pcfixed_vs_truepc,recall_at_k_pc_orb,recall_at_k_pc_fixed,recall_at_k_point
+6,A0 raw prev,581,9,0.01549053356282272,0.06716417910447761,0.0,,16.91816420912417,,,,,,
+6,A1 PAF+MTF+T2,625,11,0.0176,0.08208955223880597,0.0,,14.700739809360119,,,,,,
+24,A0 raw prev,549,10,0.018214936247723135,0.07462686567164178,0.0,,10.145695401255894,,,,,,
+24,A1 PAF+MTF+T2,591,13,0.021996615905245348,0.09701492537313433,0.0,,12.00188298201681,,,,,,

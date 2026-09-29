@@ -1,0 +1,842 @@
+[
+ {
+  "norad": 22675,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22675.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22675_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21910,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21910.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21910_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21550,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21550.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21550_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22913,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22913.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22913_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 22392,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22392.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22392_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22161,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22161.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22161_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21441,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21441.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21441_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21172,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21172.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21172_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21918,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21918.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21918_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20866,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20866.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20866_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21546,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21546.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21546_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21165,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21165.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21165_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21031,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21031.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21031_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 22707,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22707.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22707_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22693,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22693.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22693_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 22690,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22690.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22690_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21712,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21712.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21712_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21160,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21160.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21160_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22823,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22823.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22823_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21230,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21230.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21230_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 20555,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20555.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20555_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21101,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21101.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21101_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21501,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21501.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21501_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21115,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21115.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21115_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22453,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22453.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22453_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21598,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21598.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21598_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21329,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21329.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21329_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21168,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21168.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21168_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21400,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21400.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21400_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22783,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22783.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22783_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21465,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21465.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21465_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22971,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22971.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22971_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21358,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21358.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21358_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20805,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20805.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20805_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 21028,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21028.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21028_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 20791,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20791.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20791_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 22400,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22400.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22400_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21388,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21388.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21388_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21722,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21722.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21722_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22425,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22425.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22425_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21796,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21796.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21796_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 20556,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20556.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20556_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21110,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21110.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21110_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20673,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20673.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20673_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21347,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21347.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21347_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20736,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20736.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20736_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21324,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21324.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21324_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21982,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21982.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21982_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 22403,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22403.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22403_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20663,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20663.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20663_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21128,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21128.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21128_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22574,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22574.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22574_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21680,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21680.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21680_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22338,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22338.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22338_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20903,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20903.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20903_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21972,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21972.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21972_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21363,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21363.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21363_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22591,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22591.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22591_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 21164,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21164.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21164_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21730,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21730.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21730_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 22416,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22416.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22416_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20855,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20855.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20855_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21293,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21293.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21293_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22500,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22500.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22500_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21976,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21976.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21976_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 20565,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20565.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20565_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21565,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21565.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21565_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21278,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21278.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21278_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22397,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22397.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22397_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22036,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22036.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22036_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 22294,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22294.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22294_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21460,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21460.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21460_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22359,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22359.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22359_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21610,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21610.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21610_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 21984,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21984.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21984_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 20850,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20850.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20850_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20891,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20891.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20891_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22739,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22739.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22739_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21911,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21911.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21911_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22366,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22366.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22366_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22487,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22487.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22487_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21106,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21106.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21106_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 20881,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20881.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20881_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20441,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20441.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20441_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21282,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21282.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21282_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20877,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20877.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20877_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20627,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20627.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20627_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22007,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22007.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22007_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 21529,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21529.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21529_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21362,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21362.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21362_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21980,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21980.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21980_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21270,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21270.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21270_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21156,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21156.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21156_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21408,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21408.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21408_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21301,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21301.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21301_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 22608,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22608.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22608_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21276,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21276.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21276_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20491,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20491.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20491_t.npy",
+  "rows": 750240,
+  "type": "R/B"
+ },
+ {
+  "norad": 22502,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22502.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22502_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20915,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20915.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20915_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21933,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21933.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21933_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21297,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21297.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21297_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21289,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21289.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21289_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20904,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20904.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20904_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21296,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21296.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21296_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22407,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22407.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22407_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20735,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20735.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20735_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21688,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21688.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21688_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 22224,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22224.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22224_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21171,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21171.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21171_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22650,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22650.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22650_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21091,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21091.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21091_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 20884,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20884.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/20884_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21163,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21163.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21163_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22626,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22626.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22626_t.npy",
+  "rows": 750240,
+  "type": "PAY"
+ },
+ {
+  "norad": 21211,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21211.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21211_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21913,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21913.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21913_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 21677,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21677.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/21677_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22601,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22601.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22601_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ },
+ {
+  "norad": 22295,
+  "path": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22295.npy",
+  "tpath": "/mnt/data/paper/stm\u573a\u666f\u6c47\u603b/pipeline/data/deep/train/22295_t.npy",
+  "rows": 750240,
+  "type": "DEB"
+ }
+]

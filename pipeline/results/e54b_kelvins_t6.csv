@@ -1,0 +1,17 @@
+dataset,method,mse_hr,f2,precision_hr,recall_hr,score,n_events,n_high_risk
+"Kelvins public test (2167 events, competition protocol)",naive latest risk (>= 2 d before TCA),26.64298405757408,0.7390745501285348,0.6460674157303371,0.7666666666666667,36.04911582050892,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)",naive latest risk (>= 2 d before TCA),26.64298405757408,0.7986111111111112,0.9583333333333334,0.7666666666666667,33.36164960252754,199,150
+"Kelvins public test (2167 events, competition protocol)","Ridge signed-log, all events",131.98821360093635,0.0,0.0,0.0,131988213600.93634,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","Ridge signed-log, all events",131.98821360093635,0.0,0.0,0.0,131988213600.93634,199,150
+"Kelvins public test (2167 events, competition protocol)","HistGB, all events",157.47125054075173,0.00830564784053156,0.5,0.006666666666666667,18959.53856510651,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","HistGB, all events",157.47125054075173,0.008319467554076539,1.0,0.006666666666666667,18928.04431499836,199,150
+"Kelvins public test (2167 events, competition protocol)","Ridge signed-log, high-risk-focused (pre-risk >= -8, else naive)",146.25365131666476,0.0,0.0,0.0,146253651316.66473,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","Ridge signed-log, high-risk-focused (pre-risk >= -8, else naive)",146.25365131666476,0.0,0.0,0.0,146253651316.66473,199,150
+"Kelvins public test (2167 events, competition protocol)","HistGB, high-risk-focused (pre-risk >= -8, else naive)",145.12192634966215,0.0,0.0,0.0,145121926349.66214,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","HistGB, high-risk-focused (pre-risk >= -8, else naive)",145.12192634966215,0.0,0.0,0.0,145121926349.66214,199,150
+"Kelvins public test (2167 events, competition protocol)","naive + HistGB residual, high-risk-focused",145.74251948562653,0.00830564784053156,0.5,0.006666666666666667,17547.399346069436,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","naive + HistGB residual, high-risk-focused",145.74251948562653,0.008319467554076539,1.0,0.006666666666666667,17518.25084217231,199,150
+"Kelvins public test (2167 events, competition protocol)","HistGB, geometry + risk-history features only (28), high-risk-focused",160.72924480861045,0.0,0.0,0.0,160729244808.61044,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","HistGB, geometry + risk-history features only (28), high-risk-focused",160.72924480861045,0.0,0.0,0.0,160729244808.61044,199,150
+"Kelvins public test (2167 events, competition protocol)","naive + HistGB residual, geometry features, high-risk-focused",160.92761890719126,0.0,0.0,0.0,160927618907.19125,2167,150
+"Kelvins test, OrbBench 199-event subset (n=199)","naive + HistGB residual, geometry features, high-risk-focused",160.92761890719126,0.0,0.0,0.0,160927618907.19125,199,150

@@ -1,0 +1,6 @@
+install exit 0
+torch 2.11.0+cu128 cuda True NVIDIA GeForce RTX 5090
+matmul ok -120422.1953125
+deps exit 0
+deps ok; torch 2.11.0+cu128 cuda True
+DEPS DONE

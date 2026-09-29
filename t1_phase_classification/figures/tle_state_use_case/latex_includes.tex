@@ -1,0 +1,23 @@
+% Auto-generated figure include snippets.
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/tle_state_use_case/fig1_observable_state_definition.pdf}
+  \caption{Observable-state feature-rule relabeling workflow. Candidate boundaries are inherited from the prior rule pipeline and additionally split at target gaps longer than 36 h. Within each candidate, the state label uses only observable fragment statistics and the first satisfied predicate in the ordered rule set. Thus this is feature-only relabeling within inherited candidates, not an intent-free segmentation pipeline. Counts cover the full train+validation+test v2 label set.}
+  \label{fig:tle-state-definition}
+\end{figure*}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/tle_state_use_case/fig2_observable_state_examples.pdf}
+  \caption{Illustrative, hand-selected TLE-observable fragments. Each panel shows semimajor-axis change relative to the fragment start against true elapsed time; panel axes are independently scaled. Panels show (a) stable orbit, (b) sustained raise, (c) sustained decay, (d) offset plateau, (e) short excursion and return, and (f) unknown transition. Four panels use STARLINK-2706; only one offset-plateau and five short-excursion fragments exist, so those panels are qualitative cases rather than population summaries.}
+  \label{fig:tle-state-examples}
+\end{figure*}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/tle_state_use_case/fig3_method_comparison.pdf}
+  \caption{Retrospective $K=3$ comparison on the stable, sustained-raise, and sustained-decay TLE-observable proxy classes. Cluster-to-class Hungarian mappings use training labels only. Panels report (a) clustering and mapped classification scores, (b) per-state F1 and support, (c) symmetric segment IoU and boundary F1 with gray diamonds for the constant-stable control, and (d) predicted boundary counts. Bars show mean $\pm$ standard deviation over seeds 42--44 on the same retrospective 10,209-window, 376-target slice. Decay has 101 windows and only eight proxy-label boundaries exist. Segment IoU is strongly stable-class dominated; the labels describe observable trajectory shape, not operational intent.}
+  \label{fig:tle-method-comparison}
+\end{figure*}
+
+\input{figures/tle_state_use_case/TABLE_clustering_results.tex}

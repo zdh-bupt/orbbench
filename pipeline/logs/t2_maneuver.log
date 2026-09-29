@@ -1,0 +1,40 @@
+2026-09-13 08:42:35,107 INFO t2_maneuver: S1A: 3726 intervals, 275 maneuver intervals (58 in test)
+2026-09-13 08:42:38,225 INFO t2_maneuver: S2A: 3666 intervals, 65 maneuver intervals (13 in test)
+2026-09-13 08:42:41,658 INFO t2_maneuver: S3A: 3868 intervals, 59 maneuver intervals (12 in test)
+2026-09-13 08:43:17,663 INFO t2_maneuver: pooled:
+          method  precision  recall    f1    f2
+       CUSUM(Δa)      0.037   1.000 0.071 0.160
+          HistGB      0.395   0.181 0.248 0.203
+     HistGB-LOSO      0.475   0.229 0.309 0.255
+SGP4-residual-3D      0.308   0.639 0.416 0.526
+ SGP4-residual-T      0.293   0.663 0.406 0.529
+          Δa-MAD      0.308   0.627 0.413 0.519
+2026-09-13 08:43:21,460 INFO t2_maneuver: cohort detector thresholds: k_res=18.0, k_da=26.0 (MAD units, per-object scaling)
+2026-09-13 08:45:01,159 INFO t2_maneuver: cohort flags 500/3597
+2026-09-13 08:45:23,078 INFO t2_maneuver: cohort flags 1000/3597
+2026-09-13 08:45:43,757 INFO t2_maneuver: cohort flags 1500/3597
+2026-09-13 08:46:00,673 INFO t2_maneuver: cohort flags 2000/3597
+2026-09-13 08:46:18,751 INFO t2_maneuver: cohort flags 2500/3597
+2026-09-13 08:46:36,677 INFO t2_maneuver: cohort flags 3000/3597
+2026-09-13 08:46:58,495 INFO t2_maneuver: cohort flags 3500/3597
+2026-09-13 08:47:07,684 INFO t2_maneuver: cohort flags: 1238362 intervals, 0.52% flagged; per-object flag rate quantiles {'25%': 0.0, '50%': 0.003, '75%': 0.009}; errors=0
+2026-09-13 15:42:09,973 INFO t2_maneuver: S1A: 8857 intervals, 457 maneuver intervals (195 in test)
+2026-09-13 15:42:11,366 INFO t2_maneuver: S2A: 8688 intervals, 102 maneuver intervals (38 in test)
+2026-09-13 15:42:12,900 INFO t2_maneuver: S3A: 9849 intervals, 95 maneuver intervals (39 in test)
+2026-09-13 15:42:29,996 INFO t2_maneuver: pooled:
+          method  precision  recall    f1    f2
+       CUSUM(Δa)      0.039   1.000 0.074 0.167
+          HistGB      0.275   0.140 0.185 0.155
+     HistGB-LOSO      0.294   0.496 0.369 0.436
+SGP4-residual-3D      0.300   0.669 0.415 0.537
+ SGP4-residual-T      0.326   0.643 0.433 0.538
+          Δa-MAD      0.157   0.842 0.265 0.450
+2026-09-13 15:42:33,687 INFO t2_maneuver: cohort detector thresholds: k_res=9.5, k_da=29.5 (MAD units, per-object scaling)
+2026-09-13 15:42:45,578 INFO t2_maneuver: cohort flags 500/3603
+2026-09-13 15:42:56,729 INFO t2_maneuver: cohort flags 1000/3603
+2026-09-13 15:43:06,662 INFO t2_maneuver: cohort flags 1500/3603
+2026-09-13 15:43:16,656 INFO t2_maneuver: cohort flags 2000/3603
+2026-09-13 15:43:25,689 INFO t2_maneuver: cohort flags 2500/3603
+2026-09-13 15:43:35,721 INFO t2_maneuver: cohort flags 3000/3603
+2026-09-13 15:43:45,414 INFO t2_maneuver: cohort flags 3500/3603
+2026-09-13 15:43:47,718 INFO t2_maneuver: cohort flags: 1240424 intervals, 1.46% flagged; per-object flag rate quantiles {'25%': 0.003, '50%': 0.012, '75%': 0.024}; errors=0

@@ -1,0 +1,55 @@
+2026-09-13 15:17:42,911 INFO challenge_evidence: stratified sample: 430 objects over 15 cells
+2026-09-13 15:17:48,115 INFO challenge_evidence: E5/E6 50/430
+2026-09-13 15:17:52,496 INFO challenge_evidence: E5/E6 100/430
+2026-09-13 15:17:56,919 INFO challenge_evidence: E5/E6 150/430
+2026-09-13 15:18:01,806 INFO challenge_evidence: E5/E6 200/430
+2026-09-13 15:18:06,268 INFO challenge_evidence: E5/E6 250/430
+2026-09-13 15:18:10,868 INFO challenge_evidence: E5/E6 300/430
+2026-09-13 15:18:15,588 INFO challenge_evidence: E5/E6 350/430
+2026-09-13 15:18:20,348 INFO challenge_evidence: E5/E6 400/430
+2026-09-13 15:18:30,070 INFO challenge_evidence: E7 census 600/3603
+2026-09-13 15:18:35,870 INFO challenge_evidence: E7 census 1200/3603
+2026-09-13 15:18:41,162 INFO challenge_evidence: E7 census 1800/3603
+2026-09-13 15:18:46,418 INFO challenge_evidence: E7 census 2400/3603
+2026-09-13 15:18:51,501 INFO challenge_evidence: E7 census 3000/3603
+2026-09-13 15:18:56,488 INFO challenge_evidence: E7 census 3600/3603
+2026-09-13 15:18:56,685 INFO challenge_evidence: E5 ALL:
+ frac type regime     n  n_obj  nearest_p50  mtf_p50  nearest_p90  mtf_p90  mtf_win_rate  age_nearest_med_h best
+  0.0  ALL    ALL  6877    430       0.1644   0.1589       0.9000   0.8966        0.0960            11.7891  MTF
+  0.1  ALL    ALL 34385    430       0.1708   0.1683       0.9572   0.9536        0.0778            11.9938  MTF
+  0.3  ALL    ALL 34385    430       0.1909   0.1893       1.1030   1.1007        0.0482            14.6711  MTF
+  0.5  ALL    ALL 34385    430       0.2310   0.2297       1.4258   1.4254        0.0267            21.6940  MTF
+  0.7  ALL    ALL 34385    430       0.3094   0.3087       2.2676   2.2695        0.0103            24.9611  MTF
+2026-09-13 15:18:56,685 INFO challenge_evidence: E5 flips:
+                                               0
+n_obj                                        430
+objects_with_flip                            147
+flip_rate                                0.34186
+best_at_0           {'nearest': 300, 'MTF': 130}
+best_at_0p5          {'nearest': 375, 'MTF': 55}
+flip_rate_DEB|HEO                       0.307692
+flip_rate_DEB|LEO                          0.375
+flip_rate_DEB|MEO                           0.25
+flip_rate_PAY|GEO                           0.25
+flip_rate_PAY|HEO                          0.225
+flip_rate_PAY|LEO                           0.65
+flip_rate_PAY|MEO                           0.15
+flip_rate_PAY|VLEO                           0.3
+flip_rate_R/B|GEO                          0.275
+flip_rate_R/B|HEO                          0.225
+flip_rate_R/B|LEO                            0.6
+flip_rate_R/B|MEO                            0.4
+2026-09-13 15:18:56,687 INFO challenge_evidence: E6 best per cell:
+type regime  window_h  tau_h  k  res_p50  res_p50_at_global_setting  loss_of_global_pct
+ DEB    HEO      24.0    4.0  3   0.5359                     0.5359              0.0000
+ DEB    LEO      24.0    4.0  2   0.0980                     0.0997              1.7145
+ DEB    MEO      24.0    4.0  5   0.2941                     0.2941              0.0000
+ PAY    GEO      24.0    4.0  3   0.2878                     0.2881              0.1050
+ PAY    HEO      24.0    4.0  3   0.2728                     0.2728              0.0000
+ PAY    LEO      24.0    4.0  5   0.0226                     0.0226              0.0000
+ PAY    MEO      24.0    4.0  5   0.1050                     0.1050              0.0000
+ PAY   VLEO      24.0    2.0  3   0.1008                     0.1172             16.2794
+ R/B    GEO      24.0    4.0  3   0.1704                     0.1704              0.0000
+ R/B    HEO      24.0    4.0  3   0.2629                     0.2629              0.0000
+ R/B    LEO      24.0    4.0  5   0.0262                     0.0262              0.0000
+ R/B    MEO      24.0    4.0  2   0.1849                     0.1849              0.0212

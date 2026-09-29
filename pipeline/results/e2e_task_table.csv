@@ -1,0 +1,15 @@
+task,metric,A0,A1,note
+T1 Phase,"Macro-F1 vs rule labels (cohort, 3 seeds)",0.666,0.666,A1: + T2 maneuver-flag features
+T2 Maneuver,event F1 / F2 on Sentinel logs (test 2024-25H1),0.433 / 0.538,0.443 / 0.543,A1: threshold conditioned on T1 phase and T3 Ap
+T3 Weather,"MAE Ap / F10.7, 1-3 d",6.6 / 3.2,6.6 / 3.2,no upstream
+T4 Forecast,3D P50 / P95 at 24 h (km) vs L2 reference,0.11 / 3.09,0.11 / 3.09,reference = non-causal L2 product of the same TLEs (TLE-update consistency)
+T4 Uncertainty,along-track 95% coverage / median NEES at 24 h,0.92 / 0.04,0.93 / 0.03,"A0 fixed sigma; A1 sigma-age x g(T1,T2,T3)"
+T5 Evolution,TV of +24 h density vs reference,0.016,0.016,from the respective forecast
+T6 Warning,recall of reference approaches < 10 km at 20% budget (all pairs),0.196 (0.961),0.375,A0 random order; A1 T5 order
+T6 Warning,alerts / precision vs reference Pc >= 1e-4,45 / 0.05,0 / nan,A0 alerts on predicted miss < 5 km; A1 on predicted Pc >= 1e-4
+T7 Avoidance,maneuvers / unnecessary (ref Pc < 1e-4) / total dv (m/s),45 / 43 / 45.9,0 / 0 / 0.0,A0 distance rule; A1 Pc-gate
+T7 Avoidance,natural dangerous events (ref Pc >= 1e-4): total / made safe / missed,5 / 2 / 3,5 / 0 / 5,reference geometry and covariance after maneuver
+T6+T7 injected,injected dangerous conjunctions: total / in screening budget / alerted / safe after,123 / 0.22 / 26 / 25,123 / 0.39 / 45 / 45,"30/origin, ref miss 20-1000 m, same forecast error"
+T6+T7 injected,unnecessary maneuvers on injected non-dangerous / dv (m/s),4 / 414.0,0 / 274.8,
+T7 Avoidance,close events (ref miss < 1 km): total / separated / missed,5 / 0 / 5,5 / 0 / 5,distance view of the same events
+Cost,screening time per origin (s) / pairs,10.7 / 77132 (all: 50.8 / 385661),11.6 / 77132,

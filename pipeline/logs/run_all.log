@@ -1,0 +1,1334 @@
+[2026-09-13T08:26:05Z] === S0: orbpipe.stage0_staging ===
+2026-09-13 08:26:05,910 INFO stage0: space weather staged: 24739 days 1957-10-01 -> 2025-06-24
+[2026-09-13T08:27:15Z] === S0 exit 143 ===
+[2026-09-13T08:30:47Z] === S0: orbpipe.stage0_staging ===
+2026-09-13 08:30:47,382 INFO stage0: space weather staged: 24739 days 1957-10-01 -> 2025-06-24
+2026-09-13 08:32:19,580 INFO stage0: S1A POD staged: 534719 1-min GCRS states 2024-06-15 00:01:00+00:00 -> 2025-06-24 23:59:00+00:00
+2026-09-13 08:32:19,667 INFO stage0: S1A maneuvers parsed: 1589 events (89 in 2025)
+[2026-09-13T08:32:44Z] === S1: orbpipe.t3_weather ===
+2026-09-13 08:32:47,639 INFO t3_weather: best per var/horizon:
+    variable  horizon_d      method       mae  skill_vs_persistence
+kp_daily_avg          1  Ridge-AR30  0.659275              0.202337
+kp_daily_avg          3  Ridge-AR30  0.783115              0.291681
+kp_daily_avg          7  Ridge-AR30  0.785083              0.444832
+    f107_obs          1 HistGB-AR30  6.959367              0.014142
+      ap_avg          1 HistGB-AR30  6.973526              0.234935
+      ap_avg          7 HistGB-AR30  8.320095              0.438870
+      ap_avg          3 HistGB-AR30  8.533454              0.298061
+    f107_obs          3 HistGB-AR30 13.007952              0.101387
+    f107_obs          7  Ridge-AR30 18.929568              0.175631
+[2026-09-13T08:32:47Z] === S1 exit 0 ===
+2026-09-13 08:33:12,694 INFO stage0: S2A POD staged: 318299 1-min GCRS states 2024-06-15 00:01:00+00:00 -> 2025-01-22 00:59:00+00:00
+2026-09-13 08:33:12,840 INFO stage0: S2A maneuvers parsed: 186 events (13 in 2025)
+2026-09-13 08:34:47,516 INFO stage0: S2B POD staged: 539999 1-min GCRS states 2024-06-15 00:01:00+00:00 -> 2025-06-24 23:59:00+00:00
+2026-09-13 08:36:18,022 INFO stage0: S3A POD staged: 538619 1-min GCRS states 2024-06-15 00:01:00+00:00 -> 2025-06-24 23:59:00+00:00
+2026-09-13 08:36:18,100 INFO stage0: S3A maneuvers parsed: 135 events (12 in 2025)
+2026-09-13 08:37:05,202 INFO stage0: S3B POD staged: 293940 1-min GCRS states 2024-12-01 22:00:00+00:00 -> 2025-06-24 23:59:00+00:00
+2026-09-13 08:37:05,521 INFO stage0: objects: 3603 ({'pruned': 2985, 'multi': 618}); types {'DEB': 1724, 'PAY': 1173, 'R/B': 706}
+[2026-09-13T08:39:18Z] === S3: orbpipe.t2_maneuver ===
+2026-09-13 08:41:00,234 INFO stage0: staged 250/3603
+2026-09-13 08:42:35,107 INFO t2_maneuver: S1A: 3726 intervals, 275 maneuver intervals (58 in test)
+2026-09-13 08:42:38,225 INFO t2_maneuver: S2A: 3666 intervals, 65 maneuver intervals (13 in test)
+2026-09-13 08:42:41,658 INFO t2_maneuver: S3A: 3868 intervals, 59 maneuver intervals (12 in test)
+2026-09-13 08:43:17,663 INFO t2_maneuver: pooled:
+          method  precision  recall    f1    f2
+       CUSUM(Δa)      0.037   1.000 0.071 0.160
+          HistGB      0.395   0.181 0.248 0.203
+     HistGB-LOSO      0.475   0.229 0.309 0.255
+SGP4-residual-3D      0.308   0.639 0.416 0.526
+ SGP4-residual-T      0.293   0.663 0.406 0.529
+          Δa-MAD      0.308   0.627 0.413 0.519
+2026-09-13 08:43:21,460 INFO t2_maneuver: cohort detector thresholds: k_res=18.0, k_da=26.0 (MAD units, per-object scaling)
+2026-09-13 08:45:01,159 INFO t2_maneuver: cohort flags 500/3597
+2026-09-13 08:45:01,175 INFO stage0: staged 500/3603
+2026-09-13 08:45:23,078 INFO t2_maneuver: cohort flags 1000/3597
+2026-09-13 08:45:43,757 INFO t2_maneuver: cohort flags 1500/3597
+2026-09-13 08:46:00,673 INFO t2_maneuver: cohort flags 2000/3597
+2026-09-13 08:46:18,751 INFO t2_maneuver: cohort flags 2500/3597
+2026-09-13 08:46:36,677 INFO t2_maneuver: cohort flags 3000/3597
+2026-09-13 08:46:58,495 INFO t2_maneuver: cohort flags 3500/3597
+2026-09-13 08:47:07,684 INFO t2_maneuver: cohort flags: 1238362 intervals, 0.52% flagged; per-object flag rate quantiles {'25%': 0.0, '50%': 0.003, '75%': 0.009}; errors=0
+[2026-09-13T08:47:08Z] === S3 exit 0 ===
+2026-09-13 08:48:31,550 INFO stage0: staged 750/3603
+2026-09-13 08:51:05,807 INFO stage0: staged 1000/3603
+2026-09-13 08:53:48,110 INFO stage0: staged 1250/3603
+[2026-09-13T08:54:45Z] === S2: orbpipe.t1_phase ===
+2026-09-13 08:55:16,237 INFO t1_phase: fragments 500/3597
+2026-09-13 08:55:25,889 INFO t1_phase: fragments 1000/3597
+2026-09-13 08:55:34,982 INFO t1_phase: fragments 1500/3597
+2026-09-13 08:55:43,533 INFO t1_phase: fragments 2000/3597
+2026-09-13 08:55:52,131 INFO t1_phase: fragments 2500/3597
+2026-09-13 08:56:01,831 INFO t1_phase: fragments 3000/3597
+2026-09-13 08:56:13,680 INFO t1_phase: fragments 3500/3597
+2026-09-13 08:56:16,402 INFO t1_phase: fragments: 187971 from 3366 objects; silver counts {'STABLE_ORBIT': 182537, 'SUSTAINED_DECAY': 5041, 'UNKNOWN_TRANSITION': 393}
+2026-09-13 08:56:46,915 INFO stage0: staged 1500/3603
+2026-09-13 08:56:48,688 INFO t1_phase: mean over seeds:
+                  macro_f1    ari    nmi  f1_STABLE_ORBIT  f1_SUSTAINED_RAISE  f1_SUSTAINED_DECAY
+method                                                                                           
+Constant-stable      0.329  0.000  0.000            0.988                 0.0               0.000
+HistGB               0.666  0.998  0.993            1.000                 0.0               0.998
+Raw PCA + KMeans     0.398  0.028  0.073            0.943                 0.0               0.250
+Slope-rule           0.587  0.750  0.619            0.993                 0.0               0.768
+[2026-09-13T08:57:07Z] === S2 exit 0 ===
+2026-09-13 08:59:48,482 INFO stage0: staged 1750/3603
+2026-09-13 09:02:59,138 INFO stage0: staged 2000/3603
+2026-09-13 09:06:51,397 INFO stage0: staged 2250/3603
+2026-09-13 09:10:52,884 INFO stage0: staged 2500/3603
+2026-09-13 09:14:45,944 INFO stage0: staged 2750/3603
+[2026-09-13T09:16:05Z] === S4: orbpipe.t4_forecast ===
+2026-09-13 09:18:56,502 INFO stage0: staged 3000/3603
+2026-09-13 09:21:10,325 INFO stage0: staged 3250/3603
+2026-09-13 09:23:23,910 INFO stage0: staged 3500/3603
+2026-09-13 09:24:31,166 INFO t4_forecast: S3B: 24150 case rows
+2026-09-13 09:24:32,149 INFO t4_forecast: S2A: 24510 case rows
+2026-09-13 09:24:37,531 INFO t4_forecast: S2B: 42870 case rows
+2026-09-13 09:24:38,587 INFO t4_forecast: S1A: 42030 case rows
+2026-09-13 09:24:38,649 INFO t4_forecast: S3A: 42630 case rows
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py:193: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  nees=float(np.mean(z ** 2)), spearman_sigma_abserr=float(spearmanr(s, np.abs(e)).statistic) if np.std(s) > 0 else np.nan,
+2026-09-13 09:24:39,420 INFO t4_forecast: in-window 3D P50 km (all sats):
+h                   0.5     1.0      4.0      8.0      12.0     24.0
+method                                                              
+Kepler-24h        10.808  38.340  126.826  267.676  387.155  769.251
+Ridge-orbit        0.546   0.618    0.574    0.799    0.687    0.964
+Ridge-weather      0.673   0.722    0.770    0.960    0.943    1.280
+Ridge-weather+T3   0.716   0.780    0.776    0.980    0.919    1.258
+SGP4-MTF           0.505   0.615    0.449    0.733    0.454    0.495
+SGP4-MTF+T1+T2     0.505   0.615    0.450    0.732    0.454    0.494
+SGP4-MTF+T2        0.505   0.615    0.450    0.732    0.454    0.494
+SGP4-prev          0.503   0.615    0.449    0.733    0.454    0.492
+2026-09-13 09:24:39,424 INFO t4_forecast: UQ:
+           cov68                cov95                 nees              
+component      n      r      t      n      r      t      n      r      t
+model                                                                   
+σ-age      0.692  0.698  0.744  0.947  0.969  0.941  1.247  0.883  2.265
+σ-fixed    0.686  0.694  0.745  0.941  0.972  0.939  1.302  0.881  3.399
+σ-oad      0.690  0.704  0.725  0.943  0.975  0.938  1.265  0.846  2.465
+[2026-09-13T09:24:39Z] === S4 exit 0 ===
+2026-09-13 09:25:05,017 INFO stage0: trajectories staged: 3603 objects x 25057 steps; errors=0; mean coverage=0.925
+[2026-09-13T09:25:05Z] === S0 exit 0 ===
+[2026-09-13T09:26:43Z] === S5: orbpipe.t5_evolution ===
+2026-09-13 09:31:56,327 INFO t5_evolution: origins 50/347
+2026-09-13 09:34:20,498 INFO t5_evolution: origins 100/347
+2026-09-13 09:36:45,781 INFO t5_evolution: origins 150/347
+2026-09-13 09:39:10,488 INFO t5_evolution: origins 200/347
+2026-09-13 09:41:33,197 INFO t5_evolution: origins 250/347
+2026-09-13 09:43:58,521 INFO t5_evolution: origins 300/347
+2026-09-13 09:46:11,960 INFO t5_evolution: mean over origins:
+                overlap_pct     tv  regional_rel_mae  hotspot_f1  shell_spearman
+method      h                                                                   
+Kepler      1        89.265  0.107             0.157       0.786           0.989
+            6        89.018  0.110             0.131       0.781           0.995
+            24       82.205  0.178             0.245       0.667           0.990
+Persistence 1        76.261  0.237             0.420       0.557           0.986
+            6        76.478  0.235             0.402       0.555           0.987
+            24       76.543  0.235             0.411       0.559           0.987
+SGP4-prev   1        93.003  0.070             0.094       0.849           0.998
+            6        92.961  0.070             0.095       0.851           0.998
+            24       92.957  0.070             0.097       0.852           0.998
+[2026-09-13T09:46:12Z] === S5 exit 0 ===
+[2026-09-13T09:46:12Z] === S6: orbpipe.t6_warning ===
+2026-09-13 09:46:14,100 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882            1.000        0.974         150
+T6-CDM  Ridge (5-fold) 199 226443.232 3194366.007               0.979            0.953        0.958         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972            0.933        0.941         150
+2026-09-13 09:50:23,418 INFO t6_warning: 1-min reference trajectories 100/450
+2026-09-13 09:53:17,979 INFO t6_warning: 1-min reference trajectories 200/450
+2026-09-13 09:56:23,901 INFO t6_warning: 1-min reference trajectories 300/450
+2026-09-13 09:59:30,526 INFO t6_warning: 1-min reference trajectories 400/450
+2026-09-13 10:00:50,520 INFO t6_warning: shell subset 450 objects, 101025 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:01:50,955 INFO t6_warning: reference close approaches (<5.0 km): 105
+2026-09-13 10:03:24,328 ERROR t6_warning: T6 failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 205, in main
+    try:
+    
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 147, in run_screening
+    m = det[(det.i == tr.i) & (det.j == tr.j)]
+             ^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/generic.py", line 6194, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'i'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 213, in <module>
+    log.exception("T6 failed"); set_status("S6_t6_warning", "failed", message=str(ex)); raise
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 205, in main
+    try:
+    
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 147, in run_screening
+    m = det[(det.i == tr.i) & (det.j == tr.j)]
+             ^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/generic.py", line 6194, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'i'
+[2026-09-13T10:03:24Z] === S6 exit 1 ===
+[2026-09-13T10:03:24Z] === S7: orbpipe.t7_avoidance ===
+2026-09-13 10:03:26,162 INFO t7_avoidance: events: {'cdm': 117}
+2026-09-13 10:03:44,743 INFO t7_avoidance: 
+task     strategy source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver    cdm 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7          PPO    cdm 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7   Physics-Pc    cdm 59          1.0        0.056       0.300          0.186             0.0       3863845.670
+  T7  Physics-max    cdm 59          1.0        0.305       0.600          1.017             0.0       3863845.774
+  T7 Proportional    cdm 59          1.0        0.192       0.346          1.017             0.0       3863845.685
+  T7  No-maneuver    ALL 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7          PPO    ALL 59          1.0        0.000       0.000          0.000             0.0       3863845.670
+  T7   Physics-Pc    ALL 59          1.0        0.056       0.300          0.186             0.0       3863845.670
+  T7  Physics-max    ALL 59          1.0        0.305       0.600          1.017             0.0       3863845.774
+  T7 Proportional    ALL 59          1.0        0.192       0.346          1.017             0.0       3863845.685
+[2026-09-13T10:03:45Z] === S7 exit 0 ===
+[2026-09-13T10:03:45Z] === S8: orbpipe.experiments ===
+2026-09-13 10:03:49,581 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:03:49,583 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T10:03:49Z] === S8 exit 0 ===
+[2026-09-13T10:03:49Z] === S9: orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 10:03:52,418 INFO report: REPORT.md written (19 kB), figures: 4
+[2026-09-13T10:03:52Z] === S9 exit 0 ===
+2026-09-13 10:04:21,131 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:04:21,142 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 10:04:23,027 INFO report: REPORT.md written (19 kB), figures: 4
+[2026-09-13T10:04:23Z] cdm fix + S8/S9 rerun done
+[2026-09-13T10:14:40Z] === rerun orbpipe.t6_warning ===
+2026-09-13 10:14:42,453 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 10:18:51,241 INFO t6_warning: 1-min reference trajectories 100/450
+2026-09-13 10:21:43,404 INFO t6_warning: 1-min reference trajectories 200/450
+2026-09-13 10:24:46,464 INFO t6_warning: 1-min reference trajectories 300/450
+2026-09-13 10:27:49,653 INFO t6_warning: 1-min reference trajectories 400/450
+2026-09-13 10:29:09,883 INFO t6_warning: shell subset 450 objects, 100442 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:29:37,610 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 10:30:34,731 INFO t6_warning: lead 6 h, Independent: 100442 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:30:34,812 INFO t6_warning: lead 6 h, Chained-T5: 0 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:31:05,913 INFO t6_warning: lead 24 h, Independent: 100442 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:31:05,990 INFO t6_warning: lead 24 h, Chained-T5: 0 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:31:06,010 INFO t6_warning: screening:
+ task  lead_h        mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6 Independent          100442.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+T6-UQ       6    UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6    UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6      UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6       6  Chained-T5               0.0     44.0       0         13.835   0.000      0.000              NaN              NaN                    100.0       NaN          NaN           NaN
+   T6      24 Independent          100442.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+T6-UQ      24    UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24    UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24      UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6      24  Chained-T5               0.0     44.0       0         36.725   0.000      0.000              NaN              NaN                    100.0       NaN          NaN           NaN
+[2026-09-13T10:31:06Z] === orbpipe.t6_warning exit 0 ===
+[2026-09-13T10:31:06Z] === rerun orbpipe.t7_avoidance --force ===
+2026-09-13 10:31:06,949 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 10:31:24,734 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1551.946
+  T7          PPO       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7          PPO screening  4        0.000        0.000       0.000          0.000             0.0          1551.946
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1551.946
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2223.919
+  T7 Proportional       cdm 59        0.000       10.792      16.633        151.000             0.0          1720.976
+  T7 Proportional screening  4        1.000        7.039      13.342        150.500             0.0          2038.143
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.948
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2020.623
+  T7 Proportional       ALL 63        0.063       10.554      16.633        150.968             0.0          1727.201
+[2026-09-13T10:31:25Z] === orbpipe.t7_avoidance --force exit 0 ===
+[2026-09-13T10:31:25Z] === rerun orbpipe.experiments --force ===
+2026-09-13 10:31:29,885 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:31:29,930 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T10:31:30Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T10:31:30Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 10:31:33,477 INFO report: REPORT.md written (21 kB), figures: 4
+[2026-09-13T10:31:33Z] === orbpipe.report exit 0 ===
+[2026-09-13T10:39:15Z] === rerun orbpipe.t6_warning --force ===
+2026-09-13 10:39:19,235 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 10:39:19,263 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-13 10:39:19,459 INFO t6_warning: shell subset 450 objects, 72252 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:39:39,331 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 10:40:27,622 INFO t6_warning: lead 6 h, Independent: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:40:47,678 INFO t6_warning: lead 6 h, Chained-T5: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:41:11,592 INFO t6_warning: lead 24 h, Independent: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:41:31,400 INFO t6_warning: lead 24 h, Chained-T5: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:41:31,460 INFO t6_warning: screening:
+ task  lead_h        mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6 Independent           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+T6-UQ       6    UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6    UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6      UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6       6  Chained-T5           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+   T6      24 Independent           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+T6-UQ      24    UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24    UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24      UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6      24  Chained-T5           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+[2026-09-13T10:41:31Z] === orbpipe.t6_warning --force exit 0 ===
+[2026-09-13T10:41:31Z] === rerun orbpipe.t7_avoidance --force ===
+2026-09-13 10:41:32,192 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 10:42:23,952 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7          PPO       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7          PPO screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2223.871
+  T7 Proportional       cdm 59        0.000       10.792      16.633        151.000             0.0          1720.976
+  T7 Proportional screening  4        1.000        7.040      13.342        150.500             0.0          2038.157
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.948
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2020.623
+  T7 Proportional       ALL 63        0.063       10.554      16.633        150.968             0.0          1727.201
+[2026-09-13T10:42:24Z] === orbpipe.t7_avoidance --force exit 0 ===
+[2026-09-13T10:42:24Z] === rerun orbpipe.experiments --force ===
+2026-09-13 10:42:28,362 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:42:28,387 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T10:42:28Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T10:42:28Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 10:42:30,847 INFO report: REPORT.md written (21 kB), figures: 4
+[2026-09-13T10:42:30Z] === orbpipe.report exit 0 ===
+[2026-09-13T10:52:42Z] === rerun orbpipe.t6_warning --force ===
+2026-09-13 10:52:44,009 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 10:52:44,019 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-13 10:52:44,215 INFO t6_warning: shell subset 450 objects, 72252 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:53:04,149 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 10:53:50,931 INFO t6_warning: lead 6 h, Independent: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:53:51,100 INFO t6_warning: lead 6 h, Chained-T5 (50% budget): 313 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:53:51,189 INFO t6_warning: lead 6 h, Chained-T5 (25% budget): 313 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:53:51,278 INFO t6_warning: lead 6 h, Chained-T5 (10% budget): 313 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:54:14,519 INFO t6_warning: lead 24 h, Independent: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,681 INFO t6_warning: lead 24 h, Chained-T5 (50% budget): 308 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,769 INFO t6_warning: lead 24 h, Chained-T5 (25% budget): 308 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,856 INFO t6_warning: lead 24 h, Chained-T5 (10% budget): 308 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,877 INFO t6_warning: screening:
+ task  lead_h                    mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6             Independent           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                    0.000       NaN          NaN           NaN
+T6-UQ       6                UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                  UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6       6 Chained-T5 (50% budget)             313.0     44.0       0         13.835   0.000      0.000              NaN              NaN                   99.567       NaN          NaN           NaN
+   T6       6 Chained-T5 (25% budget)             313.0     44.0       0         13.835   0.000      0.000              NaN              NaN                   99.567       NaN          NaN           NaN
+   T6       6 Chained-T5 (10% budget)             313.0     44.0       0         13.835   0.000      0.000              NaN              NaN                   99.567       NaN          NaN           NaN
+   T6      24             Independent           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                    0.000       NaN          NaN           NaN
+T6-UQ      24                UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                  UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6      24 Chained-T5 (50% budget)             308.0     44.0       0         36.725   0.000      0.000              NaN              NaN                   99.574       NaN          NaN           NaN
+   T6      24 Chained-T5 (25% budget)             308.0     44.0       0         36.725   0.000      0.000              NaN              NaN                   99.574       NaN          NaN           NaN
+   T6      24 Chained-T5 (10% budget)             308.0     44.0       0         36.725   0.000      0.000              NaN              NaN                   99.574       NaN          NaN           NaN
+[2026-09-13T10:54:15Z] === orbpipe.t6_warning --force exit 0 ===
+[2026-09-13T10:54:15Z] === rerun orbpipe.t7_avoidance --force ===
+2026-09-13 10:54:15,581 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 10:55:32,475 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7          PPO       cdm 59        0.000       44.685      44.700        148.983             0.0           454.679
+  T7          PPO screening  4        0.000       44.699      44.700        149.000             0.0          1551.852
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1551.852
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2223.871
+  T7 Proportional       cdm 59        0.000       10.792      16.633        151.000             0.0          1720.976
+  T7 Proportional screening  4        1.000        7.040      13.342        150.500             0.0          2038.157
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        0.000       44.686      44.700        148.984             0.0           489.150
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.948
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2020.623
+  T7 Proportional       ALL 63        0.063       10.554      16.633        150.968             0.0          1727.201
+[2026-09-13T10:55:32Z] === orbpipe.t7_avoidance --force exit 0 ===
+[2026-09-13T10:55:32Z] === rerun orbpipe.experiments --force ===
+2026-09-13 10:55:36,939 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 10:55:36,941 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T10:55:36Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T10:55:36Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 10:55:38,254 INFO report: REPORT.md written (22 kB), figures: 4
+[2026-09-13T10:55:38Z] === orbpipe.report exit 0 ===
+[2026-09-13T11:06:38Z] === rerun orbpipe.t6_warning --force ===
+2026-09-13 11:06:40,631 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 11:06:40,656 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-13 11:06:40,952 INFO t6_warning: shell subset 450 objects, 72252 pairs after apogee/perigee filter (of 101025)
+2026-09-13 11:07:02,642 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 11:07:54,344 INFO t6_warning: lead 6 h, Independent: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:05,081 INFO t6_warning: lead 6 h, Chained-T5 (50% budget): 36126 pairs screened, 164 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:10,453 INFO t6_warning: lead 6 h, Chained-T5 (25% budget): 18063 pairs screened, 106 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:12,586 INFO t6_warning: lead 6 h, Chained-T5 (10% budget): 7225 pairs screened, 54 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:37,759 INFO t6_warning: lead 24 h, Independent: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:47,694 INFO t6_warning: lead 24 h, Chained-T5 (50% budget): 36126 pairs screened, 160 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:52,559 INFO t6_warning: lead 24 h, Chained-T5 (25% budget): 18063 pairs screened, 105 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:54,620 INFO t6_warning: lead 24 h, Chained-T5 (10% budget): 7225 pairs screened, 54 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:54,643 INFO t6_warning: screening:
+ task  lead_h                    mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6             Independent           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+T6-UQ       6                UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                  UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6       6 Chained-T5 (50% budget)           36126.0     44.0     164         13.835   0.068      0.018            0.333            0.374                     50.0       NaN          NaN           NaN
+   T6       6 Chained-T5 (25% budget)           18063.0     44.0     106         13.835   0.068      0.028            0.333            0.374                     75.0       NaN          NaN           NaN
+   T6       6 Chained-T5 (10% budget)            7225.0     44.0      54         13.835   0.000      0.000              NaN              NaN                     90.0       NaN          NaN           NaN
+   T6      24             Independent           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+T6-UQ      24                UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                  UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6      24 Chained-T5 (50% budget)           36126.0     44.0     160         36.725   0.068      0.019            0.333            0.380                     50.0       NaN          NaN           NaN
+   T6      24 Chained-T5 (25% budget)           18063.0     44.0     105         36.725   0.068      0.029            0.333            0.380                     75.0       NaN          NaN           NaN
+   T6      24 Chained-T5 (10% budget)            7225.0     44.0      54         36.725   0.000      0.000              NaN              NaN                     90.0       NaN          NaN           NaN
+[2026-09-13T11:08:54Z] === orbpipe.t6_warning --force exit 0 ===
+[2026-09-13T11:08:54Z] === rerun orbpipe.t7_avoidance --force ===
+2026-09-13 11:08:55,358 INFO t7_avoidance: events: {'cdm': 117, 'screening': 9}
+2026-09-13 11:10:17,550 INFO t7_avoidance: 
+task     strategy    source  n  safety_rate  dv_mean_m_s  dv_max_m_s  thrust_s_mean  pc_post_median  final_dist_med_m
+  T7  No-maneuver       cdm 59        0.000        0.000       0.000          0.000             0.0           454.679
+  T7  No-maneuver screening  4        0.000        0.000       0.000          0.000             0.0          1248.089
+  T7          PPO       cdm 59        1.000       45.000      45.000        150.000             0.0          3852.168
+  T7          PPO screening  4        1.000       45.000      45.000        150.000             0.0          4622.217
+  T7   Physics-Pc       cdm 59        0.000        0.122       1.800          0.407             0.0           480.343
+  T7   Physics-Pc screening  4        0.000        0.000       0.000          0.000             0.0          1248.089
+  T7  Physics-max       cdm 59        1.000       10.078      16.200         33.593             0.0          2017.328
+  T7  Physics-max screening  4        1.000        6.375      12.600         21.250             0.0          2062.335
+  T7 Proportional       cdm 59        0.000       10.757      16.579        150.000             0.0          1720.976
+  T7 Proportional screening  4        0.500        7.029      13.342        150.000             0.0          1957.345
+  T7  No-maneuver       ALL 63        0.000        0.000       0.000          0.000             0.0           489.150
+  T7          PPO       ALL 63        1.000       45.000      45.000        150.000             0.0          3886.637
+  T7   Physics-Pc       ALL 63        0.000        0.114       1.800          0.381             0.0           490.947
+  T7  Physics-max       ALL 63        1.000        9.843      16.200         32.810             0.0          2019.055
+  T7 Proportional       ALL 63        0.032       10.520      16.579        150.000             0.0          1727.201
+[2026-09-13T11:10:18Z] === orbpipe.t7_avoidance --force exit 0 ===
+[2026-09-13T11:10:18Z] === rerun orbpipe.experiments --force ===
+2026-09-13 11:10:22,057 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 11:10:22,068 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T11:10:22Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T11:10:22Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 11:10:24,260 INFO report: REPORT.md written (22 kB), figures: 4
+[2026-09-13T11:10:24Z] === orbpipe.report exit 0 ===
+[2026-09-13T15:17:42Z] === rerun orbpipe.challenge_evidence ===
+2026-09-13 15:17:42,911 INFO challenge_evidence: stratified sample: 430 objects over 15 cells
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/challenge_evidence.py:42: RuntimeWarning: invalid value encountered in divide
+  S = np.array(S); W = np.array(W) / np.sum(W)
+2026-09-13 15:17:48,115 INFO challenge_evidence: E5/E6 50/430
+2026-09-13 15:17:52,496 INFO challenge_evidence: E5/E6 100/430
+2026-09-13 15:17:56,919 INFO challenge_evidence: E5/E6 150/430
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/challenge_evidence.py:42: RuntimeWarning: invalid value encountered in divide
+  S = np.array(S); W = np.array(W) / np.sum(W)
+2026-09-13 15:18:01,806 INFO challenge_evidence: E5/E6 200/430
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/challenge_evidence.py:42: RuntimeWarning: invalid value encountered in divide
+  S = np.array(S); W = np.array(W) / np.sum(W)
+2026-09-13 15:18:06,268 INFO challenge_evidence: E5/E6 250/430
+2026-09-13 15:18:10,868 INFO challenge_evidence: E5/E6 300/430
+2026-09-13 15:18:15,588 INFO challenge_evidence: E5/E6 350/430
+2026-09-13 15:18:20,348 INFO challenge_evidence: E5/E6 400/430
+2026-09-13 15:18:30,070 INFO challenge_evidence: E7 census 600/3603
+2026-09-13 15:18:35,870 INFO challenge_evidence: E7 census 1200/3603
+2026-09-13 15:18:41,162 INFO challenge_evidence: E7 census 1800/3603
+2026-09-13 15:18:46,418 INFO challenge_evidence: E7 census 2400/3603
+2026-09-13 15:18:51,501 INFO challenge_evidence: E7 census 3000/3603
+2026-09-13 15:18:56,488 INFO challenge_evidence: E7 census 3600/3603
+2026-09-13 15:18:56,685 INFO challenge_evidence: E5 ALL:
+ frac type regime     n  n_obj  nearest_p50  mtf_p50  nearest_p90  mtf_p90  mtf_win_rate  age_nearest_med_h best
+  0.0  ALL    ALL  6877    430       0.1644   0.1589       0.9000   0.8966        0.0960            11.7891  MTF
+  0.1  ALL    ALL 34385    430       0.1708   0.1683       0.9572   0.9536        0.0778            11.9938  MTF
+  0.3  ALL    ALL 34385    430       0.1909   0.1893       1.1030   1.1007        0.0482            14.6711  MTF
+  0.5  ALL    ALL 34385    430       0.2310   0.2297       1.4258   1.4254        0.0267            21.6940  MTF
+  0.7  ALL    ALL 34385    430       0.3094   0.3087       2.2676   2.2695        0.0103            24.9611  MTF
+2026-09-13 15:18:56,685 INFO challenge_evidence: E5 flips:
+                                               0
+n_obj                                        430
+objects_with_flip                            147
+flip_rate                                0.34186
+best_at_0           {'nearest': 300, 'MTF': 130}
+best_at_0p5          {'nearest': 375, 'MTF': 55}
+flip_rate_DEB|HEO                       0.307692
+flip_rate_DEB|LEO                          0.375
+flip_rate_DEB|MEO                           0.25
+flip_rate_PAY|GEO                           0.25
+flip_rate_PAY|HEO                          0.225
+flip_rate_PAY|LEO                           0.65
+flip_rate_PAY|MEO                           0.15
+flip_rate_PAY|VLEO                           0.3
+flip_rate_R/B|GEO                          0.275
+flip_rate_R/B|HEO                          0.225
+flip_rate_R/B|LEO                            0.6
+flip_rate_R/B|MEO                            0.4
+2026-09-13 15:18:56,687 INFO challenge_evidence: E6 best per cell:
+type regime  window_h  tau_h  k  res_p50  res_p50_at_global_setting  loss_of_global_pct
+ DEB    HEO      24.0    4.0  3   0.5359                     0.5359              0.0000
+ DEB    LEO      24.0    4.0  2   0.0980                     0.0997              1.7145
+ DEB    MEO      24.0    4.0  5   0.2941                     0.2941              0.0000
+ PAY    GEO      24.0    4.0  3   0.2878                     0.2881              0.1050
+ PAY    HEO      24.0    4.0  3   0.2728                     0.2728              0.0000
+ PAY    LEO      24.0    4.0  5   0.0226                     0.0226              0.0000
+ PAY    MEO      24.0    4.0  5   0.1050                     0.1050              0.0000
+ PAY   VLEO      24.0    2.0  3   0.1008                     0.1172             16.2794
+ R/B    GEO      24.0    4.0  3   0.1704                     0.1704              0.0000
+ R/B    HEO      24.0    4.0  3   0.2629                     0.2629              0.0000
+ R/B    LEO      24.0    4.0  5   0.0262                     0.0262              0.0000
+ R/B    MEO      24.0    4.0  2   0.1849                     0.1849              0.0212
+[2026-09-13T15:18:56Z] === challenge_evidence exit 0 ===
+[2026-09-13T15:42:06Z] restage finished
+[2026-09-13T15:42:06Z] === rerun orbpipe.t2_maneuver --force ===
+2026-09-13 15:42:09,973 INFO t2_maneuver: S1A: 8857 intervals, 457 maneuver intervals (195 in test)
+2026-09-13 15:42:11,366 INFO t2_maneuver: S2A: 8688 intervals, 102 maneuver intervals (38 in test)
+2026-09-13 15:42:12,900 INFO t2_maneuver: S3A: 9849 intervals, 95 maneuver intervals (39 in test)
+2026-09-13 15:42:29,996 INFO t2_maneuver: pooled:
+          method  precision  recall    f1    f2
+       CUSUM(Δa)      0.039   1.000 0.074 0.167
+          HistGB      0.275   0.140 0.185 0.155
+     HistGB-LOSO      0.294   0.496 0.369 0.436
+SGP4-residual-3D      0.300   0.669 0.415 0.537
+ SGP4-residual-T      0.326   0.643 0.433 0.538
+          Δa-MAD      0.157   0.842 0.265 0.450
+2026-09-13 15:42:33,687 INFO t2_maneuver: cohort detector thresholds: k_res=9.5, k_da=29.5 (MAD units, per-object scaling)
+2026-09-13 15:42:45,578 INFO t2_maneuver: cohort flags 500/3603
+2026-09-13 15:42:56,729 INFO t2_maneuver: cohort flags 1000/3603
+2026-09-13 15:43:06,662 INFO t2_maneuver: cohort flags 1500/3603
+2026-09-13 15:43:16,656 INFO t2_maneuver: cohort flags 2000/3603
+2026-09-13 15:43:25,689 INFO t2_maneuver: cohort flags 2500/3603
+2026-09-13 15:43:35,721 INFO t2_maneuver: cohort flags 3000/3603
+2026-09-13 15:43:45,414 INFO t2_maneuver: cohort flags 3500/3603
+2026-09-13 15:43:47,718 INFO t2_maneuver: cohort flags: 1240424 intervals, 1.46% flagged; per-object flag rate quantiles {'25%': 0.003, '50%': 0.012, '75%': 0.024}; errors=0
+[2026-09-13T15:43:47Z] === orbpipe.t2_maneuver --force exit 0 ===
+[2026-09-13T15:43:47Z] === rerun orbpipe.t4_forecast --force ===
+2026-09-13 15:44:02,382 INFO t4_forecast: S3B: 15570 case rows
+2026-09-13 15:44:11,187 INFO t4_forecast: S2A: 29790 case rows
+2026-09-13 15:44:15,397 INFO t4_forecast: S2B: 38880 case rows
+2026-09-13 15:44:30,543 INFO t4_forecast: S1B: 76530 case rows
+2026-09-13 15:44:34,935 INFO t4_forecast: S3A: 75750 case rows
+2026-09-13 15:45:02,429 INFO t4_forecast: S1A: 141570 case rows
+2026-09-13 15:45:02,779 ERROR t4_forecast: T4 failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 271, in main
+    cases = pd.concat([cases, ridge_correctors(cases)], ignore_index=True)
+                              ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 157, in ridge_correctors
+    corr[f"err_{c}"] = te[f"err_{c}"] - m.predict(Xte)
+                                        ~~~~~~~~~^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/linear_model/_ridge.py", line 1279, in predict
+    return super().predict(X)
+           ~~~~~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/linear_model/_base.py", line 316, in predict
+    return self._decision_function(X)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/linear_model/_base.py", line 294, in _decision_function
+    X = validate_data(self, X, accept_sparse=["csr", "csc", "coo"], reset=False)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/utils/validation.py", line 3013, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/utils/validation.py", line 2865, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 283, in <module>
+    main("--force" in sys.argv)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 271, in main
+    cases = pd.concat([cases, ridge_correctors(cases)], ignore_index=True)
+                              ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 157, in ridge_correctors
+    corr[f"err_{c}"] = te[f"err_{c}"] - m.predict(Xte)
+                                        ~~~~~~~~~^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/linear_model/_ridge.py", line 1279, in predict
+    return super().predict(X)
+           ~~~~~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/linear_model/_base.py", line 316, in predict
+    return self._decision_function(X)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/linear_model/_base.py", line 294, in _decision_function
+    X = validate_data(self, X, accept_sparse=["csr", "csc", "coo"], reset=False)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/utils/validation.py", line 3013, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/sklearn/utils/validation.py", line 2865, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+[2026-09-13T15:45:03Z] === orbpipe.t4_forecast --force exit 0 ===
+[2026-09-13T15:45:03Z] === rerun orbpipe.experiments --force ===
+2026-09-13 15:45:06,310 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 15:45:06,327 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T15:45:06Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T15:45:06Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 15:45:08,544 ERROR report: report failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 111, in main
+    d = rd(name)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 20, in rd
+    p = R / name; return pd.read_csv(p) if p.exists() else None
+                         ~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 137, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 111, in main
+    d = rd(name)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 20, in rd
+    p = R / name; return pd.read_csv(p) if p.exists() else None
+                         ~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2026-09-13T15:45:08Z] === orbpipe.report exit 0 ===
+[2026-09-13T15:45:08Z] long-window chain done
+2026-09-13 15:45:30,690 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.615    0.615 3D P50 km          -0.042
+ E1             weather→forecast (T3→T4)  1        0.722    0.780 3D P50 km           8.099
+ E1               maneuver→forecast, P95  1        1.228    1.235 3D P95 km           0.533
+ E1            maneuver→forecast (T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.449    0.450 3D P50 km           0.073
+ E1             weather→forecast (T3→T4)  4        0.770    0.776 3D P50 km           0.781
+ E1               maneuver→forecast, P95  4        1.513    1.513 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.495    0.494 3D P50 km          -0.192
+ E1             weather→forecast (T3→T4) 24        1.280    1.258 3D P50 km          -1.718
+ E1               maneuver→forecast, P95 24        4.167    4.198 3D P95 km           0.762
+ E1 maneuver→forecast [maneuver windows]  1        0.371    0.371 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows]  1        0.643    0.643 3D P50 km           0.000
+ E1 maneuver→forecast [maneuver windows] 24        0.825    0.825 3D P50 km           0.000
+ E1    maneuver→forecast [quiet windows] 24        0.480    0.480 3D P50 km          -0.022
+2026-09-13 15:45:30,692 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:73: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 15:45:31,498 ERROR report: report failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 111, in main
+    d = rd(name)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 20, in rd
+    p = R / name; return pd.read_csv(p) if p.exists() else None
+                         ~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 137, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 111, in main
+    d = rd(name)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 20, in rd
+    p = R / name; return pd.read_csv(p) if p.exists() else None
+                         ~~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2026-09-13T15:45:31Z] challenge-evidence chain done
+[2026-09-13T16:13:28Z] === rerun orbpipe.loo_rules ===
+2026-09-13 16:14:04,387 INFO loo_rules: 
+     method scope        rule      n  res3d_p50  res3d_p90  ratio_p50_vs_kept  ratio_p90_vs_kept  frac_gt_1km  kept_frac_gt_1km
+    MTF-raw   ALL   bstar_neg   8134     0.0490     0.4786             0.6336             0.9132       0.0454            0.0430
+    MTF-raw   ALL half_period   6126     0.1862     0.7858             2.4093             1.4992       0.0684            0.0430
+    MTF-raw   ALL        kept 127475     0.0773     0.5241             1.0000             1.0000       0.0430            0.0430
+nearest-raw   ALL   bstar_neg   8134     0.0506     0.4866             0.6388             0.9215       0.0455            0.0431
+nearest-raw   ALL half_period   6126     0.1914     0.8027             2.4155             1.5201       0.0707            0.0431
+nearest-raw   ALL        kept 127475     0.0793     0.5281             1.0000             1.0000       0.0431            0.0431
+[2026-09-13T16:14:04Z] === orbpipe.loo_rules exit 0 ===
+[2026-09-13T16:14:04Z] === rerun orbpipe.t4_forecast --force ===
+2026-09-13 16:14:21,181 INFO t4_forecast: S3B: 15570 case rows
+2026-09-13 16:14:31,289 INFO t4_forecast: S2A: 29790 case rows
+2026-09-13 16:14:38,296 INFO t4_forecast: S2B: 38880 case rows
+2026-09-13 16:14:53,044 INFO t4_forecast: S1B: 76530 case rows
+2026-09-13 16:15:00,879 INFO t4_forecast: S3A: 75750 case rows
+2026-09-13 16:15:30,516 INFO t4_forecast: S1A: 141570 case rows
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py:199: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  nees=float(np.mean(z ** 2)), spearman_sigma_abserr=float(spearmanr(s, np.abs(e)).statistic) if np.std(s) > 0 else np.nan,
+2026-09-13 16:15:39,616 INFO t4_forecast: in-window 3D P50 km (all sats):
+h                    0.5     1.0      4.0      8.0      12.0     24.0
+method                                                               
+HistGB-orbit        0.270   0.311    0.381    0.310    0.409    0.525
+HistGB-weather      0.299   0.339    0.402    0.348    0.452    0.548
+HistGB-weather+T3   0.296   0.332    0.393    0.338    0.445    0.542
+Kepler-24h         10.509  39.448  119.384  248.103  363.561  722.392
+Ridge-orbit         0.697   0.792    0.644    0.604    0.516    0.482
+Ridge-weather       0.707   0.795    0.641    0.609    0.525    0.489
+Ridge-weather+T3    0.686   0.773    0.622    0.640    0.522    0.497
+SGP4-MTF            0.434   0.571    0.495    0.733    0.398    0.457
+SGP4-MTF+T1+T2      0.434   0.571    0.496    0.731    0.400    0.455
+SGP4-MTF+T2         0.434   0.571    0.496    0.731    0.400    0.455
+SGP4-prev           0.434   0.571    0.495    0.731    0.399    0.455
+2026-09-13 16:15:39,621 INFO t4_forecast: UQ:
+           cov68                cov95                 nees              
+component      n      r      t      n      r      t      n      r      t
+model                                                                   
+σ-age      0.898  0.795  0.670  0.994  0.989  0.925  0.484  0.604  4.070
+σ-fixed    0.900  0.810  0.674  0.995  0.997  0.923  0.480  0.546  5.468
+σ-oad      0.883  0.801  0.647  0.993  0.995  0.923  0.538  0.573  4.703
+[2026-09-13T16:15:39Z] === orbpipe.t4_forecast --force exit 0 ===
+[2026-09-13T16:15:39Z] === rerun orbpipe.proof --force ===
+2026-09-13 16:17:05,669 ERROR proof: proof failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/proof.py", line 387, in main
+    if r is not None: parts1.append(r); log.info(f"P1 {r.sat.iloc[0]}: {len(r)} rows")
+                                                       ~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/proof.py", line 426, in <module>
+    main(parts=args[0] if args else "12354", force="--force" in sys.argv)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/proof.py", line 387, in main
+    if r is not None: parts1.append(r); log.info(f"P1 {r.sat.iloc[0]}: {len(r)} rows")
+                                                       ~~~~~~~~~~^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/mnt/data/xzj/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+[2026-09-13T16:17:05Z] === orbpipe.proof --force exit 0 ===
+[2026-09-13T16:17:05Z] === rerun orbpipe.experiments --force ===
+2026-09-13 16:17:09,872 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1             weather→forecast (T3→T4)  1        0.795    0.773 3D P50 km          -2.708
+ E1               maneuver→forecast, P95  1        1.219    1.222 3D P95 km           0.230
+ E1            maneuver→forecast (T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1             weather→forecast (T3→T4)  4        0.641    0.622 3D P50 km          -3.044
+ E1               maneuver→forecast, P95  4        1.695    1.695 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1             weather→forecast (T3→T4) 24        0.489    0.497 3D P50 km           1.623
+ E1               maneuver→forecast, P95 24        4.216    4.246 3D P95 km           0.719
+ E1 maneuver→forecast [maneuver windows]  1        0.414    0.415 3D P50 km           0.103
+ E1    maneuver→forecast [quiet windows]  1        0.597    0.595 3D P50 km          -0.262
+ E1 maneuver→forecast [maneuver windows] 24        0.969    0.954 3D P50 km          -1.555
+ E1    maneuver→forecast [quiet windows] 24        0.429    0.429 3D P50 km          -0.013
+2026-09-13 16:17:09,874 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T16:17:09Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T16:17:09Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:76: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 16:17:11,265 INFO report: REPORT.md written (35 kB), figures: 4
+[2026-09-13T16:17:11Z] === orbpipe.report exit 0 ===
+[2026-09-13T16:17:11Z] proof chain done
+[2026-09-13T16:37:54Z] === rerun orbpipe.proof --force ===
+2026-09-13 16:38:01,894 INFO proof: satellites with POD truth in the test window: ['S1A', 'S2A', 'S2B', 'S3A', 'S3B']
+2026-09-13 16:38:18,452 INFO proof: P1 S3B: 760500 rows
+2026-09-13 16:39:04,938 INFO proof: P1 S2A: 1690598 rows
+2026-09-13 16:39:25,355 INFO proof: P1 S2B: 2021760 rows
+2026-09-13 16:39:41,129 INFO proof: P1 S3A: 2350530 rows
+2026-09-13 16:39:44,633 INFO proof: P1 S1A: 2342704 rows
+2026-09-13 16:41:11,359 INFO proof: P1 pooled P50 by keep x method:
+keep                       0.10   0.20   0.33   0.50   1.00
+method                                                     
+MTF                       0.583  0.535  0.523  0.517  0.514
+MTF-adaptive              0.726  0.580  0.538  0.523  0.515
+MTF-adaptive+T2-gate      0.731  0.596  0.562  0.542  0.528
+MTF-adaptive+oracle-gate  0.723  0.598  0.552  0.532  0.519
+MTF-wide                  0.584  0.536  0.525  0.518  0.514
+blend-2                   0.696  0.569  0.537  0.524  0.517
+nearest                   0.583  0.535  0.524  0.518  0.516
+2026-09-13 16:41:11,361 INFO proof: P1 CI:
+ keep                   method  nearest_p50  method_p50  rel_change_pct  ci_lo  ci_hi  win_rate
+ 0.10                      MTF        0.583       0.583          -0.009 -0.027  0.006     0.156
+ 0.10             MTF-adaptive        0.583       0.726          24.525 23.348 26.300     0.423
+ 0.10     MTF-adaptive+T2-gate        0.583       0.731          25.310 23.846 26.679     0.397
+ 0.10 MTF-adaptive+oracle-gate        0.583       0.723          24.077 21.856 25.740     0.252
+ 0.10                 MTF-wide        0.583       0.584           0.154  0.060  0.260     0.267
+ 0.10                  blend-2        0.583       0.696          19.402 18.246 20.562     0.457
+ 0.20                      MTF        0.535       0.535          -0.013 -0.053  0.012     0.206
+ 0.20             MTF-adaptive        0.535       0.580           8.419  7.676  9.219     0.478
+ 0.20     MTF-adaptive+T2-gate        0.535       0.596          11.406 10.412 12.429     0.449
+ 0.20 MTF-adaptive+oracle-gate        0.535       0.598          11.771 10.664 12.896     0.294
+ 0.20                 MTF-wide        0.535       0.536           0.158  0.037  0.294     0.406
+ 0.20                  blend-2        0.535       0.569           6.332  5.704  7.022     0.507
+ 0.33                      MTF        0.524       0.523          -0.115 -0.168 -0.060     0.287
+ 0.33             MTF-adaptive        0.524       0.538           2.602  2.222  3.026     0.505
+ 0.33     MTF-adaptive+T2-gate        0.524       0.562           7.200  6.515  8.033     0.470
+ 0.33 MTF-adaptive+oracle-gate        0.524       0.552           5.238  4.532  5.981     0.316
+ 0.33                 MTF-wide        0.524       0.525           0.113 -0.058  0.293     0.487
+ 0.33                  blend-2        0.524       0.537           2.431  2.009  2.885     0.523
+ 0.50                      MTF        0.518       0.517          -0.180 -0.245 -0.112     0.388
+ 0.50             MTF-adaptive        0.518       0.523           0.869  0.651  1.122     0.512
+ 0.50     MTF-adaptive+T2-gate        0.518       0.542           4.573  4.007  5.252     0.484
+ 0.50 MTF-adaptive+oracle-gate        0.518       0.532           2.719  2.180  3.261     0.327
+ 0.50                 MTF-wide        0.518       0.518           0.003 -0.201  0.177     0.510
+ 0.50                  blend-2        0.518       0.524           1.071  0.808  1.370     0.527
+ 1.00                      MTF        0.516       0.514          -0.361 -0.480 -0.221     0.499
+ 1.00             MTF-adaptive        0.516       0.515          -0.238 -0.421  0.005     0.515
+ 1.00     MTF-adaptive+T2-gate        0.516       0.528           2.384  2.021  2.873     0.492
+ 1.00 MTF-adaptive+oracle-gate        0.516       0.519           0.465  0.054  0.879     0.334
+ 1.00                 MTF-wide        0.516       0.514          -0.365 -0.542 -0.153     0.517
+ 1.00                  blend-2        0.516       0.517           0.217  0.014  0.470     0.531
+2026-09-13 16:41:37,424 INFO proof: empirical isolated-jump |dn/n|: n=1425, median=1.83e-05, p90=4.33e-05
+2026-09-13 16:41:57,464 INFO proof: P2 S3B done
+2026-09-13 16:42:38,577 INFO proof: P2 S2A done
+2026-09-13 16:42:55,802 INFO proof: P2 S2B done
+2026-09-13 16:42:56,662 INFO proof: P2 S1A done
+2026-09-13 16:43:01,757 INFO proof: P2 S3A done
+2026-09-13 16:43:03,426 INFO proof: P2 pooled:
+   p     pool       method      n  e3d_p50  e3d_p90  e3d_p99 sat
+0.00 PAF-lite MTF-adaptive 105822    0.516    0.948    2.262 ALL
+0.00 PAF-lite      nearest 105822    0.517    0.943    2.462 ALL
+0.00      raw MTF-adaptive 105822    0.515    0.944    1.925 ALL
+0.00      raw      nearest 105822    0.516    0.940    2.039 ALL
+0.02 PAF-lite MTF-adaptive 317466    0.518    0.954    2.820 ALL
+0.02 PAF-lite      nearest 317466    0.517    0.945    2.706 ALL
+0.02      raw MTF-adaptive 317466    0.524    0.974   10.159 ALL
+0.02      raw      nearest 317466    0.519    0.948    2.518 ALL
+0.05 PAF-lite MTF-adaptive 317466    0.522    0.966    7.748 ALL
+0.05 PAF-lite      nearest 317466    0.519    0.950    3.276 ALL
+0.05      raw MTF-adaptive 317466    0.538    1.040  719.902 ALL
+0.05      raw      nearest 317466    0.523    0.962    3.578 ALL
+0.10 PAF-lite MTF-adaptive 317466    0.530    0.998  579.557 ALL
+0.10 PAF-lite      nearest 317466    0.523    0.961    5.807 ALL
+0.10      raw MTF-adaptive 317466    0.563    1.289  868.489 ALL
+0.10      raw      nearest 317466    0.531    0.990   14.058 ALL
+2026-09-13 16:43:03,427 INFO proof: P2 detection:
+   p  n_tle  n_fault  fault_removed  clean_removed  recall_n_jump  recall_bstar_neg  recall_duplicate  fault_recall  false_removal_rate
+0.00  10640        0              0            140          0.000               0.0             0.000         0.000               0.013
+0.02  32036      576            442            530          0.667               1.0             0.671         0.767               0.017
+0.05  32220     1504           1137            703          0.624               1.0             0.700         0.756               0.023
+0.10  32527     3105           2283            993          0.595               1.0             0.677         0.735               0.034
+2026-09-13 16:43:49,326 INFO proof: P3 neighbour effect:
+  scope  n_neighbour_removed  n_neighbour_kept  nearest_raw_p50_when_nb_removed  nearest_PAF_p50_when_nb_removed  PAF_win_rate_when_nb_removed  nearest_raw_p90_when_nb_removed  nearest_PAF_p90_when_nb_removed  nearest_raw_p50_when_nb_kept  MTF_raw_p50_when_nb_removed  MTF_PAF_p50_when_nb_removed
+    ALL                 7205            120032                           0.2094                           0.3297                        0.3360                           0.9205                           1.1746                        0.0749                       0.2094                       0.3290
+DEB|GEO                   32                26                           0.2840                           0.4004                        0.5938                           2.9127                           1.8879                        0.4410                       0.2840                       0.4004
+DEB|HEO                   36               438                           0.3413                           0.6004                        0.3333                           1.4790                           2.5159                        0.7003                       0.3348                       0.6004
+DEB|LEO                  396             60254                           0.1628                           0.2462                        0.2980                           0.9607                           1.3059                        0.0878                       0.1596                       0.2454
+DEB|MEO                  221              2437                           0.3093                           0.6178                        0.2986                           2.0118                           4.2408                        0.3983                       0.3062                       0.6250
+PAY|GEO                 2409              3696                           0.2776                           0.4052                        0.3528                           1.1977                           1.3093                        0.4107                       0.2774                       0.4052
+PAY|HEO                 1072              2144                           0.2449                           0.4324                        0.2957                           0.9354                           1.3176                        0.3907                       0.2439                       0.4324
+PAY|LEO                  342             23642                           0.0345                           0.0492                        0.2602                           0.1102                           0.1480                        0.0305                       0.0330                       0.0492
+PAY|MEO                  337              5208                           0.1178                           0.1927                        0.3264                           0.4676                           0.7276                        0.1516                       0.1174                       0.1927
+R/B|GEO                 1020              1279                           0.1707                           0.2655                        0.3676                           0.6514                           0.6899                        0.2585                       0.1745                       0.2655
+R/B|HEO                  678              1972                           0.2244                           0.3422                        0.3451                           0.8066                           1.0581                        0.3432                       0.2244                       0.3379
+R/B|LEO                  120             12557                           0.0455                           0.0644                        0.3500                           0.1700                           0.2639                        0.0372                       0.0458                       0.0644
+R/B|MEO                  541              5782                           0.2211                           0.3388                        0.3475                           0.8286                           1.0518                        0.2269                       0.2238                       0.3336
+2026-09-13 16:43:49,328 INFO proof: P3 sparsity:
+   scope  n_epochs  n_obj  pct_ge2_within_12h  pct_ge2_within_24h  pct_ge1_within_12h  median_neighbour_gap_h  pct_neighbour_removed_by_paf
+     ALL    127237   3542               18.42               71.50               63.44                   10.05                          5.66
+ DEB|HEO       474     13               11.60               50.42               37.13                   22.80                          7.59
+ DEB|LEO     60650   1590               15.11               69.92               62.71                   10.25                          0.65
+ DEB|MEO      2658     89                7.15               34.95               37.81                   17.79                          8.31
+ PAY|GEO      6105    215                4.68               53.07               36.20                   16.39                         39.46
+ PAY|HEO      3216    113                3.76               43.03               31.16                   21.25                         33.33
+ PAY|LEO     23984    658               32.25               93.58               85.22                    7.19                          1.43
+ PAY|MEO      5545    154                3.07               30.35               24.42                   22.03                          6.08
+PAY|VLEO       400     10               34.75               94.75               85.50                    7.78                          0.25
+ R/B|GEO      2299     81                5.48               64.98               40.32                   13.54                         44.37
+ R/B|HEO      2650     87                6.26               41.36               34.11                   21.58                         25.58
+ R/B|LEO     12677    350               34.60               94.13               86.85                    6.97                          0.95
+ R/B|MEO      6323    175               13.06               55.73               49.39                   12.05                          8.56
+R/B|VLEO       118      3               42.37               95.76               90.68                    6.29                          0.00
+2026-09-13 16:43:59,113 INFO proof: P5 continuity:
+      method  n_switches  jump_p50_m  jump_p90_m  jump_max_m  bg_jump_p50_m  frac_jump_gt_50m  frac_jump_gt_200m  err_step_km  err_change_at_switch_km
+         MTF         576      7.4691     13.6600   7190.3509         4.3102            0.0104             0.0087       0.5376                   0.1301
+MTF-adaptive         576      7.5509     14.1149    382.9031         4.2802            0.0052             0.0035       0.5462                   0.1093
+     blend-2         576      7.2618     12.7053     17.8414         4.3098            0.0000             0.0000       0.5491                   0.1078
+     nearest         576     24.4972    137.5222   7190.3509         4.2866            0.2517             0.0573       0.5319                   0.1690
+2026-09-13 16:43:59,590 INFO proof: P4 storm sigma (T component):
+component                         model         split     n  cov68  cov95  nees  err_p50_km  sigma_p50_km                                                            g_factors_last_component
+        t                     sigma-age           all 26370  0.670  0.925 4.070       0.456         0.647 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t                     sigma-age storm(Ap>=40)  1992  0.656  0.901 6.076       0.442         0.649 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t                     sigma-age         quiet 24378  0.671  0.927 3.906       0.457         0.647 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t    sigma-age x g(Ap obs lag1)           all 26370  0.668  0.924 4.090       0.456         0.645 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t    sigma-age x g(Ap obs lag1) storm(Ap>=40)  1992  0.659  0.899 6.048       0.442         0.649 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t    sigma-age x g(Ap obs lag1)         quiet 24378  0.669  0.927 3.930       0.457         0.645 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t sigma-age x g(Ap T3-forecast)           all 26370  0.669  0.925 4.086       0.456         0.646 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t sigma-age x g(Ap T3-forecast) storm(Ap>=40)  1992  0.662  0.900 6.026       0.442         0.650 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t sigma-age x g(Ap T3-forecast)         quiet 24378  0.669  0.927 3.928       0.457         0.646 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t     sigma-age x g(Ap perfect)           all 26370  0.668  0.924 4.264       0.456         0.646 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t     sigma-age x g(Ap perfect) storm(Ap>=40)  1992  0.661  0.902 5.972       0.442         0.663 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t     sigma-age x g(Ap perfect)         quiet 24378  0.669  0.926 4.125       0.457         0.644 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+[2026-09-13T16:44:03Z] === orbpipe.proof --force exit 0 ===
+[2026-09-13T16:44:03Z] === rerun orbpipe.experiments --force ===
+2026-09-13 16:44:06,771 INFO experiments: E1:
+exp                                 edge  h  independent  chained    metric  rel_change_pct
+ E1            maneuver→forecast (T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1   phase+maneuver→forecast (T1,T2→T4)  1        0.571    0.571 3D P50 km          -0.009
+ E1             weather→forecast (T3→T4)  1        0.795    0.773 3D P50 km          -2.708
+ E1               maneuver→forecast, P95  1        1.219    1.222 3D P95 km           0.230
+ E1            maneuver→forecast (T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1   phase+maneuver→forecast (T1,T2→T4)  4        0.495    0.496 3D P50 km           0.161
+ E1             weather→forecast (T3→T4)  4        0.641    0.622 3D P50 km          -3.044
+ E1               maneuver→forecast, P95  4        1.695    1.695 3D P95 km           0.000
+ E1            maneuver→forecast (T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1   phase+maneuver→forecast (T1,T2→T4) 24        0.457    0.455 3D P50 km          -0.362
+ E1             weather→forecast (T3→T4) 24        0.489    0.497 3D P50 km           1.623
+ E1               maneuver→forecast, P95 24        4.216    4.246 3D P95 km           0.719
+ E1 maneuver→forecast [maneuver windows]  1        0.414    0.415 3D P50 km           0.103
+ E1    maneuver→forecast [quiet windows]  1        0.597    0.595 3D P50 km          -0.262
+ E1 maneuver→forecast [maneuver windows] 24        0.969    0.954 3D P50 km          -1.555
+ E1    maneuver→forecast [quiet windows] 24        0.429    0.429 3D P50 km          -0.013
+2026-09-13 16:44:06,791 INFO experiments: E3 pooled:
+               config sat split      n  n_tle  coverage  age_med_h  e3d_p50_km  e3d_p90_km  e3d_p95_km  abs_r_p50_km  abs_t_p50_km  abs_n_p50_km
+     C0 raw + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+C1 PAF-lite + nearest ALL   all 102978    NaN       1.0        NaN       0.510       0.920       1.026           NaN           NaN           NaN
+    C2 PAF-lite + MTF ALL   all 102978    NaN       1.0        NaN       0.509       0.918       1.042           NaN           NaN           NaN
+[2026-09-13T16:44:06Z] === orbpipe.experiments --force exit 0 ===
+[2026-09-13T16:44:06Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:76: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 16:44:16,123 INFO report: REPORT.md written (47 kB), figures: 6
+[2026-09-13T16:44:17Z] === orbpipe.report exit 0 ===
+[2026-09-13T16:44:17Z] proof chain 2 done
+[2026-09-13T16:47:13Z] === rerun orbpipe.proof 2 --force ===
+2026-09-13 16:47:15,845 INFO proof: satellites with POD truth in the test window: ['S1A', 'S2A', 'S2B', 'S3A', 'S3B']
+2026-09-13 16:47:40,174 INFO proof: empirical isolated-jump |dn/n|: n=1425, median=1.83e-05, p90=4.33e-05
+2026-09-13 16:48:04,423 INFO proof: P2 S3B done
+2026-09-13 16:49:09,616 INFO proof: P2 S2A done
+2026-09-13 16:49:46,126 INFO proof: P2 S1A done
+2026-09-13 16:49:51,992 INFO proof: P2 S2B done
+2026-09-13 16:49:54,311 INFO proof: P2 S3A done
+2026-09-13 16:49:56,536 INFO proof: P2 pooled:
+   p     pool       method      n  e3d_p50  e3d_p90  e3d_p99 sat
+0.00 PAF-lite          MTF 105822    0.515    0.943    2.340 ALL
+0.00 PAF-lite MTF-adaptive 105822    0.516    0.948    2.262 ALL
+0.00 PAF-lite      nearest 105822    0.517    0.943    2.462 ALL
+0.00      raw          MTF 105822    0.514    0.940    1.942 ALL
+0.00      raw MTF-adaptive 105822    0.515    0.944    1.925 ALL
+0.00      raw      nearest 105822    0.516    0.940    2.039 ALL
+0.02 PAF-lite          MTF 317466    0.517    0.948    2.993 ALL
+0.02 PAF-lite MTF-adaptive 317466    0.518    0.954    2.820 ALL
+0.02 PAF-lite      nearest 317466    0.517    0.945    2.706 ALL
+0.02      raw          MTF 317466    0.522    0.964    6.600 ALL
+0.02      raw MTF-adaptive 317466    0.524    0.974   10.159 ALL
+0.02      raw      nearest 317466    0.519    0.948    2.518 ALL
+0.05 PAF-lite          MTF 317466    0.520    0.959    7.055 ALL
+0.05 PAF-lite MTF-adaptive 317466    0.522    0.966    7.748 ALL
+0.05 PAF-lite      nearest 317466    0.519    0.950    3.276 ALL
+0.05      raw          MTF 317466    0.534    1.013  673.380 ALL
+0.05      raw MTF-adaptive 317466    0.538    1.040  719.902 ALL
+0.05      raw      nearest 317466    0.523    0.962    3.578 ALL
+0.10 PAF-lite          MTF 317466    0.528    0.984  325.528 ALL
+0.10 PAF-lite MTF-adaptive 317466    0.530    0.998  579.557 ALL
+0.10 PAF-lite      nearest 317466    0.523    0.961    5.807 ALL
+0.10      raw          MTF 317466    0.554    1.169  934.244 ALL
+0.10      raw MTF-adaptive 317466    0.563    1.289  868.489 ALL
+0.10      raw      nearest 317466    0.531    0.990   14.058 ALL
+2026-09-13 16:49:56,538 INFO proof: P2 detection:
+   p  n_tle  n_fault  fault_removed  clean_removed  recall_n_jump  recall_bstar_neg  recall_duplicate  fault_recall  false_removal_rate
+0.00  10640        0              0            140          0.000               0.0             0.000         0.000               0.013
+0.02  32036      576            442            530          0.667               1.0             0.671         0.767               0.017
+0.05  32220     1504           1137            703          0.624               1.0             0.700         0.756               0.023
+0.10  32527     3105           2283            993          0.595               1.0             0.677         0.735               0.034
+[2026-09-13T16:49:57Z] === orbpipe.proof 2 --force exit 0 ===
+[2026-09-13T16:49:57Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:76: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-13 16:49:59,182 INFO report: REPORT.md written (47 kB), figures: 6
+[2026-09-13T16:49:59Z] === orbpipe.report exit 0 ===
+[2026-09-13T16:49:59Z] proof chain 3 done
+[2026-09-14T02:39:27Z] === rerun orbpipe.chain_proof 12345 --force ===
+2026-09-14 02:39:29,439 INFO chain_proof: C1 S1A: 110 T2 flags over 8874 TLEs; 8.2% of origins flagged (oracle 33.0%)
+2026-09-14 02:39:30,779 INFO chain_proof: C1 S1B: 227 T2 flags over 8236 TLEs; 0.3% of origins flagged (oracle 0.0%)
+2026-09-14 02:39:32,181 INFO chain_proof: C1 S2A: 291 T2 flags over 8705 TLEs; 17.6% of origins flagged (oracle 13.1%)
+2026-09-14 02:39:33,623 INFO chain_proof: C1 S2B: 302 T2 flags over 8475 TLEs; 14.7% of origins flagged (oracle 0.0%)
+2026-09-14 02:39:35,195 INFO chain_proof: C1 S3A: 206 T2 flags over 9873 TLEs; 20.8% of origins flagged (oracle 11.6%)
+2026-09-14 02:39:35,944 INFO chain_proof: C1 S3B: 177 T2 flags over 4617 TLEs; 16.6% of origins flagged (oracle 0.0%)
+2026-09-14 02:39:36,065 INFO chain_proof: C1 (T component, h=all):
+                     model                  split     n  cov68  cov95  nees  err_p50_km  sigma_p50_km
+                 sigma-age                    all 26370  0.646  0.920 4.489       0.456         0.616
+                 sigma-age post-maneuver (oracle)  5400  0.594  0.818 7.272       0.494         0.617
+                 sigma-age     no recent maneuver 20970  0.659  0.946 3.772       0.449         0.616
+                 sigma-age             T2-flagged  5904  0.640  0.914 3.847       0.467         0.614
+    sigma-age x g(T2 flag)                    all 26370  0.621  0.906 5.013       0.456         0.601
+    sigma-age x g(T2 flag) post-maneuver (oracle)  5400  0.549  0.797 8.476       0.494         0.577
+    sigma-age x g(T2 flag)     no recent maneuver 20970  0.639  0.934 4.122       0.449         0.606
+    sigma-age x g(T2 flag)             T2-flagged  5904  0.527  0.851 6.189       0.467         0.484
+sigma-age x g(oracle flag)                    all 26370  0.671  0.930 3.789       0.456         0.634
+sigma-age x g(oracle flag) post-maneuver (oracle)  5400  0.714  0.868 3.853       0.494         0.847
+sigma-age x g(oracle flag)     no recent maneuver 20970  0.659  0.946 3.772       0.449         0.616
+sigma-age x g(oracle flag)             T2-flagged  5904  0.699  0.924 2.997       0.467         0.679
+2026-09-14 02:39:36,065 INFO chain_proof: C1 g factors: T2 {"r": 0.669, "t": 0.788, "n": 0.588}  oracle {"r": 0.977, "t": 1.374, "n": 1.074}
+2026-09-14 02:39:36,097 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-14 02:39:56,272 INFO chain_proof: C2: 450 objects, 72252 pairs, 281 reference approaches < 10 km
+2026-09-14 02:41:14,734 INFO chain_proof: C2:
+ lead_h           ranking                          target  n_pred  n_positive  recall_at_k  recall_at_2k  precision_at_10  spearman_score_vs_neg_truemiss
+      6        point miss matched (true approach < 10 km)    1306          84        0.167         0.286              0.2                           0.052
+      6        point miss    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.052
+      6    Pc sigma-fixed matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                           0.053
+      6    Pc sigma-fixed    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.053
+      6      Pc sigma-age matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6      Pc sigma-age    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+      6 Pc sigma-age x T2 matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6 Pc sigma-age x T2    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+     24        point miss matched (true approach < 10 km)    1305          84        0.155         0.333              0.2                           0.046
+     24        point miss    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                           0.046
+     24    Pc sigma-fixed matched (true approach < 10 km)    1305          84        0.167         0.333              0.2                           0.046
+     24    Pc sigma-fixed    dangerous (true miss < 5 km)    1305          16        0.000         0.188              0.0                           0.046
+     24      Pc sigma-age matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24      Pc sigma-age    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+     24 Pc sigma-age x T2 matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24 Pc sigma-age x T2    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+2026-09-14 02:41:15,479 INFO chain_proof: C3:
+                            policy  n_events  pre_pc_ge_1e4_frac  safety_rate_pc  safety_rate_2km  dv_mean_m_s  dv_p90_m_s  min_dist_p50_m  pc_post_p90  decision_sigma_p50_m  true_sigma_p50_m
+                       No-maneuver       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001                   NaN           725.714
+               Distance-max (2 km)       117               0.248           1.000              1.0       10.338        15.0        2016.671        0.000                   NaN           725.714
+   Pc-gate, calibrated sigma (CDM)       117               0.248           1.000              0.0        0.303         1.2         501.996        0.000               725.714           725.714
+Pc-gate, OrbBench sigma-age (24 h)       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001               648.522           725.714
+              Pc-gate, fixed sigma       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001               584.659           725.714
+  Pc-gate, conservative 2 km sigma       117               0.248           0.752              0.0        0.000         0.0         470.712        0.001              2000.000           725.714
+2026-09-14 02:46:09,698 INFO chain_proof: C4 1-min trajectories 100/600
+2026-09-14 02:47:04,596 INFO chain_proof: C4 1-min trajectories 200/600
+2026-09-14 02:50:09,884 INFO chain_proof: C4 1-min trajectories 300/600
+[2026-09-14T02:51:29Z] === rerun orbpipe.chain_proof 2 --force ===
+2026-09-14 02:51:39,357 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-14 02:52:00,744 INFO chain_proof: C2: 450 objects, 72252 pairs, 281 reference approaches < 10 km
+2026-09-14 02:52:54,831 ERROR chain_proof: chain proof failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 316, in main
+    c2 = c2_uq_ranking(); save_df(c2, "c2_uq_ranking.csv"); log.info("C2:\n" + c2.round(3).to_string(index=False))
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 154, in c2_uq_ranking
+    gT = float(np.mean([g[c]["flag_t2"] for c in RTN])) if g else 1.0
+                        ~~~~^^^^^^^^^^^
+KeyError: 'flag_t2'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 334, in <module>
+    main(parts=args[0] if args else "12345", force="--force" in sys.argv)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 316, in main
+    c2 = c2_uq_ranking(); save_df(c2, "c2_uq_ranking.csv"); log.info("C2:\n" + c2.round(3).to_string(index=False))
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/chain_proof.py", line 154, in c2_uq_ranking
+    gT = float(np.mean([g[c]["flag_t2"] for c in RTN])) if g else 1.0
+                        ~~~~^^^^^^^^^^^
+KeyError: 'flag_t2'
+[2026-09-14T02:52:55Z] === orbpipe.chain_proof 2 --force exit 0 ===
+2026-09-14 02:53:35,909 INFO chain_proof: C4 1-min trajectories 400/600
+2026-09-14 02:57:31,439 INFO chain_proof: C4 1-min trajectories 500/600
+[2026-09-14T02:58:20Z] === rerun orbpipe.chain_proof 2 --force ===
+2026-09-14 02:58:27,917 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-14 02:58:51,778 INFO chain_proof: C2: 450 objects, 72252 pairs, 281 reference approaches < 10 km
+2026-09-14 03:00:25,295 INFO chain_proof: C2:
+ lead_h                   ranking                          target  n_pred  n_positive  recall_at_k  recall_at_2k  precision_at_10  spearman_score_vs_neg_truemiss
+      6                point miss matched (true approach < 10 km)    1306          84        0.167         0.286              0.2                           0.052
+      6                point miss    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.052
+      6            Pc sigma-fixed matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                           0.053
+      6            Pc sigma-fixed    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.0                           0.053
+      6              Pc sigma-age matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6              Pc sigma-age    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+      6         Pc sigma-age x T2 matched (true approach < 10 km)    1306          84        0.167         0.298              0.2                          -0.030
+      6         Pc sigma-age x T2    dangerous (true miss < 5 km)    1306          16        0.000         0.188              0.0                          -0.030
+      6 Pc sigma-object (LOO p50) matched (true approach < 10 km)    1306          84        0.095         0.167              0.4                          -0.101
+      6 Pc sigma-object (LOO p50)    dangerous (true miss < 5 km)    1306          16        0.062         0.062              0.1                          -0.101
+      6 Pc sigma-object (LOO p90) matched (true approach < 10 km)    1306          84        0.119         0.167              0.3                          -0.124
+      6 Pc sigma-object (LOO p90)    dangerous (true miss < 5 km)    1306          16        0.062         0.125              0.1                          -0.124
+      6       miss / sigma-object matched (true approach < 10 km)    1306          84        0.095         0.167              0.3                          -0.118
+      6       miss / sigma-object    dangerous (true miss < 5 km)    1306          16        0.000         0.062              0.0                          -0.118
+     24                point miss matched (true approach < 10 km)    1305          84        0.155         0.333              0.2                           0.046
+     24                point miss    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                           0.046
+     24            Pc sigma-fixed matched (true approach < 10 km)    1305          84        0.167         0.333              0.2                           0.046
+     24            Pc sigma-fixed    dangerous (true miss < 5 km)    1305          16        0.000         0.188              0.0                           0.046
+     24              Pc sigma-age matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24              Pc sigma-age    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+     24         Pc sigma-age x T2 matched (true approach < 10 km)    1305          84        0.167         0.286              0.2                          -0.028
+     24         Pc sigma-age x T2    dangerous (true miss < 5 km)    1305          16        0.000         0.125              0.0                          -0.028
+     24 Pc sigma-object (LOO p50) matched (true approach < 10 km)    1305          84        0.083         0.167              0.3                          -0.059
+     24 Pc sigma-object (LOO p50)    dangerous (true miss < 5 km)    1305          16        0.000         0.000              0.0                          -0.059
+     24 Pc sigma-object (LOO p90) matched (true approach < 10 km)    1305          84        0.119         0.167              0.1                          -0.081
+     24 Pc sigma-object (LOO p90)    dangerous (true miss < 5 km)    1305          16        0.062         0.062              0.0                          -0.081
+     24       miss / sigma-object matched (true approach < 10 km)    1305          84        0.095         0.167              0.1                          -0.067
+     24       miss / sigma-object    dangerous (true miss < 5 km)    1305          16        0.000         0.000              0.0                          -0.067
+[2026-09-14T03:00:25Z] === orbpipe.chain_proof 2 --force exit 0 ===
+2026-09-14 03:00:33,022 INFO chain_proof: C4 1-min trajectories 600/600
+2026-09-14 03:00:48,428 INFO chain_proof: C4: 600 LEO objects, 58825 candidate pairs of 179700, 139 reference approaches < 10 km
+2026-09-14 03:00:48,669 INFO chain_proof: C4:
+                  ordering  0.02  0.05   0.1  0.15   0.2   0.3   0.4   0.5  0.75  1.0   AUC  n_truth  n_pairs  n_objects
+    T5 shell density (min) 0.091 0.167 0.227 0.326 0.371 0.492 0.606 0.742 0.886  1.0 0.656      139    58825        600
+T5 shell density (product) 0.091 0.174 0.227 0.303 0.348 0.477 0.591 0.652 0.902  1.0 0.636      139    58825        600
+                    oracle 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000  1.0 0.999      139    58825        600
+                    random 0.015 0.045 0.091 0.129 0.205 0.280 0.447 0.538 0.780  1.0 0.519      139    58825        600
+          same-shell first 0.030 0.106 0.242 0.356 0.477 0.636 0.720 0.811 0.939  1.0 0.710      139    58825        600
+2026-09-14 03:00:48,704 INFO chain_proof: A0 vs A1:
+                                       stage                                      metric                               A0          A0_value                        A1         A1_value
+                     Trajectory (T4 product)       kinematic jump at TLE switch, P90 (m)                      nearest TLE        137.522193                       MTF        13.660034
+Uncertainty (T2->UQ), post-maneuver (oracle)             along-track 95% coverage / NEES                        sigma-age      0.818 / 7.27         sigma-age x g(T2)     0.797 / 8.48
+                   Uncertainty (T2->UQ), all             along-track 95% coverage / NEES                        sigma-age      0.920 / 4.49         sigma-age x g(T2)     0.906 / 5.01
+          Warning ranking (UQ->T6), lead 6 h                 recall@K of true approaches                       point miss          0.166667        Pc(sigma-age x T2)         0.166667
+         Warning ranking (UQ->T6), lead 24 h                 recall@K of true approaches                       point miss          0.154762        Pc(sigma-age x T2)         0.166667
+     Screening budget (T5->T6), 20% of pairs              recall of reference approaches                     random order          0.204545          T5 shell density         0.348485
+     Screening budget (T5->T6), 50% of pairs              recall of reference approaches                     random order          0.537879          T5 shell density         0.651515
+                          Avoidance (UQ->T7) mean delta-v (m/s) at safety (true Pc<1e-4)                    distance rule 10.34 (safe 1.00)   Pc-gate, OrbBench sigma 0.00 (safe 0.75)
+                          Avoidance (UQ->T7) mean delta-v (m/s) at safety (true Pc<1e-4) Pc-gate, conservative 2 km sigma  0.00 (safe 0.75) Pc-gate, calibrated sigma 0.30 (safe 1.00)
+[2026-09-14T03:00:51Z] === orbpipe.chain_proof 12345 --force exit 0 ===
+[2026-09-14T03:00:51Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:76: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-14 03:00:54,172 INFO report: REPORT.md written (59 kB), figures: 8
+[2026-09-14T03:00:54Z] === orbpipe.report exit 0 ===
+[2026-09-14T03:00:54Z] chain proof done
+[2026-09-14T03:01:05Z] === rerun orbpipe.chain_proof 5 --force ===
+2026-09-14 03:01:08,251 INFO chain_proof: A0 vs A1:
+                                  stage                                metric           A0   A0_value                 A1  A1_value
+                Trajectory (T4 product) kinematic jump at TLE switch, P90 (m)  nearest TLE 137.522193                MTF 13.660034
+     Warning ranking (UQ->T6), lead 6 h           recall@K of true approaches   point miss   0.166667 Pc(sigma-age x T2)  0.166667
+    Warning ranking (UQ->T6), lead 24 h           recall@K of true approaches   point miss   0.154762 Pc(sigma-age x T2)  0.166667
+Screening budget (T5->T6), 20% of pairs        recall of reference approaches random order   0.204545   T5 shell density  0.348485
+Screening budget (T5->T6), 50% of pairs        recall of reference approaches random order   0.537879   T5 shell density  0.651515
+2026-09-14 03:01:08,697 WARNING chain_proof: figures skipped: Data cannot be log-scaled because all values are <= 0.
+[2026-09-14T03:01:08Z] === orbpipe.chain_proof 5 --force exit 0 ===
+[2026-09-14T03:01:08Z] === rerun orbpipe.report ===
+/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py:76: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  parts = [f"# OrbBench unified STM pipeline — automated results\n\nGenerated {pd.Timestamp.utcnow():%Y-%m-%d %H:%M} UTC. Window {C.WINDOW_START[:10]} → {C.WINDOW_END[:10]}; cohort = objects with L2 trajectories staged in `data/objects.csv`; truth cohort = Sentinel POD.\n"]
+2026-09-14 03:01:10,572 INFO report: REPORT.md written (58 kB), figures: 8
+[2026-09-14T03:01:10Z] === orbpipe.report exit 0 ===
+[2026-09-14T03:01:10Z] chain finish done

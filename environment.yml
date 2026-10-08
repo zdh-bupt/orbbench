@@ -1,0 +1,11 @@
+# Conda environment for the CPU pipeline and for scripts/make_table4.py.
+# The published runs used Python 3.14.4 (pipeline) and 3.13.11 (T1 sub-project); the pinned packages need Python >= 3.11.
+# For the GPU stage (orbpipe.deep_forecast) use requirements/pipeline-cuda.txt instead of pipeline-cpu.txt.
+name: orbbench-table4
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.12
+  - pip
+  - pip:
+      - -r requirements/pipeline-cpu.txt

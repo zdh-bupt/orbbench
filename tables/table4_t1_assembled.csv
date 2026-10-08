@@ -1,0 +1,5 @@
+Method,Macro-F1,ARI
+Constant stable,0.3148,0.0
+PCA + KMeans,0.701,0.7938
+PELT + KMeans,0.4708,0.6598
+Transformer + KMeans,0.3244,-0.0168

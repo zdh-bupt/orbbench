@@ -1,0 +1,165 @@
+2026-09-14 05:24:08,243 INFO starlink_chain: S1 44741: 11840 rows
+2026-09-14 05:24:10,780 INFO starlink_chain: S1 44747: 13000 rows
+2026-09-14 05:24:16,929 INFO starlink_chain: S1 44744: 12320 rows
+2026-09-14 05:24:32,221 INFO starlink_chain: S1 44714: 12880 rows
+2026-09-14 05:24:44,627 INFO starlink_chain: S1 44723: 12800 rows
+2026-09-14 05:25:06,975 INFO starlink_chain: S1 44718: 12840 rows
+2026-09-14 05:25:21,087 INFO starlink_chain: S1 44748: 12280 rows
+2026-09-14 05:25:44,195 INFO starlink_chain: S1 44751: 12080 rows
+2026-09-14 05:25:48,677 INFO starlink_chain: S1 44752: 12800 rows
+2026-09-14 05:26:00,073 INFO starlink_chain: S1 44753: 12720 rows
+2026-09-14 05:26:19,765 INFO starlink_chain: S1 44771: 11880 rows
+2026-09-14 05:26:23,680 INFO starlink_chain: S1 45179: 4880 rows
+2026-09-14 05:26:35,426 INFO starlink_chain: S1 44768: 12440 rows
+2026-09-14 05:26:51,295 INFO starlink_chain: S1 44772: 12480 rows
+2026-09-14 05:27:11,822 INFO starlink_chain: S1 45206: 12080 rows
+2026-09-14 05:27:27,920 INFO starlink_chain: S1 45227: 12520 rows
+2026-09-14 05:27:31,173 INFO starlink_chain: S1 45360: 11560 rows
+2026-09-14 05:27:31,233 INFO starlink_chain: T2 threshold tuned on train vs MEME thrust arcs: k=2.0
+2026-09-14 05:27:31,309 INFO starlink_chain: T2 vs MEME thrust arcs (test):
+ pool   k  n_intervals  n_thrust  precision  recall  thrust_fraction
+step6 2.0         1320      1083      0.844    0.37             0.82
+2026-09-14 05:33:03,159 INFO starlink_chain: S1 3D P50 (test, all):
+h                          1.0    4.0    12.0   24.0
+method                                              
++PAF +MTF                 0.904  1.166  2.568  6.009
++PAF +MTF +T2             0.898  1.162  2.539  6.009
++PAF +MTF +T2 +T1         0.895  1.155  2.532  5.988
++PAF +MTF +gate           0.773  1.016  2.225  5.515
++PAF prev                 0.895  1.152  2.526  5.981
++PAF-lite(T1-aware) +MTF  0.761  0.994  2.198  5.422
++PAF-lite(blind) +MTF     0.763  0.997  2.200  5.374
+A0 raw prev               0.748  0.986  2.166  5.316
+raw MTF                   0.759  0.992  2.203  5.464
+raw MTF +T2               0.752  0.989  2.190  5.415
+2026-09-14 05:33:03,165 INFO starlink_chain: S1 3D P50 post-thrust:
+h                          1.0    4.0    12.0   24.0
+method                                              
++PAF +MTF                 0.901  1.166  2.568  6.009
++PAF +MTF +T2             0.898  1.162  2.539  6.009
++PAF +MTF +T2 +T1         0.895  1.155  2.532  5.988
++PAF +MTF +gate           0.773  1.016  2.225  5.515
++PAF prev                 0.895  1.152  2.526  5.981
++PAF-lite(T1-aware) +MTF  0.761  0.994  2.198  5.422
++PAF-lite(blind) +MTF     0.763  0.997  2.200  5.374
+A0 raw prev               0.748  0.986  2.166  5.316
+raw MTF                   0.759  0.992  2.203  5.464
+raw MTF +T2               0.752  0.989  2.190  5.415
+2026-09-14 05:33:03,168 INFO starlink_chain: S1 win rates:
+   h                   method  n_sat  win_rate_vs_A0  median_rel_change_pct
+ 1.0                +PAF +MTF     17           0.059                  9.389
+ 1.0            +PAF +MTF +T2     17           0.059                  7.202
+ 1.0        +PAF +MTF +T2 +T1     17           0.000                  7.280
+ 1.0          +PAF +MTF +gate     17           0.235                  1.201
+ 1.0                +PAF prev     17           0.000                  7.583
+ 1.0 +PAF-lite(T1-aware) +MTF     17           0.176                  0.380
+ 1.0    +PAF-lite(blind) +MTF     17           0.176                  0.807
+ 1.0                  raw MTF     17           0.176                  0.201
+ 1.0              raw MTF +T2     17           0.353                  0.000
+ 4.0                +PAF +MTF     17           0.000                 11.671
+ 4.0            +PAF +MTF +T2     17           0.000                  8.022
+ 4.0        +PAF +MTF +T2 +T1     17           0.000                  3.377
+ 4.0          +PAF +MTF +gate     17           0.118                  4.721
+ 4.0                +PAF prev     17           0.000                  3.130
+ 4.0 +PAF-lite(T1-aware) +MTF     17           0.059                  1.161
+ 4.0    +PAF-lite(blind) +MTF     17           0.059                  1.514
+ 4.0                  raw MTF     17           0.294                  1.514
+ 4.0              raw MTF +T2     17           0.235                  0.393
+12.0                +PAF +MTF     17           0.176                 11.249
+12.0            +PAF +MTF +T2     17           0.176                  8.773
+12.0        +PAF +MTF +T2 +T1     17           0.176                  8.817
+12.0          +PAF +MTF +gate     17           0.235                  1.885
+12.0                +PAF prev     17           0.000                  6.041
+12.0 +PAF-lite(T1-aware) +MTF     17           0.294                  0.554
+12.0    +PAF-lite(blind) +MTF     17           0.353                  0.629
+12.0                  raw MTF     17           0.353                  0.554
+12.0              raw MTF +T2     17           0.529                 -0.070
+24.0                +PAF +MTF     17           0.294                 10.333
+24.0            +PAF +MTF +T2     17           0.235                  6.177
+24.0        +PAF +MTF +T2 +T1     17           0.235                  6.940
+24.0          +PAF +MTF +gate     17           0.353                  2.067
+24.0                +PAF prev     17           0.176                  4.642
+24.0 +PAF-lite(T1-aware) +MTF     17           0.235                  0.012
+24.0    +PAF-lite(blind) +MTF     17           0.235                  0.012
+24.0                  raw MTF     17           0.353                  0.077
+24.0              raw MTF +T2     17           0.294                  0.012
+2026-09-14 05:33:03,173 INFO starlink_chain: S1 correctors:
+                    base             corrector    h    n  base_p50_km  corrected_p50_km  base_p90_km  corrected_p90_km  t_abs_p50_base  t_abs_p50_corr split
++PAF-lite(T1-aware) +MTF            orbit-only  1.0 4473        0.761             3.570        3.866            23.644           0.731           3.547   NaN
++PAF-lite(T1-aware) +MTF            orbit-only  4.0 4473        0.994             4.494        5.235            24.438           0.970           4.475   NaN
++PAF-lite(T1-aware) +MTF            orbit-only 12.0 4473        2.198             6.519       11.331            38.257           2.186           6.495   NaN
++PAF-lite(T1-aware) +MTF            orbit-only 24.0 4473        5.422            13.422       27.280            79.978           5.412          13.400   NaN
++PAF-lite(T1-aware) +MTF +T1 (SMA rate, phase)  1.0 4473        0.761             3.726        3.866            17.674           0.731           3.696   NaN
++PAF-lite(T1-aware) +MTF +T1 (SMA rate, phase)  4.0 4473        0.994             4.230        5.235            18.613           0.970           4.213   NaN
++PAF-lite(T1-aware) +MTF +T1 (SMA rate, phase) 12.0 4473        2.198             7.490       11.331            38.484           2.186           7.481   NaN
++PAF-lite(T1-aware) +MTF +T1 (SMA rate, phase) 24.0 4473        5.422            15.639       27.280            69.703           5.412          15.619   NaN
++PAF-lite(T1-aware) +MTF               +T1 +T2  1.0 4473        0.761             2.706        3.866            15.105           0.731           2.690   NaN
++PAF-lite(T1-aware) +MTF               +T1 +T2  4.0 4473        0.994             2.913        5.235            16.069           0.970           2.889   NaN
++PAF-lite(T1-aware) +MTF               +T1 +T2 12.0 4473        2.198             5.545       11.331            26.262           2.186           5.543   NaN
++PAF-lite(T1-aware) +MTF               +T1 +T2 24.0 4473        5.422            14.470       27.280            68.966           5.412          14.449   NaN
+2026-09-14 05:33:03,194 INFO starlink_chain: retention step6 / paf-T1 (per sat): {44714: {'ret_step6': 0.69, 'ret_paf_t1': 0.83}, 44718: {'ret_step6': 0.85, 'ret_paf_t1': 0.97}, 44723: {'ret_step6': 0.79, 'ret_paf_t1': 0.85}, 44741: {'ret_step6': 0.7, 'ret_paf_t1': 0.85}, 44744: {'ret_step6': 0.75, 'ret_paf_t1': 0.85}, 44747: {'ret_step6': 0.84, 'ret_paf_t1': 0.85}, 44748: {'ret_step6': 0.69, 'ret_paf_t1': 0.82}, 44751: {'ret_step6': 0.7, 'ret_paf_t1': 0.84}, 44752: {'ret_step6': 0.76, 'ret_paf_t1': 0.84}, 44753: {'ret_step6': 0.8, 'ret_paf_t1': 0.82}, 44768: {'ret_step6': 0.92, 'ret_paf_t1': 0.95}, 44771: {'ret_step6': 0.26, 'ret_paf_t1': 0.88}, 44772: {'ret_step6': 0.8, 'ret_paf_t1': 0.95}, 45179: {'ret_step6': 1.0, 'ret_paf_t1': 0.9}, 45206: {'ret_step6': 0.71, 'ret_paf_t1': 0.86}, 45227: {'ret_step6': 0.83, 'ret_paf_t1': 0.85}, 45360: {'ret_step6': 0.35, 'ret_paf_t1': 0.98}}
+2026-09-14 05:33:03,199 INFO starlink_chain: S1 UQ (T, all h):
+      product                            model            split     n  cov68  cov95         nees  sigma_p50_km
+  A0 raw prev                      sigma-fixed              all 17892  0.684  0.811 7.770630e+02         3.400
+  A0 raw prev                      sigma-fixed post-thrust(48h) 17876  0.684  0.811 7.777570e+02         3.400
+  A0 raw prev                        sigma-age              all 17892  0.496  0.641 2.736622e+08         2.961
+  A0 raw prev                        sigma-age post-thrust(48h) 17876  0.495  0.641 2.739070e+08         2.961
+  A0 raw prev                sigma-age x g(T2)              all 17892  0.624  0.715 2.274349e+08         5.079
+  A0 raw prev                sigma-age x g(T2) post-thrust(48h) 17876  0.624  0.715 2.276383e+08         5.080
+  A0 raw prev operator covariance (MEME) alone              all 17892  0.062  0.117 3.508496e+07         0.097
+  A0 raw prev operator covariance (MEME) alone post-thrust(48h) 17876  0.063  0.117 3.511634e+07         0.097
+    +PAF +MTF                      sigma-fixed              all 17892  0.629  0.739 5.652636e+04         3.816
+    +PAF +MTF                      sigma-fixed post-thrust(48h) 17876  0.629  0.739 5.657682e+04         3.816
+    +PAF +MTF                        sigma-age              all 17892  0.444  0.580 2.398704e+06         3.785
+    +PAF +MTF                        sigma-age post-thrust(48h) 17876  0.444  0.580 2.400692e+06         3.785
+    +PAF +MTF                sigma-age x g(T2)              all 17892  0.580  0.656 4.311254e+05         6.620
+    +PAF +MTF                sigma-age x g(T2) post-thrust(48h) 17876  0.580  0.656 4.313525e+05         6.618
+    +PAF +MTF operator covariance (MEME) alone              all 17892  0.056  0.106 2.810710e+10         0.097
+    +PAF +MTF operator covariance (MEME) alone post-thrust(48h) 17876  0.056  0.106 2.813224e+10         0.097
++PAF +MTF +T2                      sigma-fixed              all 17892  0.631  0.739 5.624715e+04         3.826
++PAF +MTF +T2                      sigma-fixed post-thrust(48h) 17876  0.631  0.739 5.629736e+04         3.826
++PAF +MTF +T2                        sigma-age              all 17892  0.443  0.580 2.084471e+06         3.773
++PAF +MTF +T2                        sigma-age post-thrust(48h) 17876  0.443  0.580 2.086176e+06         3.772
++PAF +MTF +T2                sigma-age x g(T2)              all 17892  0.579  0.656 3.948676e+05         6.568
++PAF +MTF +T2                sigma-age x g(T2) post-thrust(48h) 17876  0.579  0.656 3.950606e+05         6.567
++PAF +MTF +T2 operator covariance (MEME) alone              all 17892  0.056  0.106 2.810710e+10         0.097
++PAF +MTF +T2 operator covariance (MEME) alone post-thrust(48h) 17876  0.056  0.106 2.813223e+10         0.097
+2026-09-14 05:33:07,964 INFO starlink_chain: S2: 17 Starlinks, 134 reference approaches < 50.0 km in test period; miss quantiles [17.57, 34.23, 47.87]; true Pc>=1e-6: 0
+2026-09-14 05:48:04,344 INFO starlink_chain: S2:
+ lead_h         chain  n_pred  n_matched  precision  recall_ref_lt50km  recall_ref_lt10km  recall_truePc_ge_1e6  miss_err_med_km  spearman_pcorb_vs_truepc  spearman_pointmiss_vs_truepc  spearman_pcfixed_vs_truepc  recall_at_k_pc_orb  recall_at_k_pc_fixed  recall_at_k_point
+      6   A0 raw prev     581          9      0.015              0.067                0.0                   NaN           16.918                       NaN                           NaN                         NaN                 NaN                   NaN                NaN
+      6 A1 PAF+MTF+T2     625         11      0.018              0.082                0.0                   NaN           14.701                       NaN                           NaN                         NaN                 NaN                   NaN                NaN
+     24   A0 raw prev     549         10      0.018              0.075                0.0                   NaN           10.146                       NaN                           NaN                         NaN                 NaN                   NaN                NaN
+     24 A1 PAF+MTF+T2     591         13      0.022              0.097                0.0                   NaN           12.002                       NaN                           NaN                         NaN                 NaN                   NaN                NaN
+2026-09-14 05:48:04,345 INFO starlink_chain: S3:
+                              policy  n_events  safety_rate_true_pc  safety_rate_2km  dv_mean_m_s  dv_p90_m_s
+                         No-maneuver        13                  1.0              1.0          0.0         0.0
+                Distance rule (2 km)        13                  1.0              1.0          0.0         0.0
+              Pc-gate OrbBench sigma        13                  1.0              1.0          0.0         0.0
+                 Pc-gate fixed sigma        13                  1.0              1.0          0.0         0.0
+Pc-gate operator covariance (oracle)        13                  1.0              1.0          0.0         0.0
+2026-09-14 05:48:04,374 INFO starlink_chain: S4 ablation:
+   h                                                         config  forecast_p50_km  forecast_p90_km  cov95_T  nees_T
+ 4.0                            B5 TLE-only (raw prev, fixed sigma)            0.986            5.162      NaN     NaN
+ 4.0                       B1 no maneuver info (PAF+MTF, sigma-age)            1.166           39.779      NaN     NaN
+ 4.0 B4 no precise reference (PAF+MTF+T2, uncalibrated fixed sigma)            1.162           38.668      NaN     NaN
+ 4.0                        B0 full (PAF+MTF+T2, sigma-age x g(T2))            1.162           38.668      NaN     NaN
+24.0                            B5 TLE-only (raw prev, fixed sigma)            5.316           27.206      NaN     NaN
+24.0                       B1 no maneuver info (PAF+MTF, sigma-age)            6.009          113.040      NaN     NaN
+24.0 B4 no precise reference (PAF+MTF+T2, uncalibrated fixed sigma)            6.009          110.986      NaN     NaN
+24.0                        B0 full (PAF+MTF+T2, sigma-age x g(T2))            6.009          110.986      NaN     NaN
+2026-09-14 05:48:04,375 INFO starlink_chain: A0 vs A1 (Starlink):
+                         stage                                        metric              A0    A0_value                     A1    A1_value
+           T4 forecast vs MEME                               3D P50 km, +1 h    raw prev TLE       0.748             PAF+MTF+T2       0.898
+           T4 forecast vs MEME                               3D P90 km, +1 h    raw prev TLE       3.849             PAF+MTF+T2      31.709
+           T4 forecast vs MEME                               3D P50 km, +4 h    raw prev TLE       0.986             PAF+MTF+T2       1.162
+           T4 forecast vs MEME                               3D P90 km, +4 h    raw prev TLE       5.162             PAF+MTF+T2      38.668
+           T4 forecast vs MEME                              3D P50 km, +24 h    raw prev TLE       5.316             PAF+MTF+T2       6.009
+           T4 forecast vs MEME                              3D P90 km, +24 h    raw prev TLE      27.206             PAF+MTF+T2     110.986
+T4 forecast, 48 h after thrust                              3D P50 km, +24 h    raw prev TLE       5.316                                   
+T4 forecast, 48 h after thrust                              3D P50 km, +24 h                                         PAF+MTF+T2       6.009
+    UQ (along-track, all test)                           95% coverage / NEES     fixed sigma   nan / nan      sigma-age x g(T2)   nan / nan
+ UQ (along-track, post-thrust)                           95% coverage / NEES     fixed sigma   nan / nan      sigma-age x g(T2)   nan / nan
+          T6 warning, lead 6 h recall of MEME approaches < 50 km / precision raw prev, point 0.07 / 0.02             PAF+MTF+T2 0.08 / 0.02
+         T6 warning, lead 24 h recall of MEME approaches < 50 km / precision raw prev, point 0.07 / 0.02             PAF+MTF+T2 0.10 / 0.02
+ T7 avoidance (matched events)          mean delta-v m/s [safety by true Pc]   distance rule 0.00 [1.00] Pc-gate OrbBench sigma 0.00 [1.00]

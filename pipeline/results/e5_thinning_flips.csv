@@ -1,0 +1,2 @@
+n_obj,objects_with_flip,flip_rate,best_at_0,best_at_0p5,flip_rate_DEB|HEO,flip_rate_DEB|LEO,flip_rate_DEB|MEO,flip_rate_PAY|GEO,flip_rate_PAY|HEO,flip_rate_PAY|LEO,flip_rate_PAY|MEO,flip_rate_PAY|VLEO,flip_rate_R/B|GEO,flip_rate_R/B|HEO,flip_rate_R/B|LEO,flip_rate_R/B|MEO
+430,147,0.34186046511627904,"{'nearest': 300, 'MTF': 130}","{'nearest': 375, 'MTF': 55}",0.3076923076923077,0.375,0.25,0.25,0.225,0.65,0.15,0.3,0.275,0.225,0.6,0.4

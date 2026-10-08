@@ -1,0 +1,32 @@
+2026-09-13 14:59:23,930 INFO e3_loo: LOO 300/3609
+2026-09-13 15:04:04,067 INFO e3_loo: LOO 600/3609
+2026-09-13 15:04:27,099 INFO e3_loo: LOO 900/3609
+2026-09-13 15:04:34,200 INFO e3_loo: LOO 1200/3609
+2026-09-13 15:04:41,229 INFO e3_loo: LOO 1500/3609
+2026-09-13 15:04:48,316 INFO e3_loo: LOO 1800/3609
+2026-09-13 15:04:55,431 INFO e3_loo: LOO 2100/3609
+2026-09-13 15:05:02,298 INFO e3_loo: LOO 2400/3609
+2026-09-13 15:05:09,102 INFO e3_loo: LOO 2700/3609
+2026-09-13 15:05:16,245 INFO e3_loo: LOO 3000/3609
+2026-09-13 15:05:23,041 INFO e3_loo: LOO 3300/3609
+2026-09-13 15:05:30,145 INFO e3_loo: LOO 3600/3609
+2026-09-13 15:05:32,643 INFO e3_loo: LOO samples: 589223 rows, 3550 objects, errors=53
+2026-09-13 15:05:33,126 INFO e3_loo: by group ALL:
+scope                       method      n  n_obj  res3d_p50_km  res3d_p90_km  res3d_p95_km  res_t_p50_km  spread_med_km
+  ALL                      MTF-PAF 127475   3548        0.0791        0.5507        0.9297        0.0618            0.0
+  ALL                      MTF-raw 127475   3548        0.0773        0.5241        0.8969        0.0608            0.0
+  ALL                  nearest-PAF 127475   3548        0.0811        0.5535        0.9325        0.0634            0.0
+  ALL                  nearest-raw 127475   3548        0.0793        0.5281        0.9016        0.0625            0.0
+  ALL product (MTF+PAF, in-sample)  20143    565        0.0013        0.0148        0.1402        0.0008            NaN
+  ALL       reference TLE_k itself    161      5        0.0000        0.0000        0.0000        0.0000            NaN
+2026-09-13 15:05:33,127 INFO e3_loo: paired:
+                      method  n_obj  win_rate_vs_nearest_raw  median_rel_change_pct  median_res3d_km  nearest_raw_median_km
+                     MTF-PAF   3548                   0.4245                  0.000           0.0868                 0.0880
+                     MTF-raw   3548                   0.4273                  0.000           0.0859                 0.0880
+                 nearest-PAF   3548                   0.0544                  0.000           0.0885                 0.0880
+product (MTF+PAF, in-sample)    565                   0.9611                -97.911           0.0012                 0.0723
+      reference TLE_k itself      5                   1.0000               -100.000           0.0000                 0.0224
+2026-09-13 15:05:33,127 INFO e3_loo: removed:
+ k_removed_by_paf      n  res3d_p50_km  res3d_p90_km
+            False 127475        0.0793        0.5281
+             True  14260        0.0994        0.6644

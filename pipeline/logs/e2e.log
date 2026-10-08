@@ -1,0 +1,162 @@
+2026-09-16 08:01:16,123 INFO e2e: cohort 600 objects, grid 2025-06-21 00:00:00+00:00 -> 2025-06-24 00:00:00+00:00
+2026-09-16 08:01:29,374 INFO e2e: TLEs for 600 objects
+2026-09-16 08:01:51,032 INFO e2e: reference approaches < 5.0 km: 26 (< 1.0 km: 0), 58825 pairs, 21.2 s
+2026-09-16 08:02:01,024 ERROR e2e: e2e failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/e2e.py", line 208, in main
+    m, ev = run_origin(t0, traj, ids, grid, tles, inp, cfg, ref_events, pairs, timing[cfg["name"]]); per.append(m); evs.append(ev)
+            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/e2e.py", line 150, in run_origin
+    P = cov_teme(F[a, jt], SIG[a, jt]) + cov_teme(F[b, jt], SIG[b, jt])
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/e2e.py", line 98, in cov_teme
+    R = rtn_basis(state[:3], state[3:]); return R.T @ np.diag(sig ** 2) @ R if R.shape == (3, 3) else np.diag(sig ** 2)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/util.py", line 205, in rtn_basis
+    R = r / np.linalg.norm(r, axis=1, keepdims=True)
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/numpy/linalg/_linalg.py", line 2804, in norm
+    return sqrt(add.reduce(s, axis=axis, keepdims=keepdims))
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+2026-09-16 09:06:08,881 INFO e2e: cohort 1500 objects, grid 2025-06-21 00:00:00+00:00 -> 2025-06-24 00:00:00+00:00
+2026-09-16 09:06:35,717 INFO e2e: TLEs for 1500 objects
+2026-09-16 09:08:59,619 INFO e2e: reference approaches < 10.0 km: 881 (< 2.0 km: 12), 385608 pairs, 143.4 s
+2026-09-16 09:14:10,557 INFO e2e: A0 independent (all pairs): done 5 origins; forecast 37 s, screening 260 s
+2026-09-16 09:15:43,816 INFO e2e: A0 independent (random 20% budget): done 5 origins; forecast 38 s, screening 52 s
+2026-09-16 09:18:16,201 INFO e2e: A1 chained: done 5 origins; forecast 84 s, screening 63 s
+2026-09-16 09:20:50,995 INFO e2e: A1 -T1 phase: done 5 origins; forecast 84 s, screening 65 s
+2026-09-16 09:23:24,296 INFO e2e: A1 -T2 maneuver: done 5 origins; forecast 90 s, screening 59 s
+2026-09-16 09:25:55,976 INFO e2e: A1 -T3 weather: done 5 origins; forecast 88 s, screening 59 s
+2026-09-16 09:28:26,853 INFO e2e: A1 -T4 sigma (fixed): done 5 origins; forecast 85 s, screening 61 s
+2026-09-16 09:30:44,833 INFO e2e: A1 -T5 order (random): done 5 origins; forecast 84 s, screening 51 s
+2026-09-16 09:33:20,308 INFO e2e: A1 -T6 Pc (distance rule): done 5 origins; forecast 85 s, screening 64 s
+2026-09-16 09:33:20,421 INFO e2e: TASK TABLE:
+          task                                                           metric                                A0               A1                                            note
+      T1 Phase                        Macro-F1 vs rule labels (cohort, 3 seeds)                             0.666            0.666                 A1: + T2 maneuver-flag features
+   T2 Maneuver                  event F1 / F2 on Sentinel logs (test 2024-25H1)                     0.433 / 0.538    0.443 / 0.543 A1: threshold conditioned on T1 phase and T3 Ap
+    T3 Weather                                            MAE Ap / F10.7, 1-3 d                         6.6 / 3.2        6.6 / 3.2                                     no upstream
+   T4 Forecast                        3D P50 / P95 at 24 h (km) vs L2 reference                   116.30 / 212.99  116.30 / 212.99                          A1: MTF + T1/T2 window
+T4 Uncertainty                          along-track 95% coverage / NEES at 24 h                  0.00 / 6583780.2 0.01 / 3451751.2      A0 fixed sigma; A1 sigma-age x g(T1,T2,T3)
+  T5 Evolution                                 TV of +24 h density vs reference                             0.076            0.076                    from the respective forecast
+    T6 Warning recall of reference approaches < 10 km at 20% budget (all pairs)                     0.077 (0.368)            0.145                    A0 random order; A1 T5 order
+    T6 Warning                      alerts / alert precision (reference < 5 km)                         53 / 0.18          0 / nan                   A0 miss < 5 km; A1 Pc >= 1e-4
+  T7 Avoidance                         maneuvers / unnecessary / total dv (m/s)                    53 / 44 / 23.4      0 / 0 / 0.0                    A0 distance rule; A1 Pc-gate
+  T7 Avoidance            dangerous (< 2 km) events: total / made safe / missed                       23 / 0 / 23      23 / 0 / 23               reference geometry after maneuver
+          Cost                            screening time per origin (s) / pairs 10.4 / 77121 (all: 52.0 / 385608)     12.7 / 77121                                                
+2026-09-16 09:33:20,425 INFO e2e: ABLATION:
+                   config  T4_p50_24h  T4_cov95_t_24h  T4_nees_24h  T6_recall_close  T6_recall_dangerous  T6_n_alerts  T6_alert_precision_close  T7_n_maneuvers  T7_unnecessary  T7_dv_total_m_s  T7_dangerous_made_safe  T7_missed_dangerous  time_screen_s
+               A1 chained     116.296           0.006  3451751.187            0.145                0.167          0.0                       NaN             0.0             0.0              0.0                     0.0                 23.0         63.271
+             A1 -T1 phase     116.296           0.006  3451779.457            0.145                0.167          0.0                       NaN             0.0             0.0              0.0                     0.0                 23.0         65.147
+          A1 -T2 maneuver     116.296           0.005  3906765.842            0.145                0.167          0.0                       NaN             0.0             0.0              0.0                     0.0                 23.0         59.064
+           A1 -T3 weather     116.296           0.006  3451751.187            0.145                0.167          0.0                       NaN             0.0             0.0              0.0                     0.0                 23.0         58.754
+     A1 -T4 sigma (fixed)     116.296           0.005  6583779.767            0.145                0.167          0.0                       NaN             0.0             0.0              0.0                     0.0                 23.0         60.764
+    A1 -T5 order (random)     116.296           0.006  3451751.187            0.077                0.000          0.0                       NaN             0.0             0.0              0.0                     0.0                 23.0         51.027
+A1 -T6 Pc (distance rule)     116.296           0.006  3451751.187            0.145                0.167        105.0                     0.162           105.0            89.0             39.3                     0.0                 23.0         64.477
+2026-09-16 09:55:37,353 INFO e2e: cohort 1500 objects, grid 2025-06-21 00:00:00+00:00 -> 2025-06-24 00:00:00+00:00
+2026-09-16 09:55:37,507 INFO e2e: TLEs for 1500 objects
+2026-09-16 09:58:01,247 INFO e2e: reference approaches < 10.0 km: 953 (< 2.0 km: 14), 385661 pairs, 143.3 s
+2026-09-16 10:03:14,568 INFO e2e: A0 independent (all pairs): done 5 origins; forecast 36 s, screening 261 s
+2026-09-16 10:04:45,164 INFO e2e: A0 independent (random 20% budget): done 5 origins; forecast 36 s, screening 51 s
+2026-09-16 10:07:16,895 INFO e2e: A1 chained: done 5 origins; forecast 84 s, screening 62 s
+2026-09-16 10:09:41,779 INFO e2e: A1 -T1 phase: done 5 origins; forecast 83 s, screening 57 s
+2026-09-16 10:12:08,942 INFO e2e: A1 -T2 maneuver: done 5 origins; forecast 84 s, screening 58 s
+2026-09-16 10:14:36,324 INFO e2e: A1 -T3 weather: done 5 origins; forecast 83 s, screening 59 s
+2026-09-16 10:17:10,629 INFO e2e: A1 -T4 sigma (fixed): done 5 origins; forecast 88 s, screening 60 s
+2026-09-16 10:19:26,677 INFO e2e: A1 -T5 order (random): done 5 origins; forecast 82 s, screening 51 s
+2026-09-16 10:22:00,460 INFO e2e: A1 -T6 Pc (distance rule): done 5 origins; forecast 86 s, screening 62 s
+2026-09-16 10:22:00,578 INFO e2e: TASK TABLE:
+          task                                                           metric                                A0               A1                                            note
+      T1 Phase                        Macro-F1 vs rule labels (cohort, 3 seeds)                             0.666            0.666                 A1: + T2 maneuver-flag features
+   T2 Maneuver                  event F1 / F2 on Sentinel logs (test 2024-25H1)                     0.433 / 0.538    0.443 / 0.543 A1: threshold conditioned on T1 phase and T3 Ap
+    T3 Weather                                            MAE Ap / F10.7, 1-3 d                         6.6 / 3.2        6.6 / 3.2                                     no upstream
+   T4 Forecast                        3D P50 / P95 at 24 h (km) vs L2 reference                       0.11 / 3.09      0.11 / 3.09                          A1: MTF + T1/T2 window
+T4 Uncertainty                          along-track 95% coverage / NEES at 24 h                  0.92 / 6581321.9 0.93 / 3439141.6      A0 fixed sigma; A1 sigma-age x g(T1,T2,T3)
+  T5 Evolution                                 TV of +24 h density vs reference                             0.016            0.016                    from the respective forecast
+    T6 Warning recall of reference approaches < 10 km at 20% budget (all pairs)                     0.196 (0.961)            0.369                    A0 random order; A1 T5 order
+    T6 Warning                      alerts / alert precision (reference < 5 km)                         45 / 1.00          0 / nan                   A0 miss < 5 km; A1 Pc >= 1e-4
+  T7 Avoidance                         maneuvers / unnecessary / total dv (m/s)                     45 / 0 / 45.9      0 / 0 / 0.0                    A0 distance rule; A1 Pc-gate
+  T7 Avoidance            dangerous (< 2 km) events: total / made safe / missed                       22 / 4 / 18      22 / 0 / 22               reference geometry after maneuver
+          Cost                            screening time per origin (s) / pairs 10.3 / 77132 (all: 52.3 / 385661)     12.4 / 77132                                                
+2026-09-16 10:22:00,581 INFO e2e: ABLATION:
+                   config  T4_p50_24h  T4_cov95_t_24h  T4_nees_24h  T6_recall_close  T6_recall_dangerous  T6_n_alerts  T6_alert_precision_close  T7_n_maneuvers  T7_unnecessary  T7_dv_total_m_s  T7_dangerous_made_safe  T7_missed_dangerous  time_screen_s
+               A1 chained       0.112           0.932  3439141.590            0.369                0.179          0.0                       NaN             0.0             0.0              0.0                     0.0                 22.0         61.929
+             A1 -T1 phase       0.112           0.931  3439141.605            0.369                0.179          0.0                       NaN             0.0             0.0              0.0                     0.0                 22.0         56.884
+          A1 -T2 maneuver       0.112           0.928  3894423.362            0.369                0.179          0.0                       NaN             0.0             0.0              0.0                     0.0                 22.0         58.210
+           A1 -T3 weather       0.112           0.932  3439141.590            0.369                0.179          0.0                       NaN             0.0             0.0              0.0                     0.0                 22.0         58.552
+     A1 -T4 sigma (fixed)       0.112           0.924  6581321.423            0.369                0.179          0.0                       NaN             0.0             0.0              0.0                     0.0                 22.0         60.318
+    A1 -T5 order (random)       0.112           0.932  3439141.590            0.196                0.179          2.0                     1.000             2.0             0.0              6.6                     0.0                 22.0         50.741
+A1 -T6 Pc (distance rule)       0.112           0.932  3439141.590            0.369                0.179        104.0                     0.968           104.0             4.0             36.3                     4.0                 18.0         61.823
+2026-09-16 10:30:50,387 INFO e2e: cohort 1500 objects, grid 2025-06-21 00:00:00+00:00 -> 2025-06-24 00:00:00+00:00
+2026-09-16 10:30:50,965 INFO e2e: TLEs for 1500 objects
+2026-09-16 10:33:31,275 INFO e2e: reference approaches < 10.0 km: 953 (< 1.0 km: 3), 385661 pairs, 153.3 s
+2026-09-16 10:39:27,560 INFO e2e: A0 independent (all pairs): done 5 origins; forecast 44 s, screening 285 s
+2026-09-16 10:41:15,126 INFO e2e: A0 independent (random 20% budget): done 5 origins; forecast 45 s, screening 54 s
+2026-09-16 10:44:19,985 INFO e2e: A1 chained: done 5 origins; forecast 104 s, screening 69 s
+2026-09-16 10:47:22,908 INFO e2e: A1 -T1 phase: done 5 origins; forecast 99 s, screening 71 s
+2026-09-16 10:50:16,319 INFO e2e: A1 -T2 maneuver: done 5 origins; forecast 99 s, screening 63 s
+2026-09-16 10:53:22,973 INFO e2e: A1 -T3 weather: done 5 origins; forecast 102 s, screening 72 s
+2026-09-16 10:56:14,062 INFO e2e: A1 -T4 sigma (fixed): done 5 origins; forecast 98 s, screening 62 s
+2026-09-16 10:58:59,522 INFO e2e: A1 -T5 order (random): done 5 origins; forecast 102 s, screening 55 s
+2026-09-16 11:01:52,244 INFO e2e: A1 -T6 Pc (distance rule): done 5 origins; forecast 93 s, screening 68 s
+2026-09-16 11:01:52,370 INFO e2e: TASK TABLE:
+          task                                                                              metric                                A0                   A1                                                                        note
+      T1 Phase                                           Macro-F1 vs rule labels (cohort, 3 seeds)                             0.666                0.666                                             A1: + T2 maneuver-flag features
+   T2 Maneuver                                     event F1 / F2 on Sentinel logs (test 2024-25H1)                     0.433 / 0.538        0.443 / 0.543                             A1: threshold conditioned on T1 phase and T3 Ap
+    T3 Weather                                                               MAE Ap / F10.7, 1-3 d                         6.6 / 3.2            6.6 / 3.2                                                                 no upstream
+   T4 Forecast                                           3D P50 / P95 at 24 h (km) vs L2 reference                       0.11 / 3.09          0.11 / 3.09 reference = non-causal L2 product of the same TLEs (TLE-update consistency)
+T4 Uncertainty                                      along-track 95% coverage / median NEES at 24 h                       0.92 / 0.04          0.93 / 0.03                                  A0 fixed sigma; A1 sigma-age x g(T1,T2,T3)
+  T5 Evolution                                                    TV of +24 h density vs reference                             0.016                0.016                                                from the respective forecast
+    T6 Warning                    recall of reference approaches < 10 km at 20% budget (all pairs)                     0.196 (0.961)                0.369                                                A0 random order; A1 T5 order
+    T6 Warning                                          alerts / precision vs reference Pc >= 1e-4                         45 / 0.05              0 / nan              A0 alerts on predicted miss < 5 km; A1 on predicted Pc >= 1e-4
+  T7 Avoidance                            maneuvers / unnecessary (ref Pc < 1e-4) / total dv (m/s)                    45 / 43 / 45.9          0 / 0 / 0.0                                                A0 distance rule; A1 Pc-gate
+  T7 Avoidance               natural dangerous events (ref Pc >= 1e-4): total / made safe / missed                         5 / 2 / 3            5 / 0 / 5                            reference geometry and covariance after maneuver
+T6+T7 injected injected dangerous conjunctions: total / in screening budget / alerted / safe after              123 / 0.22 / 26 / 25 123 / 0.35 / 39 / 38                          30/origin, ref miss 20-1000 m, same forecast error
+T6+T7 injected                          unnecessary maneuvers on injected non-dangerous / dv (m/s)                         4 / 414.0            1 / 241.5                                                                            
+  T7 Avoidance                          close events (ref miss < 1 km): total / separated / missed                         5 / 0 / 5            5 / 0 / 5                                            distance view of the same events
+          Cost                                               screening time per origin (s) / pairs 10.8 / 77132 (all: 57.0 / 385661)         13.7 / 77132                                                                            
+2026-09-16 11:01:52,373 INFO e2e: ABLATION:
+                   config  T4_p50_24h  T4_cov95_t_24h  T4_nees_24h  T6_recall_close  T6_recall_dangerous_pc  T6_n_alerts  T6_alert_precision_pc  T7_n_maneuvers  T7_unnecessary_pc  T7_dv_total_m_s  INJ_n_dangerous  INJ_in_budget  INJ_alerted  INJ_safe_after  INJ_missed  INJ_unnecessary  INJ_dv_m_s  time_screen_s
+               A1 chained       0.112           0.932        0.030            0.369                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.353         39.0            38.0        84.0              1.0       241.5         68.742
+             A1 -T1 phase       0.112           0.931        0.030            0.369                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.353         39.0            38.0        84.0              1.0       241.5         71.262
+          A1 -T2 maneuver       0.112           0.928        0.036            0.369                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.353         39.0            37.0        84.0              1.0       221.1         62.713
+           A1 -T3 weather       0.112           0.932        0.030            0.369                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.353         39.0            38.0        84.0              1.0       241.5         72.264
+     A1 -T4 sigma (fixed)       0.112           0.924        0.043            0.369                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.353         37.0            37.0        86.0              0.0       215.1         62.257
+    A1 -T5 order (random)       0.112           0.932        0.030            0.196                   0.625          2.0                    1.0             2.0                0.0              6.6            123.0          0.221         25.0            25.0        98.0              0.0       150.3         54.913
+A1 -T6 Pc (distance rule)       0.112           0.932        0.030            0.369                   0.125        104.0                    0.0           104.0              104.0             36.3            123.0          0.353         42.0            40.0        81.0             10.0       687.3         67.824
+2026-09-16 12:22:02,187 INFO e2e: cohort 1500 objects, grid 2025-06-21 00:00:00+00:00 -> 2025-06-24 00:00:00+00:00
+2026-09-16 12:22:02,340 INFO e2e: TLEs for 1500 objects
+2026-09-16 12:24:24,629 INFO e2e: reference approaches < 10.0 km: 953 (< 1.0 km: 3), 385661 pairs, 141.8 s
+2026-09-16 12:29:38,801 INFO e2e: A0 independent (all pairs): done 5 origins; forecast 37 s, screening 254 s
+2026-09-16 12:31:16,562 INFO e2e: A0 independent (random 20% budget): done 5 origins; forecast 37 s, screening 54 s
+2026-09-16 12:33:51,485 INFO e2e: A1 chained: done 5 origins; forecast 86 s, screening 58 s
+2026-09-16 12:36:24,728 INFO e2e: A1 -T1 phase: done 5 origins; forecast 83 s, screening 60 s
+2026-09-16 12:38:57,414 INFO e2e: A1 -T2 maneuver: done 5 origins; forecast 80 s, screening 62 s
+2026-09-16 12:41:34,681 INFO e2e: A1 -T3 weather: done 5 origins; forecast 85 s, screening 61 s
+2026-09-16 12:44:16,786 INFO e2e: A1 -T4 sigma (fixed): done 5 origins; forecast 88 s, screening 62 s
+2026-09-16 12:46:41,326 INFO e2e: A1 -T5 order (random): done 5 origins; forecast 85 s, screening 52 s
+2026-09-16 12:49:17,286 INFO e2e: A1 -T6 Pc (distance rule): done 5 origins; forecast 85 s, screening 60 s
+2026-09-16 12:49:17,388 INFO e2e: TASK TABLE:
+          task                                                                              metric                                A0                   A1                                                                        note
+      T1 Phase                                           Macro-F1 vs rule labels (cohort, 3 seeds)                             0.666                0.666                                             A1: + T2 maneuver-flag features
+   T2 Maneuver                                     event F1 / F2 on Sentinel logs (test 2024-25H1)                     0.433 / 0.538        0.443 / 0.543                             A1: threshold conditioned on T1 phase and T3 Ap
+    T3 Weather                                                               MAE Ap / F10.7, 1-3 d                         6.6 / 3.2            6.6 / 3.2                                                                 no upstream
+   T4 Forecast                                           3D P50 / P95 at 24 h (km) vs L2 reference                       0.11 / 3.09          0.11 / 3.09 reference = non-causal L2 product of the same TLEs (TLE-update consistency)
+T4 Uncertainty                                      along-track 95% coverage / median NEES at 24 h                       0.92 / 0.04          0.93 / 0.03                                  A0 fixed sigma; A1 sigma-age x g(T1,T2,T3)
+  T5 Evolution                                                    TV of +24 h density vs reference                             0.016                0.016                                                from the respective forecast
+    T6 Warning                    recall of reference approaches < 10 km at 20% budget (all pairs)                     0.196 (0.961)                0.375                                                A0 random order; A1 T5 order
+    T6 Warning                                          alerts / precision vs reference Pc >= 1e-4                         45 / 0.05              0 / nan              A0 alerts on predicted miss < 5 km; A1 on predicted Pc >= 1e-4
+  T7 Avoidance                            maneuvers / unnecessary (ref Pc < 1e-4) / total dv (m/s)                    45 / 43 / 45.9          0 / 0 / 0.0                                                A0 distance rule; A1 Pc-gate
+  T7 Avoidance               natural dangerous events (ref Pc >= 1e-4): total / made safe / missed                         5 / 2 / 3            5 / 0 / 5                            reference geometry and covariance after maneuver
+T6+T7 injected injected dangerous conjunctions: total / in screening budget / alerted / safe after              123 / 0.22 / 26 / 25 123 / 0.39 / 45 / 45                          30/origin, ref miss 20-1000 m, same forecast error
+T6+T7 injected                          unnecessary maneuvers on injected non-dangerous / dv (m/s)                         4 / 414.0            0 / 274.8                                                                            
+  T7 Avoidance                          close events (ref miss < 1 km): total / separated / missed                         5 / 0 / 5            5 / 0 / 5                                            distance view of the same events
+          Cost                                               screening time per origin (s) / pairs 10.7 / 77132 (all: 50.8 / 385661)         11.6 / 77132                                                                            
+2026-09-16 12:49:17,392 INFO e2e: ABLATION:
+                   config  T4_p50_24h  T4_cov95_t_24h  T4_nees_24h  T6_recall_close  T6_recall_dangerous_pc  T6_n_alerts  T6_alert_precision_pc  T7_n_maneuvers  T7_unnecessary_pc  T7_dv_total_m_s  INJ_n_dangerous  INJ_in_budget  INJ_alerted  INJ_safe_after  INJ_missed  INJ_unnecessary  INJ_dv_m_s  time_screen_s
+               A1 chained       0.112           0.932        0.030            0.375                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.394         45.0            45.0        78.0              0.0       274.8         57.848
+             A1 -T1 phase       0.112           0.931        0.030            0.375                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.394         45.0            45.0        78.0              0.0       274.8         59.500
+          A1 -T2 maneuver       0.112           0.928        0.036            0.375                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.394         45.0            44.0        78.0              0.0       251.7         61.817
+           A1 -T3 weather       0.112           0.932        0.030            0.375                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.394         45.0            45.0        78.0              0.0       274.8         61.333
+     A1 -T4 sigma (fixed)       0.112           0.924        0.043            0.375                   0.125          0.0                    NaN             0.0                0.0              0.0            123.0          0.394         44.0            44.0        79.0              0.0       250.8         62.306
+    A1 -T5 order (random)       0.112           0.932        0.030            0.196                   0.625          2.0                    1.0             2.0                0.0              6.6            123.0          0.221         25.0            25.0        98.0              0.0       150.3         51.910
+A1 -T6 Pc (distance rule)       0.112           0.932        0.030            0.375                   0.125        108.0                    0.0           108.0              108.0             42.9            123.0          0.394         47.0            46.0        76.0              8.0       760.5         60.019

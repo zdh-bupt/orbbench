@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starlink-density-forecast"
+version = "0.2.0"
+description = "Physics-residual, count-conserving closed-cohort LEO voxel forecasting"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+  "pyarrow>=19,<23",
+  "PyYAML>=6,<7",
+  "torch>=2.6,<3",
+  "astropy>=7,<8",
+  "scipy>=1.15,<2",
+  "matplotlib>=3.9,<4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

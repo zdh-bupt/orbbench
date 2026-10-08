@@ -1,0 +1,2 @@
+cohort_objects,objects_with_pod_truth,pct_objects_with_truth,starlink_ephemeris_objects,starlink_ephemeris_overlaps_tle_archive,tle_epochs_cohort_2006plus,note
+3603,5,0.1385809312638581,10653,False,32191037,"POD truth exists only for the Sentinel satellites; Starlink ephemerides start 2026-06, after the TLE archive ends (2025-12-31)."

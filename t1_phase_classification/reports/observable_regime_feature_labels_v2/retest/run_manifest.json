@@ -1,0 +1,22 @@
+{
+  "created_by": "scripts/retest_feature_label_clustering_v2.py",
+  "label_version": "feature_rules_v2",
+  "evaluation_kind": "retrospective_test",
+  "not_a_new_unseen_final_test": true,
+  "reuse_rationale": "TLE inputs, self-supervised next-TLE target, split, and cluster count are unchanged; only the proxy labels and train-fitted cluster-to-state mapping changed.",
+  "dataset": "C:\\Users\\reviewer\\Documents\\Shigoto\\SatLife\\output\\tle_observable_regime_feature_labels_v2",
+  "dataset_sha256": "dd3cc1711ec4edfdeb9a16876743d286614ad1944e6c2283df54ed2bed30d0d0",
+  "index_sha256": "159ac47d33aed06523f0548a7585cacc42272f00ff70458e9f41933167b7112f",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "device": "cuda",
+  "elapsed_seconds": 86.243,
+  "python": "3.13.11",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.0"
+}

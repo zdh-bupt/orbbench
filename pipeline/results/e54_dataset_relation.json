@@ -1,0 +1,33 @@
+{
+ "kelvins_train_rows": 162634,
+ "kelvins_train_events": 13154,
+ "kelvins_test_rows": 24484,
+ "kelvins_test_events": 2167,
+ "kelvins_test_time_to_tca_min": 2.000213078703704,
+ "orbbench_cdm_rows": 199,
+ "orbbench_events": 199,
+ "orbbench_only_cols": [
+  "true_risk"
+ ],
+ "kelvins_only_cols": [
+  "risk"
+ ],
+ "orbbench_rows_found_in_kelvins_public_test": 0.0,
+ "orbbench_true_risk_equals_kelvins_private_risk": 1.0,
+ "orbbench_rows_identical_to_private_rows": 1.0,
+ "kelvins_private_cols_first": [
+  "event_id",
+  "time_to_tca",
+  "mission_id",
+  "true_risk",
+  "max_risk_estimate",
+  "max_risk_scaling"
+ ],
+ "orbbench_time_to_tca_range": [
+  -0.025511898,
+  0.957317800925926
+ ],
+ "interpretation": "OrbBench's 199 CDM rows are rows of test_data_private.csv: the final CDM (closest to TCA) of 199 of the 2,167 Kelvins test events, with the final risk as true_risk.",
+ "n_focus_train_events": 2160,
+ "n_focus_test_events": 388
+}

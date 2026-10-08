@@ -1,0 +1,30 @@
+# virtual environments / caches
+.venv*/
+__pycache__/
+*.py[cod]
+.cache/
+.DS_Store
+
+# large staged inputs that are NOT part of the release (see DATA.md)
+pipeline/data/*.npz
+pipeline/data/sentinel_pod_*.parquet
+pipeline/data/stale/
+pipeline/data/starlink/meme_*.parquet
+pipeline/data/external/
+pipeline/data/smoke/
+pipeline/data/deep/train/
+pipeline/data/deep/windows/
+pipeline/data/torch_install.log
+
+# per-sample result files above the GitHub size limit (see DATA.md)
+pipeline/results/p1_thinning_samples.parquet
+pipeline/results/p2_injection_samples.parquet
+pipeline/results/t2_cohort_flags.parquet
+
+# sub-project working directories
+t5_population_forecasting/VoxelDensityForecast/artifacts/
+t5_population_forecasting/VoxelDensityForecast/data/
+t5_population_forecasting/VoxelDensityForecast/predictions/
+t3_space_weather/data_checks/
+t3_space_weather/logs/
+pipeline/logs/nohup_*.out

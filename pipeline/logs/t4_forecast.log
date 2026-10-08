@@ -1,0 +1,80 @@
+2026-09-13 09:24:31,166 INFO t4_forecast: S3B: 24150 case rows
+2026-09-13 09:24:32,149 INFO t4_forecast: S2A: 24510 case rows
+2026-09-13 09:24:37,531 INFO t4_forecast: S2B: 42870 case rows
+2026-09-13 09:24:38,587 INFO t4_forecast: S1A: 42030 case rows
+2026-09-13 09:24:38,649 INFO t4_forecast: S3A: 42630 case rows
+2026-09-13 09:24:39,420 INFO t4_forecast: in-window 3D P50 km (all sats):
+h                   0.5     1.0      4.0      8.0      12.0     24.0
+method                                                              
+Kepler-24h        10.808  38.340  126.826  267.676  387.155  769.251
+Ridge-orbit        0.546   0.618    0.574    0.799    0.687    0.964
+Ridge-weather      0.673   0.722    0.770    0.960    0.943    1.280
+Ridge-weather+T3   0.716   0.780    0.776    0.980    0.919    1.258
+SGP4-MTF           0.505   0.615    0.449    0.733    0.454    0.495
+SGP4-MTF+T1+T2     0.505   0.615    0.450    0.732    0.454    0.494
+SGP4-MTF+T2        0.505   0.615    0.450    0.732    0.454    0.494
+SGP4-prev          0.503   0.615    0.449    0.733    0.454    0.492
+2026-09-13 09:24:39,424 INFO t4_forecast: UQ:
+           cov68                cov95                 nees              
+component      n      r      t      n      r      t      n      r      t
+model                                                                   
+σ-age      0.692  0.698  0.744  0.947  0.969  0.941  1.247  0.883  2.265
+σ-fixed    0.686  0.694  0.745  0.941  0.972  0.939  1.302  0.881  3.399
+σ-oad      0.690  0.704  0.725  0.943  0.975  0.938  1.265  0.846  2.465
+2026-09-13 15:44:02,382 INFO t4_forecast: S3B: 15570 case rows
+2026-09-13 15:44:11,187 INFO t4_forecast: S2A: 29790 case rows
+2026-09-13 15:44:15,397 INFO t4_forecast: S2B: 38880 case rows
+2026-09-13 15:44:30,543 INFO t4_forecast: S1B: 76530 case rows
+2026-09-13 15:44:34,935 INFO t4_forecast: S3A: 75750 case rows
+2026-09-13 15:45:02,429 INFO t4_forecast: S1A: 141570 case rows
+2026-09-13 15:45:02,779 ERROR t4_forecast: T4 failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 271, in main
+    cases = pd.concat([cases, ridge_correctors(cases)], ignore_index=True)
+                              ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t4_forecast.py", line 157, in ridge_correctors
+    corr[f"err_{c}"] = te[f"err_{c}"] - m.predict(Xte)
+                                        ~~~~~~~~~^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/sklearn/linear_model/_ridge.py", line 1279, in predict
+    return super().predict(X)
+           ~~~~~~~~~~~~~~~^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/sklearn/linear_model/_base.py", line 316, in predict
+    return self._decision_function(X)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/sklearn/linear_model/_base.py", line 294, in _decision_function
+    X = validate_data(self, X, accept_sparse=["csr", "csc", "coo"], reset=False)
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/sklearn/utils/validation.py", line 3013, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/sklearn/utils/validation.py", line 2865, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2026-09-13 16:14:21,181 INFO t4_forecast: S3B: 15570 case rows
+2026-09-13 16:14:31,289 INFO t4_forecast: S2A: 29790 case rows
+2026-09-13 16:14:38,296 INFO t4_forecast: S2B: 38880 case rows
+2026-09-13 16:14:53,044 INFO t4_forecast: S1B: 76530 case rows
+2026-09-13 16:15:00,879 INFO t4_forecast: S3A: 75750 case rows
+2026-09-13 16:15:30,516 INFO t4_forecast: S1A: 141570 case rows
+2026-09-13 16:15:39,616 INFO t4_forecast: in-window 3D P50 km (all sats):
+h                    0.5     1.0      4.0      8.0      12.0     24.0
+method                                                               
+HistGB-orbit        0.270   0.311    0.381    0.310    0.409    0.525
+HistGB-weather      0.299   0.339    0.402    0.348    0.452    0.548
+HistGB-weather+T3   0.296   0.332    0.393    0.338    0.445    0.542
+Kepler-24h         10.509  39.448  119.384  248.103  363.561  722.392
+Ridge-orbit         0.697   0.792    0.644    0.604    0.516    0.482
+Ridge-weather       0.707   0.795    0.641    0.609    0.525    0.489
+Ridge-weather+T3    0.686   0.773    0.622    0.640    0.522    0.497
+SGP4-MTF            0.434   0.571    0.495    0.733    0.398    0.457
+SGP4-MTF+T1+T2      0.434   0.571    0.496    0.731    0.400    0.455
+SGP4-MTF+T2         0.434   0.571    0.496    0.731    0.400    0.455
+SGP4-prev           0.434   0.571    0.495    0.731    0.399    0.455
+2026-09-13 16:15:39,621 INFO t4_forecast: UQ:
+           cov68                cov95                 nees              
+component      n      r      t      n      r      t      n      r      t
+model                                                                   
+σ-age      0.898  0.795  0.670  0.994  0.989  0.925  0.484  0.604  4.070
+σ-fixed    0.900  0.810  0.674  0.995  0.997  0.923  0.480  0.546  5.468
+σ-oad      0.883  0.801  0.647  0.993  0.995  0.923  0.538  0.573  4.703

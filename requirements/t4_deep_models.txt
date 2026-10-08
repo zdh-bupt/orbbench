@@ -1,0 +1,8 @@
+# T4 eight-model study (t4_deep_models/src). The protocol (PROTOCOL_zh.md, Sec. 8) fixes chronos-forecasting==2.2.2;
+# the Table-4 numbers were produced by pipeline/orbpipe/deep_forecast.py with requirements/pipeline-cuda.txt
+# (chronos-forecasting 2.3.2), which imports models.py / representation.py from this directory.
+torch>=2.6
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+chronos-forecasting==2.2.2

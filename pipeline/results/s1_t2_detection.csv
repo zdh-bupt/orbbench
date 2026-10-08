@@ -1,0 +1,2 @@
+pool,k,n_intervals,n_thrust,precision,recall,thrust_fraction
+step6,2.0,1320,1083,0.8442105263157895,0.3702677746999077,0.8204545454545454

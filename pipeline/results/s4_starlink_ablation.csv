@@ -1,0 +1,11 @@
+h,config,p50,p90
+4.0,"B5 TLE-only: raw prev, fixed sigma",0.986,5.16
+4.0,"PAF alone (official step6 pool, no gate)",1.152,38.67
+4.0,"B1 no maneuver awareness: PAF+MTF (no gate, no T1/T2)",1.166,39.78
+4.0,B0 full: PAF+MTF + availability gate,1.016,5.44
+4.0,B0' full: T1-aware PAF-lite + MTF,0.994,5.24
+24.0,"B5 TLE-only: raw prev, fixed sigma",5.316,27.21
+24.0,"PAF alone (official step6 pool, no gate)",5.981,110.99
+24.0,"B1 no maneuver awareness: PAF+MTF (no gate, no T1/T2)",6.009,113.04
+24.0,B0 full: PAF+MTF + availability gate,5.515,27.31
+24.0,B0' full: T1-aware PAF-lite + MTF,5.422,27.28

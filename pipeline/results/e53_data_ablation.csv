@@ -1,0 +1,31 @@
+config,data_removed,example,metric,B0_full,ablated,note,rel_change_pct
+B2 No-weather,space-weather indices,X1 CDM warning->avoidance,missed dangerous events (of 56),12.0,14.0,,16.666666666666668
+B2 No-weather,space-weather indices,X1 CDM warning->avoidance,unnecessary maneuvers,16.0,16.0,,0.0
+B2 No-weather,space-weather indices,X1 CDM warning->avoidance,total delta-v (m/s),457.79999999999984,340.5000000000001,,-25.62254259501961
+B3 No-physical,"object type, size, area-to-mass, orbit attributes",X1 CDM warning->avoidance,missed dangerous events (of 56),12.0,14.0,,16.666666666666668
+B3 No-physical,"object type, size, area-to-mass, orbit attributes",X1 CDM warning->avoidance,unnecessary maneuvers,16.0,14.0,,-12.5
+B3 No-physical,"object type, size, area-to-mass, orbit attributes",X1 CDM warning->avoidance,total delta-v (m/s),457.79999999999984,383.4000000000001,,-16.251638269986845
+B4 No-precise,operator covariances for sigma calibration,X1 CDM warning->avoidance,missed dangerous events (of 56),12.0,10.0,,-16.666666666666668
+B4 No-precise,operator covariances for sigma calibration,X1 CDM warning->avoidance,unnecessary maneuvers,16.0,25.0,,56.25
+B4 No-precise,operator covariances for sigma calibration,X1 CDM warning->avoidance,total delta-v (m/s),457.79999999999984,816.2999999999998,,78.30930537352559
+B5 TLE-only,all auxiliary data,X1 CDM warning->avoidance,missed dangerous events (of 56),12.0,0.0,,-100.0
+B5 TLE-only,all auxiliary data,X1 CDM warning->avoidance,unnecessary maneuvers,16.0,61.0,,281.25
+B5 TLE-only,all auxiliary data,X1 CDM warning->avoidance,total delta-v (m/s),457.79999999999984,1209.6000000000008,,164.22018348623882
+B2 No-weather,space-weather indices,X2 Starlink triage (4 h),AUC,0.7331247206803417,0.7102954797173447,,-3.113964148120853
+B1 No-maneuver,"maneuver/phase information (T1, T2 inputs)",X2 Starlink triage (4 h),AUC,0.7331247206803417,0.7178886024625469,"removes T1, T2 and T3 inputs",-2.0782436859659628
+B2 No-weather,space-weather indices,X2 Starlink triage (24 h),AUC,0.6432110200557224,0.65058717572767,,1.146770724063247
+B1 No-maneuver,"maneuver/phase information (T1, T2 inputs)",X2 Starlink triage (24 h),AUC,0.6432110200557224,0.6022120967522346,"removes T1, T2 and T3 inputs",-6.374101504034547
+B0 with maneuver logs,(adds logged maneuvers to sigma),X4 Sentinel post-maneuver (4 h),T7 safety on dangerous conjunctions,0.7026657552973342,0.6493506493506493,full = detector only; logs = B0 with maneuver records,-7.587548638132292
+B1 No-maneuver,maneuver awareness (detector and logs),X4 Sentinel post-maneuver (4 h),T7 safety on dangerous conjunctions,0.6493506493506493,0.5946684894053315,,-8.421052631578956
+B1 No-maneuver,maneuver logs,T4-UQ Sentinel post-maneuver (24 h),along-track 95% coverage,0.7955555555555556,0.7466666666666667,logs -> detector only,-6.145251396648042
+B1 No-maneuver,maneuver awareness,T4-UQ Sentinel post-maneuver (24 h),along-track 95% coverage,0.7955555555555556,0.7166666666666667,,-9.916201117318437
+B4 No-precise,POD for corrector training,T4 Sentinel forecast (1 h),3D P50 (km),0.3106957836968718,0.5712214479292005,full = POD-trained corrector; ablated = SGP4-MTF,83.85233334434587
+B4 No-precise,POD for corrector training,T4 Sentinel forecast (4 h),3D P50 (km),0.3805841470715667,0.4952729590978226,full = POD-trained corrector; ablated = SGP4-MTF,30.13494201183565
+B4 No-precise,POD for corrector training,T4 Sentinel forecast (24 h),3D P50 (km),0.5248033591835478,0.4566224130842264,full = POD-trained corrector; ablated = SGP4-MTF,-12.99171297329204
+B4 No-precise,POD for sigma calibration,T4-UQ Sentinel (along-track),NEES,4.070276261633267,5.468164815422441,,34.343824938021484
+B1 No-maneuver,maneuver awareness (gate / T1),S4 Starlink forecast (4 h),3D P90 (km),5.44,39.78,,631.25
+B5 TLE-only,all auxiliary data,S4 Starlink forecast (4 h),3D P90 (km),5.44,5.16,,-5.147058823529416
+B1 No-maneuver,maneuver awareness (gate / T1),S4 Starlink forecast (24 h),3D P90 (km),27.31,113.04,,313.9143170999634
+B5 TLE-only,all auxiliary data,S4 Starlink forecast (24 h),3D P90 (km),27.31,27.21,,-0.3661662394727128
+B5 TLE-only,all auxiliary data,X3 LEO screening (20% budget),recall of reference approaches,0.382716049382716,0.1358024691358024,,-64.51612903225808
+B5 TLE-only,all auxiliary data,X3 LEO screening (20% budget),total delta-v (m/s),6.09,6.48,,6.403940886699517

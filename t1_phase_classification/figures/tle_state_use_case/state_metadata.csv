@@ -1,0 +1,7 @@
+state,display_name,priority,rule,color,marker
+STABLE_ORBIT,Stable orbit,5,"N≥5; Rₐ≤2.5 km; |Δa|<0.9 km",#0072B2,o
+SUSTAINED_RAISE,Sustained raise,3,"N≥5; T≥2 d; Δa≥4 km; p₊≥0.55",#E69F00,^
+SUSTAINED_DECAY,Sustained decay,4,"N≥5; T≥3 d; Δa≤−0.9 km; p₋≥0.70",#CC79A7,v
+OFFSET_PLATEAU,Offset plateau,2,"N≥5; T≥10 d; Rₐ≥5 km; |Δa|≤1 km; p₊,p₋≥0.30",#009E73,s
+SHORT_EXCURSION_RETURN,Short excursion and return,1,"N≥3; T<10 d; Rₐ≥4 km; |Δa|≤1 km; p₊,p₋≥0.25",#D55E00,D
+UNKNOWN_TRANSITION,Unknown transition,6,No exclusive rule matched,#777777,X

@@ -1,0 +1,25 @@
+setting,n_objects,n_pairs,screening_time_s,recall
+A0: all candidate pairs,600.0,74766.0,27.7,1.0
+"A1: T5-ordered, 20% budget",600.0,14953.0,6.5,0.3516483516483517
+A0: random 20% budget,600.0,14953.0,6.5,0.12087912087912088
+stage S0_staging,,,3258.0,
+stage S1_t3_weather,,,2.0,
+stage S3_t2_maneuver,,,99.0,
+stage S2_t1_phase,,,108.0,
+stage S4_t4_forecast,,,95.0,
+stage S5_t5_evolution,,,1797.0,
+stage S6_t6_warning,,,1481.0,
+stage S7_t7_avoidance,,,82.0,
+stage S8_experiments,,,4.0,
+stage S9_report,,,3.0,
+stage S8b_e3_loo,,,644.0,
+stage S8c_challenge_evidence,,,74.0,
+stage S8d_proof,,,164.0,
+stage S8e_chain_proof,,,517.0,
+stage S0b_starlink,,,41.0,
+stage S8f_starlink_chain,,,1513.0,
+stage S8g_chain_ablation,,,523.0,
+stage S8i_external,,,7.0,
+stage S8h_exp_summary,,,,
+stage S8j_e2e,,,1870.0,
+stage S8k_upstream_chain,,,58.0,

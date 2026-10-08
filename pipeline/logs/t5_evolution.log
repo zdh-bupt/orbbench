@@ -1,0 +1,36 @@
+2026-09-13 09:31:56,327 INFO t5_evolution: origins 50/347
+2026-09-13 09:34:20,498 INFO t5_evolution: origins 100/347
+2026-09-13 09:36:45,781 INFO t5_evolution: origins 150/347
+2026-09-13 09:39:10,488 INFO t5_evolution: origins 200/347
+2026-09-13 09:41:33,197 INFO t5_evolution: origins 250/347
+2026-09-13 09:43:58,521 INFO t5_evolution: origins 300/347
+2026-09-13 09:46:11,960 INFO t5_evolution: mean over origins:
+                overlap_pct     tv  regional_rel_mae  hotspot_f1  shell_spearman
+method      h                                                                   
+Kepler      1        89.265  0.107             0.157       0.786           0.989
+            6        89.018  0.110             0.131       0.781           0.995
+            24       82.205  0.178             0.245       0.667           0.990
+Persistence 1        76.261  0.237             0.420       0.557           0.986
+            6        76.478  0.235             0.402       0.555           0.987
+            24       76.543  0.235             0.411       0.559           0.987
+SGP4-prev   1        93.003  0.070             0.094       0.849           0.998
+            6        92.961  0.070             0.095       0.851           0.998
+            24       92.957  0.070             0.097       0.852           0.998
+2026-09-16 11:16:37,621 INFO t5_evolution: origins 50/347
+2026-09-16 11:20:18,900 INFO t5_evolution: origins 100/347
+2026-09-16 11:23:54,537 INFO t5_evolution: origins 150/347
+2026-09-16 11:27:29,466 INFO t5_evolution: origins 200/347
+2026-09-16 11:31:13,349 INFO t5_evolution: origins 250/347
+2026-09-16 11:34:53,252 INFO t5_evolution: origins 300/347
+2026-09-16 11:38:18,120 INFO t5_evolution: mean over origins:
+                overlap_pct     tv  regional_rel_mae  hotspot_f1  shell_spearman
+method      h                                                                   
+Kepler      1        88.912  0.111             0.157       0.777           0.989
+            6        88.678  0.113             0.134       0.768           0.994
+            24       81.594  0.184             0.250       0.645           0.990
+Persistence 1        75.431  0.246             0.426       0.539           0.987
+            6        75.711  0.243             0.403       0.535           0.988
+            24       75.724  0.243             0.412       0.542           0.988
+SGP4-prev   1        97.572  0.024             0.045       0.921           0.999
+            6        97.589  0.024             0.046       0.923           0.999
+            24       97.534  0.025             0.047       0.923           0.999

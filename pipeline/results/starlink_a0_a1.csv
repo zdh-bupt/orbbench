@@ -1,0 +1,10 @@
+stage,metric,A0_raw_prev,PAF_alone,PAF_MTF_T2_no_gate,A1_PAF_MTF_gate,A1_T1aware_PAFlite_MTF
+"T4 forecast vs MEME (17 Starlink, test 2026-07-05..08-23)","3D P50 km, +1 h",0.75,0.9,0.9,0.77,0.76
+"T4 forecast vs MEME (17 Starlink, test 2026-07-05..08-23)","3D P90 km, +1 h",3.85,31.71,31.71,4.06,3.87
+"T4 forecast vs MEME (17 Starlink, test 2026-07-05..08-23)","3D P50 km, +4 h",0.99,1.15,1.16,1.02,0.99
+"T4 forecast vs MEME (17 Starlink, test 2026-07-05..08-23)","3D P90 km, +4 h",5.16,38.67,38.67,5.44,5.24
+"T4 forecast vs MEME (17 Starlink, test 2026-07-05..08-23)","3D P50 km, +24 h",5.32,5.98,6.01,5.52,5.42
+"T4 forecast vs MEME (17 Starlink, test 2026-07-05..08-23)","3D P90 km, +24 h",27.21,110.99,110.99,27.31,27.28
+"UQ along-track, 95%/68% coverage",fixed sigma on raw prev | age sigma | age x g(T2),0.811/0.684,,0.580/0.443,,0.656/0.579
+"T6 warning lead 6 h (134 MEME approaches < 50 km, none with true Pc > 0)",recall < 50 km / precision,0.067 / 0.015,,0.082 / 0.018,,
+"T6 warning lead 24 h (134 MEME approaches < 50 km, none with true Pc > 0)",recall < 50 km / precision,0.075 / 0.018,,0.097 / 0.022,,

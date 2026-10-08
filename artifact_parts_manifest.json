@@ -1,0 +1,73 @@
+[
+  {
+    "path": "pipeline/results/e3_loo_samples.parquet",
+    "size": 17355635,
+    "sha256": "4669e2b01af2a7697d24092749b3a6322d3690643cfb221163c0ceda85ec7d41",
+    "parts": [
+      {
+        "path": "artifact_parts/e3_loo_samples.parquet/part-001.bin",
+        "size": 6000000,
+        "sha256": "1ad92e938f6e6acc87dd027dc2b210278d4769c947156b8919daa65ea516a9ef"
+      },
+      {
+        "path": "artifact_parts/e3_loo_samples.parquet/part-002.bin",
+        "size": 6000000,
+        "sha256": "6fedaf0887dec38bf576df14ca48f3f80a7fa27310ce11532718a6cf1671dfd5"
+      },
+      {
+        "path": "artifact_parts/e3_loo_samples.parquet/part-003.bin",
+        "size": 5355635,
+        "sha256": "c31f8722e179a29f98d10abe805081f9d29206e090c9d5a566018739b0d9ed68"
+      }
+    ]
+  },
+  {
+    "path": "pipeline/results/t1_phase_labels.parquet",
+    "size": 18313833,
+    "sha256": "17324fa107388e0bb61679ccbfe7a4d9f835eedc10c6b12c888069d468117df2",
+    "parts": [
+      {
+        "path": "artifact_parts/t1_phase_labels.parquet/part-001.bin",
+        "size": 6000000,
+        "sha256": "d8fc96edebe73d6b69907bed59ed5463e7804915d9849b0190564becb24c557c"
+      },
+      {
+        "path": "artifact_parts/t1_phase_labels.parquet/part-002.bin",
+        "size": 6000000,
+        "sha256": "1c1f48701fa5562a5570c7ffa3756df4dd17fa07da214a352983b2fca6833a17"
+      },
+      {
+        "path": "artifact_parts/t1_phase_labels.parquet/part-003.bin",
+        "size": 6000000,
+        "sha256": "5177e148d462d023c3aedd7afc5eb5105120d49a7ec57a45d0e05d4636b1a93a"
+      },
+      {
+        "path": "artifact_parts/t1_phase_labels.parquet/part-004.bin",
+        "size": 313833,
+        "sha256": "50d8a2c9733eb9adca75311f0dc5bc7c1672fc07f66f96b366c8f092893c95c2"
+      }
+    ]
+  },
+  {
+    "path": "pipeline/results/t4_forecast_cases.parquet",
+    "size": 16040462,
+    "sha256": "5101c4a2de2e797dfe3e2d054ee5c8170fd0d517e49dd29ff0a7dea3e6ac805b",
+    "parts": [
+      {
+        "path": "artifact_parts/t4_forecast_cases.parquet/part-001.bin",
+        "size": 6000000,
+        "sha256": "962e62921ead89b766241feabeb69355b950f92d603828df5a44ee81954ce996"
+      },
+      {
+        "path": "artifact_parts/t4_forecast_cases.parquet/part-002.bin",
+        "size": 6000000,
+        "sha256": "c014742131c0ac28d9a7807ac0ca715a8e71bb4676fc8638dd1aedd0d9521183"
+      },
+      {
+        "path": "artifact_parts/t4_forecast_cases.parquet/part-003.bin",
+        "size": 4040462,
+        "sha256": "b27d51882b4d672b5aa8897ced48fa7273cbb15ef459856a1d1223d119edf866"
+      }
+    ]
+  }
+]

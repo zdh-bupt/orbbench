@@ -1,0 +1,621 @@
+{
+  "package": "tle_observable_state_use_case_20260908",
+  "file_count_excluding_manifest": 152,
+  "total_bytes_excluding_manifest": 3171745,
+  "exclusions": [
+    "label and TLE datasets",
+    "row-level predictions.csv",
+    "model weights and fitted artifacts",
+    "Python caches"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2232
+    },
+    {
+      "path": "STARLINK_MOTION_PHASE_TEST_CASE.md",
+      "bytes": 10046
+    },
+    {
+      "path": "figures/tle_state_use_case/RESULTS_TABLE.md",
+      "bytes": 5968
+    },
+    {
+      "path": "figures/tle_state_use_case/TABLE_clustering_results.tex",
+      "bytes": 1635
+    },
+    {
+      "path": "figures/tle_state_use_case/fig1_observable_state_definition.pdf",
+      "bytes": 91118
+    },
+    {
+      "path": "figures/tle_state_use_case/fig1_observable_state_definition.png",
+      "bytes": 307927
+    },
+    {
+      "path": "figures/tle_state_use_case/fig1_observable_state_definition.svg",
+      "bytes": 185413
+    },
+    {
+      "path": "figures/tle_state_use_case/fig2_observable_state_examples.pdf",
+      "bytes": 68743
+    },
+    {
+      "path": "figures/tle_state_use_case/fig2_observable_state_examples.png",
+      "bytes": 321245
+    },
+    {
+      "path": "figures/tle_state_use_case/fig2_observable_state_examples.svg",
+      "bytes": 209234
+    },
+    {
+      "path": "figures/tle_state_use_case/fig3_method_comparison.pdf",
+      "bytes": 66204
+    },
+    {
+      "path": "figures/tle_state_use_case/fig3_method_comparison.png",
+      "bytes": 262403
+    },
+    {
+      "path": "figures/tle_state_use_case/fig3_method_comparison.svg",
+      "bytes": 138953
+    },
+    {
+      "path": "figures/tle_state_use_case/gen_fig1_state_definition.py",
+      "bytes": 6913
+    },
+    {
+      "path": "figures/tle_state_use_case/gen_fig2_state_examples.py",
+      "bytes": 4489
+    },
+    {
+      "path": "figures/tle_state_use_case/gen_fig3_method_comparison.py",
+      "bytes": 8488
+    },
+    {
+      "path": "figures/tle_state_use_case/gen_results_table.py",
+      "bytes": 15094
+    },
+    {
+      "path": "figures/tle_state_use_case/latex_includes.tex",
+      "bytes": 2391
+    },
+    {
+      "path": "figures/tle_state_use_case/paper_plot_style.py",
+      "bytes": 1330
+    },
+    {
+      "path": "figures/tle_state_use_case/selected_state_examples.csv",
+      "bytes": 1056
+    },
+    {
+      "path": "figures/tle_state_use_case/state_examples.csv",
+      "bytes": 470
+    },
+    {
+      "path": "figures/tle_state_use_case/state_metadata.csv",
+      "bytes": 602
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 333
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/RESULTS.md",
+      "bytes": 3028
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/change_vs_v1.csv",
+      "bytes": 2117
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_test/boundary_matches.csv",
+      "bytes": 2
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_test/confusion_matrix.csv",
+      "bytes": 63
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_test/metrics.json",
+      "bytes": 10053
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_test/per_class.csv",
+      "bytes": 182
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_test/segment_matches.csv",
+      "bytes": 49509
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_validation/boundary_matches.csv",
+      "bytes": 2
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_validation/confusion_matrix.csv",
+      "bytes": 63
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_validation/metrics.json",
+      "bytes": 10380
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_validation/per_class.csv",
+      "bytes": 182
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/constant_stable/evaluation_validation/segment_matches.csv",
+      "bytes": 50753
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/metrics_long.csv",
+      "bytes": 3492
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_test/boundary_matches.csv",
+      "bytes": 703
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_test/metrics.json",
+      "bytes": 10260
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_test/per_class.csv",
+      "bytes": 229
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_test/segment_matches.csv",
+      "bytes": 51191
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_validation/boundary_matches.csv",
+      "bytes": 2
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_validation/confusion_matrix.csv",
+      "bytes": 66
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_validation/metrics.json",
+      "bytes": 10450
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_validation/per_class.csv",
+      "bytes": 243
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_42/evaluation_validation/segment_matches.csv",
+      "bytes": 52666
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_test/boundary_matches.csv",
+      "bytes": 703
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_test/metrics.json",
+      "bytes": 10260
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_test/per_class.csv",
+      "bytes": 229
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_test/segment_matches.csv",
+      "bytes": 51191
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_validation/boundary_matches.csv",
+      "bytes": 2
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_validation/confusion_matrix.csv",
+      "bytes": 66
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_validation/metrics.json",
+      "bytes": 10450
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_validation/per_class.csv",
+      "bytes": 243
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_43/evaluation_validation/segment_matches.csv",
+      "bytes": 52666
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_test/boundary_matches.csv",
+      "bytes": 703
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_test/metrics.json",
+      "bytes": 10260
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_test/per_class.csv",
+      "bytes": 229
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_test/segment_matches.csv",
+      "bytes": 51191
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_validation/boundary_matches.csv",
+      "bytes": 2
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_validation/confusion_matrix.csv",
+      "bytes": 66
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_validation/metrics.json",
+      "bytes": 10450
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_validation/per_class.csv",
+      "bytes": 243
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/pelt_kmeans/seed_44/evaluation_validation/segment_matches.csv",
+      "bytes": 52666
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/per_class_summary.csv",
+      "bytes": 2975
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_test/boundary_matches.csv",
+      "bytes": 1343
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_test/metrics.json",
+      "bytes": 10408
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_test/per_class.csv",
+      "bytes": 287
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_test/segment_matches.csv",
+      "bytes": 54655
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_validation/boundary_matches.csv",
+      "bytes": 713
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_validation/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_validation/metrics.json",
+      "bytes": 10845
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_validation/per_class.csv",
+      "bytes": 286
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_42/evaluation_validation/segment_matches.csv",
+      "bytes": 56932
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_test/boundary_matches.csv",
+      "bytes": 1343
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_test/metrics.json",
+      "bytes": 10407
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_test/per_class.csv",
+      "bytes": 289
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_test/segment_matches.csv",
+      "bytes": 54654
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_validation/boundary_matches.csv",
+      "bytes": 713
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_validation/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_validation/metrics.json",
+      "bytes": 10845
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_validation/per_class.csv",
+      "bytes": 286
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_43/evaluation_validation/segment_matches.csv",
+      "bytes": 56932
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_test/boundary_matches.csv",
+      "bytes": 1343
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_test/metrics.json",
+      "bytes": 10407
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_test/per_class.csv",
+      "bytes": 287
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_test/segment_matches.csv",
+      "bytes": 54655
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_validation/boundary_matches.csv",
+      "bytes": 713
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_validation/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_validation/metrics.json",
+      "bytes": 10845
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_validation/per_class.csv",
+      "bytes": 286
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/raw_pca_kmeans/seed_44/evaluation_validation/segment_matches.csv",
+      "bytes": 56932
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/run_manifest.json",
+      "bytes": 889
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/summary_by_system.csv",
+      "bytes": 2771
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_test/boundary_matches.csv",
+      "bytes": 191
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_test/metrics.json",
+      "bytes": 11884
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_test/per_class.csv",
+      "bytes": 295
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_test/segment_matches.csv",
+      "bytes": 56090
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_validation/boundary_matches.csv",
+      "bytes": 191
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_validation/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_validation/metrics.json",
+      "bytes": 12076
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_validation/per_class.csv",
+      "bytes": 293
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_42/evaluation_validation/segment_matches.csv",
+      "bytes": 56574
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_test/boundary_matches.csv",
+      "bytes": 278
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_test/metrics.json",
+      "bytes": 11444
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_test/per_class.csv",
+      "bytes": 294
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_test/segment_matches.csv",
+      "bytes": 53246
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_validation/boundary_matches.csv",
+      "bytes": 2
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_validation/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_validation/metrics.json",
+      "bytes": 11851
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_validation/per_class.csv",
+      "bytes": 296
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_43/evaluation_validation/segment_matches.csv",
+      "bytes": 55334
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/cluster_label_mapping.json",
+      "bytes": 36
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_test/boundary_matches.csv",
+      "bytes": 278
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_test/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_test/metrics.json",
+      "bytes": 11841
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_test/per_class.csv",
+      "bytes": 296
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_test/segment_matches.csv",
+      "bytes": 56048
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_validation/boundary_matches.csv",
+      "bytes": 191
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_validation/confusion_matrix.csv",
+      "bytes": 68
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_validation/metrics.json",
+      "bytes": 12117
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_validation/per_class.csv",
+      "bytes": 294
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest/transformer_embedding_kmeans/seed_44/evaluation_validation/segment_matches.csv",
+      "bytes": 56904
+    },
+    {
+      "path": "reports/observable_regime_feature_labels_v2/retest.log",
+      "bytes": 7446
+    },
+    {
+      "path": "satlife_observable/__init__.py",
+      "bytes": 60
+    },
+    {
+      "path": "satlife_observable/data.py",
+      "bytes": 5826
+    },
+    {
+      "path": "satlife_observable/final_test.py",
+      "bytes": 1330
+    },
+    {
+      "path": "satlife_observable/metrics.py",
+      "bytes": 18949
+    },
+    {
+      "path": "satlife_observable/model.py",
+      "bytes": 2526
+    },
+    {
+      "path": "scripts/analyze_feature_label_clustering_v2.py",
+      "bytes": 12907
+    },
+    {
+      "path": "scripts/build_tle_observable_feature_labels_v2.py",
+      "bytes": 11253
+    },
+    {
+      "path": "scripts/package_tle_use_case.py",
+      "bytes": 9173
+    },
+    {
+      "path": "scripts/plot_tle_observable_state_division.py",
+      "bytes": 14755
+    },
+    {
+      "path": "scripts/retest_feature_label_clustering_v2.py",
+      "bytes": 13526
+    },
+    {
+      "path": "scripts/run_frozen_observable_final_test.py",
+      "bytes": 24341
+    },
+    {
+      "path": "tests/test_observable_metrics.py",
+      "bytes": 5434
+    },
+    {
+      "path": "tests/test_tle_observable_state_division.py",
+      "bytes": 1983
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "generated_at_utc": "2026-09-05T07:21:45.573121+00:00",
+  "grid": {
+    "height_min_km": 300.0,
+    "height_step_km": 50.0,
+    "lat_step_deg": 5.0,
+    "lon_step_deg": 5.0,
+    "shape": [
+      24,
+      36,
+      72
+    ]
+  },
+  "inputs": {
+    "config": "/home/reviewer/aaDensityForecast/StarLinkDensityForecast/configs/server.yaml",
+    "prediction": "/home/reviewer/aaDensityForecast/StarLinkDensityForecast/predictions/formal_physics_origin_20240424T050000Z.npz",
+    "truth_shard": "/home/reviewer/aaDensityForecast/closed_cohort_shards/closed-cohort-2024-04.npz"
+  },
+  "interpretation_boundary": "The figure compares CIC density mass for one aligned closed-cohort origin. It is descriptive and is not per-satellite exact-grid accuracy or formal model acceptance.",
+  "metrics": {
+    "density_mass_overlap_percent": 82.72284380300943,
+    "future_total": 4092.0,
+    "joint_tv": 0.1727715619699057,
+    "prediction_in_grid_mass": 3626.825815255248,
+    "prediction_outside_above_mass": 465.1741943359375,
+    "prediction_outside_below_mass": 0.0,
+    "prediction_relative_mass_error": 2.343886978717162e-09,
+    "prediction_total_mass": 4092.0000095911855,
+    "regional_relative_mae": 0.201128037228928,
+    "truth_in_grid_mass": 3582.076745605469,
+    "truth_outside_above_mass": 509.92325439453134,
+    "truth_outside_below_mass": 0.0,
+    "truth_relative_mass_error": 1.1113082866238126e-16,
+    "truth_total_mass": 4092.0000000000005
+  },
+  "outputs": {
+    "json": "/home/reviewer/aaDensityForecast/StarLinkDensityForecast/reports/figures/one_hour_density_heatmap_20240424T050000Z/one_hour_density_heatmap.json",
+    "pdf": "/home/reviewer/aaDensityForecast/StarLinkDensityForecast/reports/figures/one_hour_density_heatmap_20240424T050000Z/one_hour_density_heatmap.pdf",
+    "png": "/home/reviewer/aaDensityForecast/StarLinkDensityForecast/reports/figures/one_hour_density_heatmap_20240424T050000Z/one_hour_density_heatmap.png"
+  },
+  "population": {
+    "matched": true,
+    "satellite_count": 4092,
+    "semantics": "same origin-known closed-cohort members"
+  },
+  "schema_version": 1,
+  "selection": {
+    "horizon_hours": 1,
+    "origin_time_ns": 1713934800000000000,
+    "origin_time_utc": "2024-04-24T05:00:00Z",
+    "prediction_lead_index": 0,
+    "selected_model": "causal_physics_prior",
+    "target_time_utc": "2024-04-24T06:00:00Z",
+    "truth_dataset_origin_index": 364,
+    "truth_raw_origin_index": 562
+  },
+  "status": "rendered",
+  "view": {
+    "altitude_index": null,
+    "altitude_range_km": [
+      300.0,
+      1500.0
+    ],
+    "colorbar_label": "Satellite count mass per 5 deg x 5 deg column",
+    "error_colorbar_label": "Absolute count-mass error per 5 deg x 5 deg column",
+    "unit": "CIC mass / expected satellites per latitude-longitude column",
+    "view": "column-sum"
+  }
+}

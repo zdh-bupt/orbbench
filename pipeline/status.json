@@ -1,0 +1,130 @@
+{
+ "stages": {
+  "S0_staging": {
+   "state": "done",
+   "updated": "2026-09-13T09:25:05Z",
+   "elapsed_s": 3258,
+   "n_objects": 3603
+  },
+  "S1_t3_weather": {
+   "state": "done",
+   "updated": "2026-09-13T08:32:47Z",
+   "elapsed_s": 2,
+   "n_rows": 51
+  },
+  "S3_t2_maneuver": {
+   "state": "done",
+   "updated": "2026-09-13T15:43:47Z",
+   "elapsed_s": 99
+  },
+  "S2_t1_phase": {
+   "state": "done",
+   "updated": "2026-09-13T08:56:49Z",
+   "elapsed_s": 108,
+   "n_fragments": 187971
+  },
+  "S4_t4_forecast": {
+   "state": "done",
+   "updated": "2026-09-13T16:15:39Z",
+   "elapsed_s": 95,
+   "n_cases": 536310
+  },
+  "S5_t5_evolution": {
+   "state": "done",
+   "updated": "2026-09-16T11:38:18Z",
+   "elapsed_s": 1797,
+   "n_rows": 3123
+  },
+  "S6_t6_warning": {
+   "state": "done",
+   "updated": "2026-09-16T12:02:59Z",
+   "elapsed_s": 1481,
+   "n_truth_events": 47
+  },
+  "S7_t7_avoidance": {
+   "state": "done",
+   "updated": "2026-09-13T11:10:17Z",
+   "elapsed_s": 82,
+   "n_events": 63
+  },
+  "S8_experiments": {
+   "state": "done",
+   "updated": "2026-09-16T12:22:00Z",
+   "elapsed_s": 8
+  },
+  "S9_report": {
+   "state": "done",
+   "updated": "2026-09-16T12:50:59Z",
+   "elapsed_s": 2
+  },
+  "S8b_e3_loo": {
+   "state": "done",
+   "updated": "2026-09-13T15:05:33Z",
+   "elapsed_s": 644,
+   "n_samples": 589223
+  },
+  "S8c_challenge_evidence": {
+   "state": "done",
+   "updated": "2026-09-13T15:18:56Z",
+   "elapsed_s": 74
+  },
+  "S8d_proof": {
+   "state": "done",
+   "updated": "2026-09-13T16:49:57Z",
+   "elapsed_s": 164
+  },
+  "S8e_chain_proof": {
+   "state": "done",
+   "updated": "2026-09-16T12:11:37Z",
+   "elapsed_s": 517
+  },
+  "S0b_starlink": {
+   "state": "done",
+   "updated": "2026-09-14T04:53:03Z",
+   "elapsed_s": 41,
+   "n_states": 1584788
+  },
+  "S8f_starlink_chain": {
+   "state": "done",
+   "updated": "2026-09-14T05:48:04Z",
+   "elapsed_s": 1513,
+   "n_cases": 203400
+  },
+  "S8g_chain_ablation": {
+   "state": "done",
+   "updated": "2026-09-16T12:20:22Z",
+   "elapsed_s": 523
+  },
+  "S8i_external": {
+   "state": "done",
+   "updated": "2026-09-16T06:09:08Z",
+   "elapsed_s": 7
+  },
+  "S8h_exp_summary": {
+   "state": "done",
+   "updated": "2026-09-16T12:21:51Z",
+   "elapsed_s": 89
+  },
+  "S8j_e2e": {
+   "state": "done",
+   "updated": "2026-09-16T12:49:17Z",
+   "elapsed_s": 1636
+  },
+  "S8k_upstream_chain": {
+   "state": "done",
+   "updated": "2026-09-16T08:17:33Z",
+   "elapsed_s": 58
+  },
+  "S8l_detail_table": {
+   "state": "done",
+   "updated": "2026-09-17T05:01:19Z",
+   "elapsed_s": 242
+  },
+  "S8m_deep_forecast": {
+   "state": "done",
+   "updated": "2026-09-20T06:32:21Z",
+   "elapsed_s": 3640
+  }
+ },
+ "last_update": "2026-09-20T06:32:21Z"
+}

@@ -1,0 +1,9 @@
+data,setting,note,starlink_p90_4h_km,starlink_p95_4h_km,starlink_p50_1h_km,sentinel_p50_1h_km,sentinel_p95_1h_km,screening_recall_20pct,cdm_umc,cdm_dv_m_s,cohort_resolved,cohort_dv_m_s
+All,Full,Starlink: PAF+MTF with availability gate; Sentinel: POD-trained corrector with weather + T3,5.440848352287687,9.717411023102295,0.7732245873786119,0.33195458574728526,1.590913417681456,0.382716049382716,16.0,457.79999999999984,45.0,274.8
+L2,Raw TLE instead of L2 trajectories,no continuous states -> no density ordering (random); Starlink forecast from the latest raw TLE; the Sentinel corrector does not use L2,5.162236611675882,9.103842239672128,0.7481203260401806,,,0.1358024691358024,,,25.0,150.29999999999998
+L2,Fixed sigma instead of OAD uncertainty,"point forecast unchanged; screening order unchanged (density, not sigma)",,,,,,0.382716049382716,25.0,816.2999999999998,44.0,250.8
+L3/L4,w/o REF (no POD/MEME-trained corrector),REF also calibrates sigma: that effect is the fixed-sigma row,,,,0.5712214479292005,1.219074470489031,,,,,
+Supplementary,w/o MAN,Starlink: filtered pool without maneuver awareness; the Sentinel corrector does not use maneuver information,39.77894752952494,430.3468281210429,0.9037546687272994,,,,,,44.0,251.7
+Supplementary,w/o SW,Sentinel corrector without weather features,,,,0.3106957836968718,1.601088272252399,,16.0,340.5000000000001,45.0,274.8
+Supplementary,w/o PROP,,,,,,,,14.0,383.4000000000001,,
+Supplementary,w/o AUX (TLE only),,5.162236611675882,9.103842239672128,0.7481203260401806,0.5706297949541004,1.2182484994145764,0.1358024691358024,61.0,1209.6000000000008,25.0,414.00000000000034

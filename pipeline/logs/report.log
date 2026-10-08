@@ -1,0 +1,65 @@
+2026-09-13 10:03:52,418 INFO report: REPORT.md written (19 kB), figures: 4
+2026-09-13 10:04:23,027 INFO report: REPORT.md written (19 kB), figures: 4
+2026-09-13 10:31:33,477 INFO report: REPORT.md written (21 kB), figures: 4
+2026-09-13 10:42:30,847 INFO report: REPORT.md written (21 kB), figures: 4
+2026-09-13 10:55:38,254 INFO report: REPORT.md written (22 kB), figures: 4
+2026-09-13 11:10:24,260 INFO report: REPORT.md written (22 kB), figures: 4
+2026-09-13 11:19:15,993 INFO report: REPORT.md written (25 kB), figures: 4
+2026-09-13 15:45:08,544 ERROR report: report failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 111, in main
+    d = rd(name)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 20, in rd
+    p = R / name; return pd.read_csv(p) if p.exists() else None
+                         ~~~~~~~~~~~^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-09-13 15:45:31,498 ERROR report: report failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 111, in main
+    d = rd(name)
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/report.py", line 20, in rd
+    p = R / name; return pd.read_csv(p) if p.exists() else None
+                         ~~~~~~~~~~~^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1922, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 95, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 575, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-09-13 16:17:11,265 INFO report: REPORT.md written (35 kB), figures: 4
+2026-09-13 16:44:16,123 INFO report: REPORT.md written (47 kB), figures: 6
+2026-09-13 16:49:59,182 INFO report: REPORT.md written (47 kB), figures: 6
+2026-09-13 16:52:55,073 INFO report: REPORT.md written (50 kB), figures: 6
+2026-09-13 16:53:40,922 INFO report: REPORT.md written (50 kB), figures: 6
+2026-09-14 03:00:54,172 INFO report: REPORT.md written (59 kB), figures: 8
+2026-09-14 03:01:10,572 INFO report: REPORT.md written (58 kB), figures: 8
+2026-09-14 03:11:07,284 INFO report: REPORT.md written (61 kB), figures: 8
+2026-09-14 05:52:48,088 INFO report: REPORT.md written (73 kB), figures: 9
+2026-09-14 05:53:40,127 INFO report: REPORT.md written (76 kB), figures: 9
+2026-09-14 08:29:19,431 INFO report: REPORT.md written (87 kB), figures: 10
+2026-09-16 06:10:12,693 INFO report: REPORT.md written (118 kB), figures: 10
+2026-09-16 12:49:20,418 INFO report: REPORT.md written (118 kB), figures: 10
+2026-09-16 12:50:59,342 INFO report: REPORT.md written (128 kB), figures: 10

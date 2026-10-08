@@ -1,0 +1,224 @@
+2026-09-16 05:04:25,590 INFO external: E54a CryoSat-2: 4310 TLEs, 164 maneuvers, gap 24.8 h
+2026-09-16 05:04:27,844 INFO external: E54a Fengyun-2D: 1189 TLEs, 22 maneuvers, gap 26.2 h
+2026-09-16 05:04:32,600 INFO external: E54a Fengyun-2E: 2377 TLEs, 48 maneuvers, gap 25.3 h
+2026-09-16 05:04:38,919 INFO external: E54a Fengyun-2F: 2987 TLEs, 68 maneuvers, gap 24.8 h
+2026-09-16 05:04:41,593 INFO external: E54a Fengyun-2H: 1055 TLEs, 12 maneuvers, gap 24.1 h
+2026-09-16 05:04:44,006 INFO external: E54a Fengyun-4A: 1307 TLEs, 49 maneuvers, gap 24.4 h
+2026-09-16 05:04:50,002 INFO external: E54a Haiyang-2A: 3000 TLEs, 56 maneuvers, gap 24.4 h
+2026-09-16 05:04:58,333 INFO external: E54a Jason-1: 3998 TLEs, 115 maneuvers, gap 24.4 h
+2026-09-16 05:05:05,505 INFO external: E54a Jason-2: 3923 TLEs, 96 maneuvers, gap 24.4 h
+2026-09-16 05:05:09,701 INFO external: E54a Jason-3: 2412 TLEs, 40 maneuvers, gap 24.4 h
+2026-09-16 05:05:15,793 INFO external: E54a SARAL: 3292 TLEs, 55 maneuvers, gap 25.2 h
+2026-09-16 05:05:21,017 INFO external: E54a Sentinel-3A: 2387 TLEs, 59 maneuvers, gap 23.6 h
+2026-09-16 05:05:24,500 INFO external: E54a Sentinel-3B: 1584 TLEs, 51 maneuvers, gap 23.6 h
+2026-09-16 05:05:26,011 INFO external: E54a Sentinel-6A: 665 TLEs, 13 maneuvers, gap 24.4 h
+2026-09-16 05:05:34,126 INFO external: E54a TOPEX: 4136 TLEs, 39 maneuvers, gap 24.4 h
+2026-09-16 05:05:34,287 INFO external: E54a pooled:
+                     dataset  satellite     pool                setting  n_maneuvers  precision  recall    f1    f2
+       Shorten TLE benchmark POOLED-LEO      raw  transfer (Sentinel k)        688.0      0.263   0.708 0.383 0.529
+       Shorten TLE benchmark POOLED-ALL      raw  transfer (Sentinel k)        887.0      0.263   0.754 0.390 0.549
+       Shorten TLE benchmark POOLED-LEO      raw best k on this dataset        688.0      0.323   0.656 0.433 0.544
+       Shorten TLE benchmark POOLED-ALL      raw best k on this dataset        887.0      0.378   0.696 0.490 0.596
+       Shorten TLE benchmark POOLED-LEO PAF-lite  transfer (Sentinel k)        688.0      0.308   0.759 0.438 0.587
+       Shorten TLE benchmark POOLED-ALL PAF-lite  transfer (Sentinel k)        887.0      0.303   0.795 0.439 0.600
+       Shorten TLE benchmark POOLED-LEO PAF-lite best k on this dataset        688.0      0.457   0.695 0.552 0.629
+       Shorten TLE benchmark POOLED-ALL PAF-lite best k on this dataset        887.0      0.513   0.734 0.604 0.676
+       Shorten TLE benchmark POOLED-GEO      raw  transfer (Sentinel k)        199.0      0.262   0.915 0.408 0.611
+       Shorten TLE benchmark POOLED-GEO      raw best k on this dataset        199.0      0.706   0.834 0.765 0.805
+       Shorten TLE benchmark POOLED-GEO PAF-lite  transfer (Sentinel k)        199.0      0.290   0.920 0.441 0.641
+       Shorten TLE benchmark POOLED-GEO PAF-lite best k on this dataset        199.0      0.772   0.869 0.818 0.848
+OrbBench (Sentinel POD logs)        S1A      PAF   tuned on train years        195.0      0.326   0.554 0.411 0.486
+OrbBench (Sentinel POD logs)        S2A      PAF   tuned on train years         38.0      0.323   0.842 0.467 0.637
+OrbBench (Sentinel POD logs)        S3A      PAF   tuned on train years         39.0      0.327   0.897 0.479 0.665
+OrbBench (Sentinel POD logs)        ALL      PAF   tuned on train years          NaN      0.326   0.643 0.433 0.538
+2026-09-16 05:05:35,708 ERROR external: external failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/external.py", line 136, in main
+    b, rel = e54b(); save_df(b, "e54b_kelvins_t6.csv"); (C.RESULTS / "e54_dataset_relation.json").write_text(json.dumps(rel, indent=1)); log.info("E54b:\n" + b.round(3).to_string(index=False)); log.info("relation: " + json.dumps(rel))
+             ~~~~^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/external.py", line 107, in e54b
+    csvs = glob.glob(str(KELVINS / "**" / "*.csv"), recursive=True); tr = [f for f in csvs if "train" in Path(f).name.lower()][0]
+                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-09-16 05:09:53,337 INFO external: E54a CryoSat-2: 4310 TLEs, 164 maneuvers, gap 24.8 h
+2026-09-16 05:09:55,395 INFO external: E54a Fengyun-2D: 1189 TLEs, 22 maneuvers, gap 26.2 h
+2026-09-16 05:09:59,956 INFO external: E54a Fengyun-2E: 2377 TLEs, 48 maneuvers, gap 25.3 h
+2026-09-16 05:10:05,610 INFO external: E54a Fengyun-2F: 2987 TLEs, 68 maneuvers, gap 24.8 h
+2026-09-16 05:10:07,915 INFO external: E54a Fengyun-2H: 1055 TLEs, 12 maneuvers, gap 24.1 h
+2026-09-16 05:10:10,597 INFO external: E54a Fengyun-4A: 1307 TLEs, 49 maneuvers, gap 24.4 h
+2026-09-16 05:10:15,812 INFO external: E54a Haiyang-2A: 3000 TLEs, 56 maneuvers, gap 24.4 h
+2026-09-16 05:10:23,420 INFO external: E54a Jason-1: 3998 TLEs, 115 maneuvers, gap 24.4 h
+2026-09-16 05:10:30,621 INFO external: E54a Jason-2: 3923 TLEs, 96 maneuvers, gap 24.4 h
+2026-09-16 05:10:34,650 INFO external: E54a Jason-3: 2412 TLEs, 40 maneuvers, gap 24.4 h
+2026-09-16 05:10:41,218 INFO external: E54a SARAL: 3292 TLEs, 55 maneuvers, gap 25.2 h
+2026-09-16 05:10:45,912 INFO external: E54a Sentinel-3A: 2387 TLEs, 59 maneuvers, gap 23.6 h
+2026-09-16 05:10:48,914 INFO external: E54a Sentinel-3B: 1584 TLEs, 51 maneuvers, gap 23.6 h
+2026-09-16 05:10:50,252 INFO external: E54a Sentinel-6A: 665 TLEs, 13 maneuvers, gap 24.4 h
+2026-09-16 05:10:57,154 INFO external: E54a TOPEX: 4136 TLEs, 39 maneuvers, gap 24.4 h
+2026-09-16 05:10:57,221 INFO external: E54a pooled:
+                     dataset  satellite     pool                setting  n_maneuvers  precision  recall    f1    f2
+       Shorten TLE benchmark POOLED-LEO      raw  transfer (Sentinel k)        688.0      0.263   0.708 0.383 0.529
+       Shorten TLE benchmark POOLED-ALL      raw  transfer (Sentinel k)        887.0      0.263   0.754 0.390 0.549
+       Shorten TLE benchmark POOLED-LEO      raw best k on this dataset        688.0      0.323   0.656 0.433 0.544
+       Shorten TLE benchmark POOLED-ALL      raw best k on this dataset        887.0      0.378   0.696 0.490 0.596
+       Shorten TLE benchmark POOLED-LEO PAF-lite  transfer (Sentinel k)        688.0      0.308   0.759 0.438 0.587
+       Shorten TLE benchmark POOLED-ALL PAF-lite  transfer (Sentinel k)        887.0      0.303   0.795 0.439 0.600
+       Shorten TLE benchmark POOLED-LEO PAF-lite best k on this dataset        688.0      0.457   0.695 0.552 0.629
+       Shorten TLE benchmark POOLED-ALL PAF-lite best k on this dataset        887.0      0.513   0.734 0.604 0.676
+       Shorten TLE benchmark POOLED-GEO      raw  transfer (Sentinel k)        199.0      0.262   0.915 0.408 0.611
+       Shorten TLE benchmark POOLED-GEO      raw best k on this dataset        199.0      0.706   0.834 0.765 0.805
+       Shorten TLE benchmark POOLED-GEO PAF-lite  transfer (Sentinel k)        199.0      0.290   0.920 0.441 0.641
+       Shorten TLE benchmark POOLED-GEO PAF-lite best k on this dataset        199.0      0.772   0.869 0.818 0.848
+OrbBench (Sentinel POD logs)        S1A      PAF   tuned on train years        195.0      0.326   0.554 0.411 0.486
+OrbBench (Sentinel POD logs)        S2A      PAF   tuned on train years         38.0      0.323   0.842 0.467 0.637
+OrbBench (Sentinel POD logs)        S3A      PAF   tuned on train years         39.0      0.327   0.897 0.479 0.665
+OrbBench (Sentinel POD logs)        ALL      PAF   tuned on train years          NaN      0.326   0.643 0.433 0.538
+2026-09-16 05:11:06,378 INFO external: Kelvins train: (162634, 103), events 13154 from /mnt/data/paper/stm场景汇总/pipeline/data/external/kelvins_cdm/Collision Avoidance Challenge - Dataset/kelvins_competition_data/train_data.csv
+2026-09-16 05:11:06,424 INFO external: Kelvins private test: (2167, 103), events 2167
+2026-09-16 06:01:43,874 INFO external: E54a CryoSat-2: 4310 TLEs, 164 maneuvers, gap 24.8 h
+2026-09-16 06:01:44,750 INFO external: E54a Fengyun-2D: 1189 TLEs, 22 maneuvers, gap 26.2 h
+2026-09-16 06:01:46,449 INFO external: E54a Fengyun-2E: 2377 TLEs, 48 maneuvers, gap 25.3 h
+2026-09-16 06:01:48,942 INFO external: E54a Fengyun-2F: 2987 TLEs, 68 maneuvers, gap 24.8 h
+2026-09-16 06:01:49,936 INFO external: E54a Fengyun-2H: 1055 TLEs, 12 maneuvers, gap 24.1 h
+2026-09-16 06:01:51,119 INFO external: E54a Fengyun-4A: 1307 TLEs, 49 maneuvers, gap 24.4 h
+2026-09-16 06:01:52,731 INFO external: E54a Haiyang-2A: 3000 TLEs, 56 maneuvers, gap 24.4 h
+2026-09-16 06:01:55,308 INFO external: E54a Jason-1: 3998 TLEs, 115 maneuvers, gap 24.4 h
+2026-09-16 06:01:57,444 INFO external: E54a Jason-2: 3923 TLEs, 96 maneuvers, gap 24.4 h
+2026-09-16 06:01:58,550 INFO external: E54a Jason-3: 2412 TLEs, 40 maneuvers, gap 24.4 h
+2026-09-16 06:02:00,613 INFO external: E54a SARAL: 3292 TLEs, 55 maneuvers, gap 25.2 h
+2026-09-16 06:02:02,241 INFO external: E54a Sentinel-3A: 2387 TLEs, 59 maneuvers, gap 23.6 h
+2026-09-16 06:02:03,094 INFO external: E54a Sentinel-3B: 1584 TLEs, 51 maneuvers, gap 23.6 h
+2026-09-16 06:02:03,561 INFO external: E54a Sentinel-6A: 665 TLEs, 13 maneuvers, gap 24.4 h
+2026-09-16 06:02:05,603 INFO external: E54a TOPEX: 4136 TLEs, 39 maneuvers, gap 24.4 h
+2026-09-16 06:02:05,639 INFO external: E54a pooled:
+                     dataset  satellite     pool                setting  n_maneuvers  precision  recall    f1    f2
+       Shorten TLE benchmark POOLED-LEO      raw  transfer (Sentinel k)        688.0      0.263   0.708 0.383 0.529
+       Shorten TLE benchmark POOLED-ALL      raw  transfer (Sentinel k)        887.0      0.263   0.754 0.390 0.549
+       Shorten TLE benchmark POOLED-LEO      raw best k on this dataset        688.0      0.323   0.656 0.433 0.544
+       Shorten TLE benchmark POOLED-ALL      raw best k on this dataset        887.0      0.378   0.696 0.490 0.596
+       Shorten TLE benchmark POOLED-LEO PAF-lite  transfer (Sentinel k)        688.0      0.308   0.759 0.438 0.587
+       Shorten TLE benchmark POOLED-ALL PAF-lite  transfer (Sentinel k)        887.0      0.303   0.795 0.439 0.600
+       Shorten TLE benchmark POOLED-LEO PAF-lite best k on this dataset        688.0      0.457   0.695 0.552 0.629
+       Shorten TLE benchmark POOLED-ALL PAF-lite best k on this dataset        887.0      0.513   0.734 0.604 0.676
+       Shorten TLE benchmark POOLED-GEO      raw  transfer (Sentinel k)        199.0      0.262   0.915 0.408 0.611
+       Shorten TLE benchmark POOLED-GEO      raw best k on this dataset        199.0      0.706   0.834 0.765 0.805
+       Shorten TLE benchmark POOLED-GEO PAF-lite  transfer (Sentinel k)        199.0      0.290   0.920 0.441 0.641
+       Shorten TLE benchmark POOLED-GEO PAF-lite best k on this dataset        199.0      0.772   0.869 0.818 0.848
+OrbBench (Sentinel POD logs)        S1A      PAF   tuned on train years        195.0      0.326   0.554 0.411 0.486
+OrbBench (Sentinel POD logs)        S2A      PAF   tuned on train years         38.0      0.323   0.842 0.467 0.637
+OrbBench (Sentinel POD logs)        S3A      PAF   tuned on train years         39.0      0.327   0.897 0.479 0.665
+OrbBench (Sentinel POD logs)        ALL      PAF   tuned on train years          NaN      0.326   0.643 0.433 0.538
+2026-09-16 06:02:10,430 INFO external: Kelvins train: (162634, 103), events 13154 from /mnt/data/paper/stm场景汇总/pipeline/data/external/kelvins_cdm/Collision Avoidance Challenge - Dataset/kelvins_competition_data/train_data.csv
+2026-09-16 06:02:10,455 INFO external: Kelvins private test: (2167, 103), events 2167
+2026-09-16 06:02:14,484 INFO external: E54b:
+                                   dataset                             method  mse_hr    f2  precision_hr  recall_hr   score  n_events  n_high_risk
+         Kelvins full (5-fold CV by event)                  naive latest risk   3.503 0.806         0.527      0.929   4.345     11942          323
+         Kelvins full (5-fold CV by event) Ridge signed-log (OrbBench T6-CDM)  56.196 0.072         0.206      0.062 780.568     11942          323
+         Kelvins full (5-fold CV by event)                             HistGB  53.106 0.107         0.426      0.090 498.102     11942          323
+Kelvins, OrbBench 199-event subset (n=185)                  naive latest risk   0.000 0.938         0.750      1.000   0.000       185            6
+Kelvins, OrbBench 199-event subset (n=185) Ridge signed-log (OrbBench T6-CDM)  29.965 0.370         0.667      0.333  80.906       185            6
+Kelvins, OrbBench 199-event subset (n=185)                             HistGB   9.769 0.200         1.000      0.167  48.846       185            6
+2026-09-16 06:02:14,484 INFO external: relation: {"kelvins_rows": 162634, "kelvins_events": 13154, "orbbench_cdm_rows": 199, "same_columns": false, "orbbench_only_cols": ["true_risk"], "files": ["train_data.csv", "test_data_private.csv", "test_data.csv"], "orbbench_event_ids_in_kelvins_train": 1.0, "orbbench_event_ids_in_kelvins_test": 1.0, "kelvins_test_rows": 26651, "kelvins_test_events": 2167, "orbbench_rows_matching_kelvins_test_rows": 0.9346733668341709, "orbbench_has_true_risk_column": true, "orbbench_events": 199, "orbbench_rows_matching_kelvins_train_rows": 0.0, "orbbench_time_to_tca_range": [-0.025511898, 0.957317800925926]}
+2026-09-16 06:05:41,995 INFO external: E54a pooled:
+                     dataset  satellite     pool                setting  n_maneuvers  precision  recall    f1    f2
+       Shorten TLE benchmark POOLED-LEO      raw  transfer (Sentinel k)        688.0      0.263   0.708 0.383 0.529
+       Shorten TLE benchmark POOLED-ALL      raw  transfer (Sentinel k)        887.0      0.263   0.754 0.390 0.549
+       Shorten TLE benchmark POOLED-LEO      raw best k on this dataset        688.0      0.323   0.656 0.433 0.544
+       Shorten TLE benchmark POOLED-ALL      raw best k on this dataset        887.0      0.378   0.696 0.490 0.596
+       Shorten TLE benchmark POOLED-LEO PAF-lite  transfer (Sentinel k)        688.0      0.308   0.759 0.438 0.587
+       Shorten TLE benchmark POOLED-ALL PAF-lite  transfer (Sentinel k)        887.0      0.303   0.795 0.439 0.600
+       Shorten TLE benchmark POOLED-LEO PAF-lite best k on this dataset        688.0      0.457   0.695 0.552 0.629
+       Shorten TLE benchmark POOLED-ALL PAF-lite best k on this dataset        887.0      0.513   0.734 0.604 0.676
+       Shorten TLE benchmark POOLED-GEO      raw  transfer (Sentinel k)        199.0      0.262   0.915 0.408 0.611
+       Shorten TLE benchmark POOLED-GEO      raw best k on this dataset        199.0      0.706   0.834 0.765 0.805
+       Shorten TLE benchmark POOLED-GEO PAF-lite  transfer (Sentinel k)        199.0      0.290   0.920 0.441 0.641
+       Shorten TLE benchmark POOLED-GEO PAF-lite best k on this dataset        199.0      0.772   0.869 0.818 0.848
+OrbBench (Sentinel POD logs)        S1A      PAF   tuned on train years        195.0      0.326   0.554 0.411 0.486
+OrbBench (Sentinel POD logs)        S2A      PAF   tuned on train years         38.0      0.323   0.842 0.467 0.637
+OrbBench (Sentinel POD logs)        S3A      PAF   tuned on train years         39.0      0.327   0.897 0.479 0.665
+OrbBench (Sentinel POD logs)        ALL      PAF   tuned on train years          NaN      0.326   0.643 0.433 0.538
+2026-09-16 06:05:46,945 INFO external: Kelvins train (162634, 103) (13154 events); public test (24484, 103) (2167 events); private truth (2167, 103)
+2026-09-16 06:05:46,962 ERROR external: external failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/external.py", line 151, in main
+    b, rel = e54b(); save_df(b, "e54b_kelvins_t6.csv"); (C.RESULTS / "e54_dataset_relation.json").write_text(json.dumps(rel, indent=1)); log.info("E54b:\n" + b.round(3).to_string(index=False)); log.info("relation: " + json.dumps(rel))
+             ~~~~^^
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/external.py", line 126, in e54b
+    orbbench_rows_found_in_kelvins_public_test=float(m._merge.eq("both").mean()), orbbench_true_risk_equals_kelvins_private_risk=float(np.isclose(j.true_risk, j.risk).mean()) if "true_risk" in ours else None,
+                                                                                                                                                               ^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/core/generic.py", line 6194, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'risk'
+2026-09-16 06:06:32,205 INFO external: E54a pooled:
+                     dataset  satellite     pool                setting  n_maneuvers  precision  recall    f1    f2
+       Shorten TLE benchmark POOLED-LEO      raw  transfer (Sentinel k)        688.0      0.263   0.708 0.383 0.529
+       Shorten TLE benchmark POOLED-ALL      raw  transfer (Sentinel k)        887.0      0.263   0.754 0.390 0.549
+       Shorten TLE benchmark POOLED-LEO      raw best k on this dataset        688.0      0.323   0.656 0.433 0.544
+       Shorten TLE benchmark POOLED-ALL      raw best k on this dataset        887.0      0.378   0.696 0.490 0.596
+       Shorten TLE benchmark POOLED-LEO PAF-lite  transfer (Sentinel k)        688.0      0.308   0.759 0.438 0.587
+       Shorten TLE benchmark POOLED-ALL PAF-lite  transfer (Sentinel k)        887.0      0.303   0.795 0.439 0.600
+       Shorten TLE benchmark POOLED-LEO PAF-lite best k on this dataset        688.0      0.457   0.695 0.552 0.629
+       Shorten TLE benchmark POOLED-ALL PAF-lite best k on this dataset        887.0      0.513   0.734 0.604 0.676
+       Shorten TLE benchmark POOLED-GEO      raw  transfer (Sentinel k)        199.0      0.262   0.915 0.408 0.611
+       Shorten TLE benchmark POOLED-GEO      raw best k on this dataset        199.0      0.706   0.834 0.765 0.805
+       Shorten TLE benchmark POOLED-GEO PAF-lite  transfer (Sentinel k)        199.0      0.290   0.920 0.441 0.641
+       Shorten TLE benchmark POOLED-GEO PAF-lite best k on this dataset        199.0      0.772   0.869 0.818 0.848
+OrbBench (Sentinel POD logs)        S1A      PAF   tuned on train years        195.0      0.326   0.554 0.411 0.486
+OrbBench (Sentinel POD logs)        S2A      PAF   tuned on train years         38.0      0.323   0.842 0.467 0.637
+OrbBench (Sentinel POD logs)        S3A      PAF   tuned on train years         39.0      0.327   0.897 0.479 0.665
+OrbBench (Sentinel POD logs)        ALL      PAF   tuned on train years          NaN      0.326   0.643 0.433 0.538
+2026-09-16 06:06:36,868 INFO external: Kelvins train (162634, 103) (13154 events); public test (24484, 103) (2167 events); private truth (2167, 103)
+2026-09-16 06:06:38,503 INFO external: E54b:
+                                                dataset                                                           method  mse_hr    f2  precision_hr  recall_hr        score  n_events  n_high_risk
+Kelvins public test (2167 events, competition protocol)                            naive latest risk (>= 2 d before TCA)  26.643 0.739         0.646      0.767 3.604900e+01      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                            naive latest risk (>= 2 d before TCA)  26.643 0.799         0.958      0.767 3.336200e+01       199          150
+Kelvins public test (2167 events, competition protocol)                                     Ridge signed-log, all events 131.988 0.000         0.000      0.000 1.319882e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                                     Ridge signed-log, all events 131.988 0.000         0.000      0.000 1.319882e+11       199          150
+Kelvins public test (2167 events, competition protocol)                                               HistGB, all events 157.471 0.008         0.500      0.007 1.895954e+04      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                                               HistGB, all events 157.471 0.008         1.000      0.007 1.892804e+04       199          150
+Kelvins public test (2167 events, competition protocol) Ridge signed-log, high-risk-focused (pre-risk >= -8, else naive) 146.254 0.000         0.000      0.000 1.462537e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199) Ridge signed-log, high-risk-focused (pre-risk >= -8, else naive) 146.254 0.000         0.000      0.000 1.462537e+11       199          150
+Kelvins public test (2167 events, competition protocol)           HistGB, high-risk-focused (pre-risk >= -8, else naive) 145.122 0.000         0.000      0.000 1.451219e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)           HistGB, high-risk-focused (pre-risk >= -8, else naive) 145.122 0.000         0.000      0.000 1.451219e+11       199          150
+Kelvins public test (2167 events, competition protocol)                       naive + HistGB residual, high-risk-focused 145.743 0.008         0.500      0.007 1.754740e+04      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                       naive + HistGB residual, high-risk-focused 145.743 0.008         1.000      0.007 1.751825e+04       199          150
+2026-09-16 06:06:38,503 INFO external: relation: {"kelvins_train_rows": 162634, "kelvins_train_events": 13154, "kelvins_test_rows": 24484, "kelvins_test_events": 2167, "kelvins_test_time_to_tca_min": 2.000213078703704, "orbbench_cdm_rows": 199, "orbbench_events": 199, "orbbench_only_cols": ["true_risk"], "kelvins_only_cols": ["risk"], "orbbench_rows_found_in_kelvins_public_test": 0.0, "orbbench_true_risk_equals_kelvins_private_risk": 1.0, "orbbench_rows_identical_to_private_rows": 1.0, "kelvins_private_cols_first": ["event_id", "time_to_tca", "mission_id", "true_risk", "max_risk_estimate", "max_risk_scaling"], "orbbench_time_to_tca_range": [-0.025511898, 0.957317800925926], "interpretation": "OrbBench's 199 CDM rows are rows of test_data_private.csv: the final CDM (closest to TCA) of 199 of the 2,167 Kelvins test events, with the final risk as true_risk.", "n_focus_train_events": 2160, "n_focus_test_events": 388}
+2026-09-16 06:09:01,303 INFO external: E54a pooled:
+                     dataset  satellite     pool                setting  n_maneuvers  precision  recall    f1    f2
+       Shorten TLE benchmark POOLED-LEO      raw  transfer (Sentinel k)        688.0      0.263   0.708 0.383 0.529
+       Shorten TLE benchmark POOLED-ALL      raw  transfer (Sentinel k)        887.0      0.263   0.754 0.390 0.549
+       Shorten TLE benchmark POOLED-LEO      raw best k on this dataset        688.0      0.323   0.656 0.433 0.544
+       Shorten TLE benchmark POOLED-ALL      raw best k on this dataset        887.0      0.378   0.696 0.490 0.596
+       Shorten TLE benchmark POOLED-LEO PAF-lite  transfer (Sentinel k)        688.0      0.308   0.759 0.438 0.587
+       Shorten TLE benchmark POOLED-ALL PAF-lite  transfer (Sentinel k)        887.0      0.303   0.795 0.439 0.600
+       Shorten TLE benchmark POOLED-LEO PAF-lite best k on this dataset        688.0      0.457   0.695 0.552 0.629
+       Shorten TLE benchmark POOLED-ALL PAF-lite best k on this dataset        887.0      0.513   0.734 0.604 0.676
+       Shorten TLE benchmark POOLED-GEO      raw  transfer (Sentinel k)        199.0      0.262   0.915 0.408 0.611
+       Shorten TLE benchmark POOLED-GEO      raw best k on this dataset        199.0      0.706   0.834 0.765 0.805
+       Shorten TLE benchmark POOLED-GEO PAF-lite  transfer (Sentinel k)        199.0      0.290   0.920 0.441 0.641
+       Shorten TLE benchmark POOLED-GEO PAF-lite best k on this dataset        199.0      0.772   0.869 0.818 0.848
+OrbBench (Sentinel POD logs)        S1A      PAF   tuned on train years        195.0      0.326   0.554 0.411 0.486
+OrbBench (Sentinel POD logs)        S2A      PAF   tuned on train years         38.0      0.323   0.842 0.467 0.637
+OrbBench (Sentinel POD logs)        S3A      PAF   tuned on train years         39.0      0.327   0.897 0.479 0.665
+OrbBench (Sentinel POD logs)        ALL      PAF   tuned on train years          NaN      0.326   0.643 0.433 0.538
+2026-09-16 06:09:06,114 INFO external: Kelvins train (162634, 103) (13154 events); public test (24484, 103) (2167 events); private truth (2167, 103)
+2026-09-16 06:09:08,621 INFO external: E54b:
+                                                dataset                                                                method  mse_hr    f2  precision_hr  recall_hr        score  n_events  n_high_risk
+Kelvins public test (2167 events, competition protocol)                                 naive latest risk (>= 2 d before TCA)  26.643 0.739         0.646      0.767 3.604900e+01      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                                 naive latest risk (>= 2 d before TCA)  26.643 0.799         0.958      0.767 3.336200e+01       199          150
+Kelvins public test (2167 events, competition protocol)                                          Ridge signed-log, all events 131.988 0.000         0.000      0.000 1.319882e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                                          Ridge signed-log, all events 131.988 0.000         0.000      0.000 1.319882e+11       199          150
+Kelvins public test (2167 events, competition protocol)                                                    HistGB, all events 157.471 0.008         0.500      0.007 1.895954e+04      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                                                    HistGB, all events 157.471 0.008         1.000      0.007 1.892804e+04       199          150
+Kelvins public test (2167 events, competition protocol)      Ridge signed-log, high-risk-focused (pre-risk >= -8, else naive) 146.254 0.000         0.000      0.000 1.462537e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)      Ridge signed-log, high-risk-focused (pre-risk >= -8, else naive) 146.254 0.000         0.000      0.000 1.462537e+11       199          150
+Kelvins public test (2167 events, competition protocol)                HistGB, high-risk-focused (pre-risk >= -8, else naive) 145.122 0.000         0.000      0.000 1.451219e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                HistGB, high-risk-focused (pre-risk >= -8, else naive) 145.122 0.000         0.000      0.000 1.451219e+11       199          150
+Kelvins public test (2167 events, competition protocol)                            naive + HistGB residual, high-risk-focused 145.743 0.008         0.500      0.007 1.754740e+04      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)                            naive + HistGB residual, high-risk-focused 145.743 0.008         1.000      0.007 1.751825e+04       199          150
+Kelvins public test (2167 events, competition protocol) HistGB, geometry + risk-history features only (28), high-risk-focused 160.729 0.000         0.000      0.000 1.607292e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199) HistGB, geometry + risk-history features only (28), high-risk-focused 160.729 0.000         0.000      0.000 1.607292e+11       199          150
+Kelvins public test (2167 events, competition protocol)         naive + HistGB residual, geometry features, high-risk-focused 160.928 0.000         0.000      0.000 1.609276e+11      2167          150
+        Kelvins test, OrbBench 199-event subset (n=199)         naive + HistGB residual, geometry features, high-risk-focused 160.928 0.000         0.000      0.000 1.609276e+11       199          150
+2026-09-16 06:09:08,621 INFO external: relation: {"kelvins_train_rows": 162634, "kelvins_train_events": 13154, "kelvins_test_rows": 24484, "kelvins_test_events": 2167, "kelvins_test_time_to_tca_min": 2.000213078703704, "orbbench_cdm_rows": 199, "orbbench_events": 199, "orbbench_only_cols": ["true_risk"], "kelvins_only_cols": ["risk"], "orbbench_rows_found_in_kelvins_public_test": 0.0, "orbbench_true_risk_equals_kelvins_private_risk": 1.0, "orbbench_rows_identical_to_private_rows": 1.0, "kelvins_private_cols_first": ["event_id", "time_to_tca", "mission_id", "true_risk", "max_risk_estimate", "max_risk_scaling"], "orbbench_time_to_tca_range": [-0.025511898, 0.957317800925926], "interpretation": "OrbBench's 199 CDM rows are rows of test_data_private.csv: the final CDM (closest to TCA) of 199 of the 2,167 Kelvins test events, with the final risk as true_risk.", "n_focus_train_events": 2160, "n_focus_test_events": 388}

@@ -1,0 +1,10 @@
+# T3 space-weather forecasting (t3_space_weather/run.py): zero-shot amazon/chronos-2 on CPU.
+# The original run did not record package versions; chronos-forecasting 2.3.2 (the version in
+# requirements/pipeline-cuda.txt) exposes the Chronos2Pipeline API that run.py uses.
+chronos-forecasting>=2.2,<3
+torch>=2.6
+pandas>=2.2
+numpy>=2.0
+pyarrow>=19
+scipy>=1.15
+matplotlib>=3.9

@@ -1,0 +1,182 @@
+2026-09-13 16:17:05,669 ERROR proof: proof failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/proof.py", line 387, in main
+    if r is not None: parts1.append(r); log.info(f"P1 {r.sat.iloc[0]}: {len(r)} rows")
+                                                       ~~~~~~~~~~^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/core/indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-09-13 16:38:01,894 INFO proof: satellites with POD truth in the test window: ['S1A', 'S2A', 'S2B', 'S3A', 'S3B']
+2026-09-13 16:38:18,452 INFO proof: P1 S3B: 760500 rows
+2026-09-13 16:39:04,938 INFO proof: P1 S2A: 1690598 rows
+2026-09-13 16:39:25,355 INFO proof: P1 S2B: 2021760 rows
+2026-09-13 16:39:41,129 INFO proof: P1 S3A: 2350530 rows
+2026-09-13 16:39:44,633 INFO proof: P1 S1A: 2342704 rows
+2026-09-13 16:41:11,359 INFO proof: P1 pooled P50 by keep x method:
+keep                       0.10   0.20   0.33   0.50   1.00
+method                                                     
+MTF                       0.583  0.535  0.523  0.517  0.514
+MTF-adaptive              0.726  0.580  0.538  0.523  0.515
+MTF-adaptive+T2-gate      0.731  0.596  0.562  0.542  0.528
+MTF-adaptive+oracle-gate  0.723  0.598  0.552  0.532  0.519
+MTF-wide                  0.584  0.536  0.525  0.518  0.514
+blend-2                   0.696  0.569  0.537  0.524  0.517
+nearest                   0.583  0.535  0.524  0.518  0.516
+2026-09-13 16:41:11,361 INFO proof: P1 CI:
+ keep                   method  nearest_p50  method_p50  rel_change_pct  ci_lo  ci_hi  win_rate
+ 0.10                      MTF        0.583       0.583          -0.009 -0.027  0.006     0.156
+ 0.10             MTF-adaptive        0.583       0.726          24.525 23.348 26.300     0.423
+ 0.10     MTF-adaptive+T2-gate        0.583       0.731          25.310 23.846 26.679     0.397
+ 0.10 MTF-adaptive+oracle-gate        0.583       0.723          24.077 21.856 25.740     0.252
+ 0.10                 MTF-wide        0.583       0.584           0.154  0.060  0.260     0.267
+ 0.10                  blend-2        0.583       0.696          19.402 18.246 20.562     0.457
+ 0.20                      MTF        0.535       0.535          -0.013 -0.053  0.012     0.206
+ 0.20             MTF-adaptive        0.535       0.580           8.419  7.676  9.219     0.478
+ 0.20     MTF-adaptive+T2-gate        0.535       0.596          11.406 10.412 12.429     0.449
+ 0.20 MTF-adaptive+oracle-gate        0.535       0.598          11.771 10.664 12.896     0.294
+ 0.20                 MTF-wide        0.535       0.536           0.158  0.037  0.294     0.406
+ 0.20                  blend-2        0.535       0.569           6.332  5.704  7.022     0.507
+ 0.33                      MTF        0.524       0.523          -0.115 -0.168 -0.060     0.287
+ 0.33             MTF-adaptive        0.524       0.538           2.602  2.222  3.026     0.505
+ 0.33     MTF-adaptive+T2-gate        0.524       0.562           7.200  6.515  8.033     0.470
+ 0.33 MTF-adaptive+oracle-gate        0.524       0.552           5.238  4.532  5.981     0.316
+ 0.33                 MTF-wide        0.524       0.525           0.113 -0.058  0.293     0.487
+ 0.33                  blend-2        0.524       0.537           2.431  2.009  2.885     0.523
+ 0.50                      MTF        0.518       0.517          -0.180 -0.245 -0.112     0.388
+ 0.50             MTF-adaptive        0.518       0.523           0.869  0.651  1.122     0.512
+ 0.50     MTF-adaptive+T2-gate        0.518       0.542           4.573  4.007  5.252     0.484
+ 0.50 MTF-adaptive+oracle-gate        0.518       0.532           2.719  2.180  3.261     0.327
+ 0.50                 MTF-wide        0.518       0.518           0.003 -0.201  0.177     0.510
+ 0.50                  blend-2        0.518       0.524           1.071  0.808  1.370     0.527
+ 1.00                      MTF        0.516       0.514          -0.361 -0.480 -0.221     0.499
+ 1.00             MTF-adaptive        0.516       0.515          -0.238 -0.421  0.005     0.515
+ 1.00     MTF-adaptive+T2-gate        0.516       0.528           2.384  2.021  2.873     0.492
+ 1.00 MTF-adaptive+oracle-gate        0.516       0.519           0.465  0.054  0.879     0.334
+ 1.00                 MTF-wide        0.516       0.514          -0.365 -0.542 -0.153     0.517
+ 1.00                  blend-2        0.516       0.517           0.217  0.014  0.470     0.531
+2026-09-13 16:41:37,424 INFO proof: empirical isolated-jump |dn/n|: n=1425, median=1.83e-05, p90=4.33e-05
+2026-09-13 16:41:57,464 INFO proof: P2 S3B done
+2026-09-13 16:42:38,577 INFO proof: P2 S2A done
+2026-09-13 16:42:55,802 INFO proof: P2 S2B done
+2026-09-13 16:42:56,662 INFO proof: P2 S1A done
+2026-09-13 16:43:01,757 INFO proof: P2 S3A done
+2026-09-13 16:43:03,426 INFO proof: P2 pooled:
+   p     pool       method      n  e3d_p50  e3d_p90  e3d_p99 sat
+0.00 PAF-lite MTF-adaptive 105822    0.516    0.948    2.262 ALL
+0.00 PAF-lite      nearest 105822    0.517    0.943    2.462 ALL
+0.00      raw MTF-adaptive 105822    0.515    0.944    1.925 ALL
+0.00      raw      nearest 105822    0.516    0.940    2.039 ALL
+0.02 PAF-lite MTF-adaptive 317466    0.518    0.954    2.820 ALL
+0.02 PAF-lite      nearest 317466    0.517    0.945    2.706 ALL
+0.02      raw MTF-adaptive 317466    0.524    0.974   10.159 ALL
+0.02      raw      nearest 317466    0.519    0.948    2.518 ALL
+0.05 PAF-lite MTF-adaptive 317466    0.522    0.966    7.748 ALL
+0.05 PAF-lite      nearest 317466    0.519    0.950    3.276 ALL
+0.05      raw MTF-adaptive 317466    0.538    1.040  719.902 ALL
+0.05      raw      nearest 317466    0.523    0.962    3.578 ALL
+0.10 PAF-lite MTF-adaptive 317466    0.530    0.998  579.557 ALL
+0.10 PAF-lite      nearest 317466    0.523    0.961    5.807 ALL
+0.10      raw MTF-adaptive 317466    0.563    1.289  868.489 ALL
+0.10      raw      nearest 317466    0.531    0.990   14.058 ALL
+2026-09-13 16:43:03,427 INFO proof: P2 detection:
+   p  n_tle  n_fault  fault_removed  clean_removed  recall_n_jump  recall_bstar_neg  recall_duplicate  fault_recall  false_removal_rate
+0.00  10640        0              0            140          0.000               0.0             0.000         0.000               0.013
+0.02  32036      576            442            530          0.667               1.0             0.671         0.767               0.017
+0.05  32220     1504           1137            703          0.624               1.0             0.700         0.756               0.023
+0.10  32527     3105           2283            993          0.595               1.0             0.677         0.735               0.034
+2026-09-13 16:43:49,326 INFO proof: P3 neighbour effect:
+  scope  n_neighbour_removed  n_neighbour_kept  nearest_raw_p50_when_nb_removed  nearest_PAF_p50_when_nb_removed  PAF_win_rate_when_nb_removed  nearest_raw_p90_when_nb_removed  nearest_PAF_p90_when_nb_removed  nearest_raw_p50_when_nb_kept  MTF_raw_p50_when_nb_removed  MTF_PAF_p50_when_nb_removed
+    ALL                 7205            120032                           0.2094                           0.3297                        0.3360                           0.9205                           1.1746                        0.0749                       0.2094                       0.3290
+DEB|GEO                   32                26                           0.2840                           0.4004                        0.5938                           2.9127                           1.8879                        0.4410                       0.2840                       0.4004
+DEB|HEO                   36               438                           0.3413                           0.6004                        0.3333                           1.4790                           2.5159                        0.7003                       0.3348                       0.6004
+DEB|LEO                  396             60254                           0.1628                           0.2462                        0.2980                           0.9607                           1.3059                        0.0878                       0.1596                       0.2454
+DEB|MEO                  221              2437                           0.3093                           0.6178                        0.2986                           2.0118                           4.2408                        0.3983                       0.3062                       0.6250
+PAY|GEO                 2409              3696                           0.2776                           0.4052                        0.3528                           1.1977                           1.3093                        0.4107                       0.2774                       0.4052
+PAY|HEO                 1072              2144                           0.2449                           0.4324                        0.2957                           0.9354                           1.3176                        0.3907                       0.2439                       0.4324
+PAY|LEO                  342             23642                           0.0345                           0.0492                        0.2602                           0.1102                           0.1480                        0.0305                       0.0330                       0.0492
+PAY|MEO                  337              5208                           0.1178                           0.1927                        0.3264                           0.4676                           0.7276                        0.1516                       0.1174                       0.1927
+R/B|GEO                 1020              1279                           0.1707                           0.2655                        0.3676                           0.6514                           0.6899                        0.2585                       0.1745                       0.2655
+R/B|HEO                  678              1972                           0.2244                           0.3422                        0.3451                           0.8066                           1.0581                        0.3432                       0.2244                       0.3379
+R/B|LEO                  120             12557                           0.0455                           0.0644                        0.3500                           0.1700                           0.2639                        0.0372                       0.0458                       0.0644
+R/B|MEO                  541              5782                           0.2211                           0.3388                        0.3475                           0.8286                           1.0518                        0.2269                       0.2238                       0.3336
+2026-09-13 16:43:49,328 INFO proof: P3 sparsity:
+   scope  n_epochs  n_obj  pct_ge2_within_12h  pct_ge2_within_24h  pct_ge1_within_12h  median_neighbour_gap_h  pct_neighbour_removed_by_paf
+     ALL    127237   3542               18.42               71.50               63.44                   10.05                          5.66
+ DEB|HEO       474     13               11.60               50.42               37.13                   22.80                          7.59
+ DEB|LEO     60650   1590               15.11               69.92               62.71                   10.25                          0.65
+ DEB|MEO      2658     89                7.15               34.95               37.81                   17.79                          8.31
+ PAY|GEO      6105    215                4.68               53.07               36.20                   16.39                         39.46
+ PAY|HEO      3216    113                3.76               43.03               31.16                   21.25                         33.33
+ PAY|LEO     23984    658               32.25               93.58               85.22                    7.19                          1.43
+ PAY|MEO      5545    154                3.07               30.35               24.42                   22.03                          6.08
+PAY|VLEO       400     10               34.75               94.75               85.50                    7.78                          0.25
+ R/B|GEO      2299     81                5.48               64.98               40.32                   13.54                         44.37
+ R/B|HEO      2650     87                6.26               41.36               34.11                   21.58                         25.58
+ R/B|LEO     12677    350               34.60               94.13               86.85                    6.97                          0.95
+ R/B|MEO      6323    175               13.06               55.73               49.39                   12.05                          8.56
+R/B|VLEO       118      3               42.37               95.76               90.68                    6.29                          0.00
+2026-09-13 16:43:59,113 INFO proof: P5 continuity:
+      method  n_switches  jump_p50_m  jump_p90_m  jump_max_m  bg_jump_p50_m  frac_jump_gt_50m  frac_jump_gt_200m  err_step_km  err_change_at_switch_km
+         MTF         576      7.4691     13.6600   7190.3509         4.3102            0.0104             0.0087       0.5376                   0.1301
+MTF-adaptive         576      7.5509     14.1149    382.9031         4.2802            0.0052             0.0035       0.5462                   0.1093
+     blend-2         576      7.2618     12.7053     17.8414         4.3098            0.0000             0.0000       0.5491                   0.1078
+     nearest         576     24.4972    137.5222   7190.3509         4.2866            0.2517             0.0573       0.5319                   0.1690
+2026-09-13 16:43:59,590 INFO proof: P4 storm sigma (T component):
+component                         model         split     n  cov68  cov95  nees  err_p50_km  sigma_p50_km                                                            g_factors_last_component
+        t                     sigma-age           all 26370  0.670  0.925 4.070       0.456         0.647 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t                     sigma-age storm(Ap>=40)  1992  0.656  0.901 6.076       0.442         0.649 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t                     sigma-age         quiet 24378  0.671  0.927 3.906       0.457         0.647 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t    sigma-age x g(Ap obs lag1)           all 26370  0.668  0.924 4.090       0.456         0.645 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t    sigma-age x g(Ap obs lag1) storm(Ap>=40)  1992  0.659  0.899 6.048       0.442         0.649 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t    sigma-age x g(Ap obs lag1)         quiet 24378  0.669  0.927 3.930       0.457         0.645 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t sigma-age x g(Ap T3-forecast)           all 26370  0.669  0.925 4.086       0.456         0.646 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t sigma-age x g(Ap T3-forecast) storm(Ap>=40)  1992  0.662  0.900 6.026       0.442         0.650 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t sigma-age x g(Ap T3-forecast)         quiet 24378  0.669  0.927 3.928       0.457         0.646 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t     sigma-age x g(Ap perfect)           all 26370  0.668  0.924 4.264       0.456         0.646 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t     sigma-age x g(Ap perfect) storm(Ap>=40)  1992  0.661  0.902 5.972       0.442         0.663 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+        t     sigma-age x g(Ap perfect)         quiet 24378  0.669  0.926 4.125       0.457         0.644 {'0-15': 1.04, '15-30': 0.86, '30-50': 0.79, '50-80': 0.59, '80-1000000000.0': 1.0}
+2026-09-13 16:47:15,845 INFO proof: satellites with POD truth in the test window: ['S1A', 'S2A', 'S2B', 'S3A', 'S3B']
+2026-09-13 16:47:40,174 INFO proof: empirical isolated-jump |dn/n|: n=1425, median=1.83e-05, p90=4.33e-05
+2026-09-13 16:48:04,423 INFO proof: P2 S3B done
+2026-09-13 16:49:09,616 INFO proof: P2 S2A done
+2026-09-13 16:49:46,126 INFO proof: P2 S1A done
+2026-09-13 16:49:51,992 INFO proof: P2 S2B done
+2026-09-13 16:49:54,311 INFO proof: P2 S3A done
+2026-09-13 16:49:56,536 INFO proof: P2 pooled:
+   p     pool       method      n  e3d_p50  e3d_p90  e3d_p99 sat
+0.00 PAF-lite          MTF 105822    0.515    0.943    2.340 ALL
+0.00 PAF-lite MTF-adaptive 105822    0.516    0.948    2.262 ALL
+0.00 PAF-lite      nearest 105822    0.517    0.943    2.462 ALL
+0.00      raw          MTF 105822    0.514    0.940    1.942 ALL
+0.00      raw MTF-adaptive 105822    0.515    0.944    1.925 ALL
+0.00      raw      nearest 105822    0.516    0.940    2.039 ALL
+0.02 PAF-lite          MTF 317466    0.517    0.948    2.993 ALL
+0.02 PAF-lite MTF-adaptive 317466    0.518    0.954    2.820 ALL
+0.02 PAF-lite      nearest 317466    0.517    0.945    2.706 ALL
+0.02      raw          MTF 317466    0.522    0.964    6.600 ALL
+0.02      raw MTF-adaptive 317466    0.524    0.974   10.159 ALL
+0.02      raw      nearest 317466    0.519    0.948    2.518 ALL
+0.05 PAF-lite          MTF 317466    0.520    0.959    7.055 ALL
+0.05 PAF-lite MTF-adaptive 317466    0.522    0.966    7.748 ALL
+0.05 PAF-lite      nearest 317466    0.519    0.950    3.276 ALL
+0.05      raw          MTF 317466    0.534    1.013  673.380 ALL
+0.05      raw MTF-adaptive 317466    0.538    1.040  719.902 ALL
+0.05      raw      nearest 317466    0.523    0.962    3.578 ALL
+0.10 PAF-lite          MTF 317466    0.528    0.984  325.528 ALL
+0.10 PAF-lite MTF-adaptive 317466    0.530    0.998  579.557 ALL
+0.10 PAF-lite      nearest 317466    0.523    0.961    5.807 ALL
+0.10      raw          MTF 317466    0.554    1.169  934.244 ALL
+0.10      raw MTF-adaptive 317466    0.563    1.289  868.489 ALL
+0.10      raw      nearest 317466    0.531    0.990   14.058 ALL
+2026-09-13 16:49:56,538 INFO proof: P2 detection:
+   p  n_tle  n_fault  fault_removed  clean_removed  recall_n_jump  recall_bstar_neg  recall_duplicate  fault_recall  false_removal_rate
+0.00  10640        0              0            140          0.000               0.0             0.000         0.000               0.013
+0.02  32036      576            442            530          0.667               1.0             0.671         0.767               0.017
+0.05  32220     1504           1137            703          0.624               1.0             0.700         0.756               0.023
+0.10  32527     3105           2283            993          0.595               1.0             0.677         0.735               0.034

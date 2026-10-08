@@ -1,0 +1,176 @@
+2026-09-13 09:46:14,100 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882            1.000        0.974         150
+T6-CDM  Ridge (5-fold) 199 226443.232 3194366.007               0.979            0.953        0.958         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972            0.933        0.941         150
+2026-09-13 09:50:23,418 INFO t6_warning: 1-min reference trajectories 100/450
+2026-09-13 09:53:17,979 INFO t6_warning: 1-min reference trajectories 200/450
+2026-09-13 09:56:23,901 INFO t6_warning: 1-min reference trajectories 300/450
+2026-09-13 09:59:30,526 INFO t6_warning: 1-min reference trajectories 400/450
+2026-09-13 10:00:50,520 INFO t6_warning: shell subset 450 objects, 101025 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:01:50,955 INFO t6_warning: reference close approaches (<5.0 km): 105
+2026-09-13 10:03:24,328 ERROR t6_warning: T6 failed
+Traceback (most recent call last):
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 205, in main
+    try:
+    
+  File "/mnt/data/paper/stm场景汇总/pipeline/orbpipe/t6_warning.py", line 147, in run_screening
+    m = det[(det.i == tr.i) & (det.j == tr.j)]
+             ^^^^^
+  File "/mnt/data/processed_data/.venv/lib/python3.14/site-packages/pandas/core/generic.py", line 6194, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'i'
+2026-09-13 10:14:42,453 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 10:18:51,241 INFO t6_warning: 1-min reference trajectories 100/450
+2026-09-13 10:21:43,404 INFO t6_warning: 1-min reference trajectories 200/450
+2026-09-13 10:24:46,464 INFO t6_warning: 1-min reference trajectories 300/450
+2026-09-13 10:27:49,653 INFO t6_warning: 1-min reference trajectories 400/450
+2026-09-13 10:29:09,883 INFO t6_warning: shell subset 450 objects, 100442 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:29:37,610 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 10:30:34,731 INFO t6_warning: lead 6 h, Independent: 100442 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:30:34,812 INFO t6_warning: lead 6 h, Chained-T5: 0 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:31:05,913 INFO t6_warning: lead 24 h, Independent: 100442 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:31:05,990 INFO t6_warning: lead 24 h, Chained-T5: 0 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:31:06,010 INFO t6_warning: screening:
+ task  lead_h        mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6 Independent          100442.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+T6-UQ       6    UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6    UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6      UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6       6  Chained-T5               0.0     44.0       0         13.835   0.000      0.000              NaN              NaN                    100.0       NaN          NaN           NaN
+   T6      24 Independent          100442.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+T6-UQ      24    UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24    UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24      UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6      24  Chained-T5               0.0     44.0       0         36.725   0.000      0.000              NaN              NaN                    100.0       NaN          NaN           NaN
+2026-09-13 10:39:19,235 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 10:39:19,263 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-13 10:39:19,459 INFO t6_warning: shell subset 450 objects, 72252 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:39:39,331 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 10:40:27,622 INFO t6_warning: lead 6 h, Independent: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:40:47,678 INFO t6_warning: lead 6 h, Chained-T5: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:41:11,592 INFO t6_warning: lead 24 h, Independent: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:41:31,400 INFO t6_warning: lead 24 h, Chained-T5: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:41:31,460 INFO t6_warning: screening:
+ task  lead_h        mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6 Independent           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+T6-UQ       6    UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6    UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ       6      UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6       6  Chained-T5           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+   T6      24 Independent           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+T6-UQ      24    UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24    UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+T6-UQ      24      UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       0.0          0.0           0.0
+   T6      24  Chained-T5           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+2026-09-13 10:52:44,009 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 10:52:44,019 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-13 10:52:44,215 INFO t6_warning: shell subset 450 objects, 72252 pairs after apogee/perigee filter (of 101025)
+2026-09-13 10:53:04,149 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 10:53:50,931 INFO t6_warning: lead 6 h, Independent: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:53:51,100 INFO t6_warning: lead 6 h, Chained-T5 (50% budget): 313 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:53:51,189 INFO t6_warning: lead 6 h, Chained-T5 (25% budget): 313 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:53:51,278 INFO t6_warning: lead 6 h, Chained-T5 (10% budget): 313 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 10:54:14,519 INFO t6_warning: lead 24 h, Independent: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,681 INFO t6_warning: lead 24 h, Chained-T5 (50% budget): 308 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,769 INFO t6_warning: lead 24 h, Chained-T5 (25% budget): 308 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,856 INFO t6_warning: lead 24 h, Chained-T5 (10% budget): 308 pairs screened, 0 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 10:54:14,877 INFO t6_warning: screening:
+ task  lead_h                    mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6             Independent           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                    0.000       NaN          NaN           NaN
+T6-UQ       6                UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                  UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6       6 Chained-T5 (50% budget)             313.0     44.0       0         13.835   0.000      0.000              NaN              NaN                   99.567       NaN          NaN           NaN
+   T6       6 Chained-T5 (25% budget)             313.0     44.0       0         13.835   0.000      0.000              NaN              NaN                   99.567       NaN          NaN           NaN
+   T6       6 Chained-T5 (10% budget)             313.0     44.0       0         13.835   0.000      0.000              NaN              NaN                   99.567       NaN          NaN           NaN
+   T6      24             Independent           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                    0.000       NaN          NaN           NaN
+T6-UQ      24                UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                  UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6      24 Chained-T5 (50% budget)             308.0     44.0       0         36.725   0.000      0.000              NaN              NaN                   99.574       NaN          NaN           NaN
+   T6      24 Chained-T5 (25% budget)             308.0     44.0       0         36.725   0.000      0.000              NaN              NaN                   99.574       NaN          NaN           NaN
+   T6      24 Chained-T5 (10% budget)             308.0     44.0       0         36.725   0.000      0.000              NaN              NaN                   99.574       NaN          NaN           NaN
+2026-09-13 11:06:40,631 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-13 11:06:40,656 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-13 11:06:40,952 INFO t6_warning: shell subset 450 objects, 72252 pairs after apogee/perigee filter (of 101025)
+2026-09-13 11:07:02,642 INFO t6_warning: reference close approaches (<5.0 km): 44
+2026-09-13 11:07:54,344 INFO t6_warning: lead 6 h, Independent: 72252 pairs screened, 313 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:05,081 INFO t6_warning: lead 6 h, Chained-T5 (50% budget): 36126 pairs screened, 164 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:10,453 INFO t6_warning: lead 6 h, Chained-T5 (25% budget): 18063 pairs screened, 106 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:12,586 INFO t6_warning: lead 6 h, Chained-T5 (10% budget): 7225 pairs screened, 54 predicted approaches < 10.0 km; median TLE age at issue 13.8 h
+2026-09-13 11:08:37,759 INFO t6_warning: lead 24 h, Independent: 72252 pairs screened, 308 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:47,694 INFO t6_warning: lead 24 h, Chained-T5 (50% budget): 36126 pairs screened, 160 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:52,559 INFO t6_warning: lead 24 h, Chained-T5 (25% budget): 18063 pairs screened, 105 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:54,620 INFO t6_warning: lead 24 h, Chained-T5 (10% budget): 7225 pairs screened, 54 predicted approaches < 10.0 km; median TLE age at issue 36.7 h
+2026-09-13 11:08:54,643 INFO t6_warning: screening:
+ task  lead_h                    mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6             Independent           72252.0     44.0     313         13.835   0.182      0.026            0.267            0.408                      0.0       NaN          NaN           NaN
+T6-UQ       6                UQ-point               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                UQ-fixed               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.125
+T6-UQ       6                  UQ-age               NaN      NaN     313            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6       6 Chained-T5 (50% budget)           36126.0     44.0     164         13.835   0.068      0.018            0.333            0.374                     50.0       NaN          NaN           NaN
+   T6       6 Chained-T5 (25% budget)           18063.0     44.0     106         13.835   0.068      0.028            0.333            0.374                     75.0       NaN          NaN           NaN
+   T6       6 Chained-T5 (10% budget)            7225.0     44.0      54         13.835   0.000      0.000              NaN              NaN                     90.0       NaN          NaN           NaN
+   T6      24             Independent           72252.0     44.0     308         36.725   0.182      0.026            0.267            0.596                      0.0       NaN          NaN           NaN
+T6-UQ      24                UQ-point               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                UQ-fixed               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+T6-UQ      24                  UQ-age               NaN      NaN     308            NaN     NaN        NaN              NaN              NaN                      NaN       8.0          0.0         0.000
+   T6      24 Chained-T5 (50% budget)           36126.0     44.0     160         36.725   0.068      0.019            0.333            0.380                     50.0       NaN          NaN           NaN
+   T6      24 Chained-T5 (25% budget)           18063.0     44.0     105         36.725   0.068      0.029            0.333            0.380                     75.0       NaN          NaN           NaN
+   T6      24 Chained-T5 (10% budget)            7225.0     44.0      54         36.725   0.000      0.000              NaN              NaN                     90.0       NaN          NaN           NaN
+2026-09-14 02:39:36,097 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-14 02:51:39,357 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-14 02:58:27,917 INFO t6_warning: shell subset loaded from cache t6_shell_700_1000_450_3d.npz
+2026-09-16 11:38:20,737 INFO t6_warning: CDM:
+  task          method   n  mae_log10  rmse_log10  highrisk_precision  highrisk_recall  highrisk_f2  n_highrisk
+T6-CDM   Last-estimate 199      0.524       0.834               0.882             1.00        0.974         150
+T6-CDM  Ridge (5-fold) 199      0.445       0.581               0.898             0.88        0.884         150
+T6-CDM HistGB (5-fold) 199      0.263       0.369               0.972             0.94        0.946         150
+2026-09-16 11:45:05,804 INFO t6_warning: 1-min reference trajectories 100/450
+2026-09-16 11:49:20,929 INFO t6_warning: 1-min reference trajectories 200/450
+2026-09-16 11:53:29,126 INFO t6_warning: 1-min reference trajectories 300/450
+2026-09-16 11:57:36,459 INFO t6_warning: 1-min reference trajectories 400/450
+2026-09-16 11:59:27,463 INFO t6_warning: shell subset 450 objects, 68849 pairs after apogee/perigee filter (of 101025)
+2026-09-16 11:59:58,880 INFO t6_warning: reference close approaches (<5.0 km): 47
+2026-09-16 12:01:23,942 INFO t6_warning: lead 6 h, Independent: 68849 pairs screened, 290 predicted approaches < 10.0 km; median TLE age at issue 13.7 h
+2026-09-16 12:01:43,096 INFO t6_warning: lead 6 h, Chained-T5 (50% budget): 34424 pairs screened, 150 predicted approaches < 10.0 km; median TLE age at issue 13.7 h
+2026-09-16 12:01:51,165 INFO t6_warning: lead 6 h, Chained-T5 (25% budget): 17212 pairs screened, 111 predicted approaches < 10.0 km; median TLE age at issue 13.7 h
+2026-09-16 12:01:55,359 INFO t6_warning: lead 6 h, Chained-T5 (10% budget): 6884 pairs screened, 64 predicted approaches < 10.0 km; median TLE age at issue 13.7 h
+2026-09-16 12:02:32,751 INFO t6_warning: lead 24 h, Independent: 68849 pairs screened, 290 predicted approaches < 10.0 km; median TLE age at issue 36.5 h
+2026-09-16 12:02:48,734 INFO t6_warning: lead 24 h, Chained-T5 (50% budget): 34424 pairs screened, 150 predicted approaches < 10.0 km; median TLE age at issue 36.5 h
+2026-09-16 12:02:56,451 INFO t6_warning: lead 24 h, Chained-T5 (25% budget): 17212 pairs screened, 111 predicted approaches < 10.0 km; median TLE age at issue 36.5 h
+2026-09-16 12:02:59,777 INFO t6_warning: lead 24 h, Chained-T5 (10% budget): 6884 pairs screened, 64 predicted approaches < 10.0 km; median TLE age at issue 36.5 h
+2026-09-16 12:02:59,833 INFO t6_warning: screening:
+ task  lead_h                    mode  n_pairs_screened  n_truth  n_pred  tle_age_med_h  recall  precision  tca_err_med_min  miss_err_med_km  candidate_reduction_pct  n_danger  recall_at_k  recall_at_2k
+   T6       6             Independent           68849.0     47.0     290         13.652   0.915      0.148              0.0            0.101                    0.000       NaN          NaN           NaN
+T6-UQ       6                UQ-point               NaN      NaN     290            NaN     NaN        NaN              NaN              NaN                      NaN      43.0        0.884         1.000
+T6-UQ       6                UQ-fixed               NaN      NaN     290            NaN     NaN        NaN              NaN              NaN                      NaN      43.0        0.884         1.000
+T6-UQ       6                  UQ-age               NaN      NaN     290            NaN     NaN        NaN              NaN              NaN                      NaN      43.0        0.837         0.977
+   T6       6 Chained-T5 (50% budget)           34424.0     47.0     150         13.652   0.489      0.153              0.0            0.109                   50.001       NaN          NaN           NaN
+   T6       6 Chained-T5 (25% budget)           17212.0     47.0     111         13.652   0.383      0.162              0.0            0.107                   75.000       NaN          NaN           NaN
+   T6       6 Chained-T5 (10% budget)            6884.0     47.0      64         13.652   0.255      0.188              0.0            0.073                   90.001       NaN          NaN           NaN
+   T6      24             Independent           68849.0     47.0     290         36.458   0.915      0.148              0.0            0.207                    0.000       NaN          NaN           NaN
+T6-UQ      24                UQ-point               NaN      NaN     290            NaN     NaN        NaN              NaN              NaN                      NaN      43.0        0.814         0.953
+T6-UQ      24                UQ-fixed               NaN      NaN     290            NaN     NaN        NaN              NaN              NaN                      NaN      43.0        0.837         0.953
+T6-UQ      24                  UQ-age               NaN      NaN     290            NaN     NaN        NaN              NaN              NaN                      NaN      43.0        0.837         0.977
+   T6      24 Chained-T5 (50% budget)           34424.0     47.0     150         36.458   0.489      0.153              0.0            0.175                   50.001       NaN          NaN           NaN
+   T6      24 Chained-T5 (25% budget)           17212.0     47.0     111         36.458   0.383      0.162              0.0            0.165                   75.000       NaN          NaN           NaN
+   T6      24 Chained-T5 (10% budget)            6884.0     47.0      64         36.458   0.255      0.188              0.0            0.117                   90.001       NaN          NaN           NaN
